@@ -116,4 +116,4 @@ for id in df['video_id']:
 df['comments']=comments
 '''
 print(str(count) + " results added!")
-df.to_csv('/Users/mingjun.lim/Documents/youtubeScraper/test.csv')
+df.to_csv('test.csv')
