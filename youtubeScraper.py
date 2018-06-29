@@ -9,10 +9,13 @@ import urllib3
 import certifi
 import json
 import pandas as pd
+import numpy as np
 #from googletrans import Translator
 #import emoji
 #import textblob
 
+
+# Load existing DataFrame (named test.csv). If unable to find, start from scratch.
 try:
     old_df = pd.read_csv('test.csv')
     video_id = (old_df['video_id']).tolist()
@@ -27,20 +30,27 @@ except:
     description = []
     published_at = []
     print('no file found')
+    
+try:
+    tokn = open("tokensSeen.json", "r")
+    tokensSeen = json.loads(tokn)
+except:
+    print('tokens seen not found')
+    tokensSeen = []
 
-search_params = 'Grab'
+# Modifyable search parameters (CHANGE ME)
+search_params = 'Grab' # Params seperated by + (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’)
 num_pages = 10
 results_per_page = 50
-
+# Modifyable search parameters (CHANGE ME)
     
 base_url = 'https://www.googleapis.com/youtube/v3/search?'
 api_key = 'AIzaSyDlITOYKP8ABriX7UZisXTF9DDtTfma480'
 
-# change 'Grab' to what you want to search for (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’), and change 'maxResults=10' to liking
 remainder = 'part=snippet&maxResults=' + str(results_per_page) +'&' + 'q=' + search_params + '&key=' + api_key
 url = base_url + remainder
 
-
+# To track number of additions to Database
 count = 0
 
 # scraping videos related to 'Grab'
@@ -53,6 +63,8 @@ for i in range(num_pages):
     data = json.loads(response)
     items = data['items']
     next_page_token = data['nextPageToken']
+    if next_page_token not in tokensSeen:
+        tokensSeen.append(next_page_token)
 
     for item in items:
         if item['id']['kind'] == 'youtube#video' and item['id']['videoId'] not in seen:
@@ -72,6 +84,8 @@ df['video_id']=video_id
 df['title']=title
 df['description']=description
 # left a giant string here for future use :)
+
+tokendf = pd.
 '''
 #translate data
 translator = Translator()
@@ -115,5 +129,7 @@ for id in df['video_id']:
 
 df['comments']=comments
 '''
+
+
 print(str(count) + " results added!")
 df.to_csv('test.csv')

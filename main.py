@@ -27,6 +27,21 @@ data = json.loads(response)
 with open("comments_file.json", "w") as data_file:
 	json.dump(data, data_file, indent=2)
 
+listy = ['daf','dafwq','eqfdas','dqfqe']
+with open("tkfile.json", "w") as write_file:
+	json.dump(listy, write_file, indent=2)
+
+try:
+    data_dump = open("~/Documents/youtubeScraper/tkfile.json", "r")
+    data_index = json.loads(data_dump)
+except:
+    print('No tkfile found')
+    data_index = []
+
+data_index.append('moosey')
+with open("tkfile.json", "w") as write_file:
+	json.dump(data_index, write_file, indent=2)
+
 
 # load_json = open('data_file.json', 'r')
 # new_todos = json.load(load_json)
