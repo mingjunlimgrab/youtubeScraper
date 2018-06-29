@@ -1,0 +1,2989 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/H7EzaBwFJ8k4_AbIrQ2cuzRqOkc\"",
+  "nextPageToken": "QURTSl9pMkZ3UWw4Y3BmalJXY0NVNTZRbFJyT3MwcVFvZTJ6M1l2UWFfdHFWcUFGTjR2U0VuZlMwYmV1VFhHTUtzODZrYjVNNkRPWlhNN1l5OV9mM3MwRjJmV1dobkh2aENNRE82N0FZdHR1LVZGUy1SWDZXYkFHQTNqRjJWMFQxQldEdHZKUXlaOGVrQ3F1di1lRkduZlV5Sm1IaWoxS0tJekdid1B5Q1h3UFhIcjBvazJqYWtRZ0NKUGFBN3owcklsVVVMdlJyMlRvZFBERlZzUVRmMm1fZklKZ3M0STVmYzNocW40dFNYalk0WEl2dU95OXNQZ1NFMXMyeWg2SEItVHkwTzBudEZzQU1zZlo4N2VZcU5ZXzJtRHV1QnBMM1NIaFZXM3YwMW9CUmFwQjNZbFVQWVVKMzB1aFpOLTZ5eGwxMVZSQklYLTRINXpqRTVkQWZoSjRGeVpmMWNHS3ZiT1NzeS1wbXZFODItY1dmQ0NEbW1oaGY2VUVsdkhIN3RyZzM3elRBQ29sZFliRzRDXy11U1RDc0VxZ1BrVGREOEtsRFRETmFWQnZEQkV2bDdPUGZmN0R2aXY1aHZEaTJzVWxnV1hmYkNIVDA3cTlXbzE0cHBER1UtWHZYNmh1S2VUWUNsdmhaS1VfMUFYeWlaYk9CUXNwRVNjMkM2VEtYMVQ1M0xCWnluazgxR19NN2JmVlFoTjUwUjR4dzlDcEtWVDVTSWxlZnZYV2p6TEdHN19PVFhVaGJ2enN2dmhmYl94WnFqSVhGSG1YQVR1MVUxbUtIbDVIdF9FdDBzLVk4MmdSc1pTd2tqa05reGVzOXhjUlhuYXpCZWRXZlVLV2p1cnRqY2VnbGhwRkFWMTkyTzBCend4emVMaHdmVVB4ZktUa2Z4cEFtcWlHcXZuZExGUnVnVmItVGtwOVpkU1hPcmhYbkp4bFRTVy00SFJqcUFxNUpHV0xodVNpUzdQc0hyYTItdzg3Sk81STlsRnd3Tmo0aHN6cjJYMA==",
+  "pageInfo": {
+    "totalResults": 50,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ReLhVe3fZGofSD43JrAkNWyNvc4\"",
+      "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/426vBE0f5Bi7H01fBCq4SZkSfqg\"",
+          "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+          "snippet": {
+            "authorDisplayName": "JungChimSugaTae my bbys",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-z7SjzxpZ7J0/AAAAAAAAAAI/AAAAAAAAAAA/-wpBPpkuM1I/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCWEQEI-TLnupdCEWo9IWkgg",
+            "authorChannelId": {
+              "value": "UCWEQEI-TLnupdCEWo9IWkgg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "You must have put a lot of effort in the information! Well done!",
+            "textOriginal": "You must have put a lot of effort in the information! Well done!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 208,
+            "publishedAt": "2018-05-12T07:03:35.000Z",
+            "updatedAt": "2018-05-12T07:03:35.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/m1O0CKmLYg4ORAJ45zWMTwVX_J4\"",
+            "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg.8g8HHo1ZsS18gYLW4QV1Bn",
+            "snippet": {
+              "authorDisplayName": "TV\u514b\u62c9\u4e3d\u4e1d",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-XAJAAq9IFKg/AAAAAAAAAAI/AAAAAAAAAAA/-_BoPDWZQM8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCoRCkkagwyEHuQVBRqS0-AA",
+              "authorChannelId": {
+                "value": "UCoRCkkagwyEHuQVBRqS0-AA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "JungChimSugaTae my bbys sugar is mine!!!!\ud83e\udd23",
+              "textOriginal": "JungChimSugaTae my bbys sugar is mine!!!!\ud83e\udd23",
+              "parentId": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-22T10:00:44.000Z",
+              "updatedAt": "2018-05-22T10:00:44.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/_kKdkJZHi_z6sEe5JEAYUGbnQ-s\"",
+            "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg.8g8HHo1ZsS18g8sLD43oRv",
+            "snippet": {
+              "authorDisplayName": "_mango exos",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-7Rz_wvYM-Hg/AAAAAAAAAAI/AAAAAAAAAAA/aL6oEGFOMaw/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCWa8J9PDWAF1JW1jfqfiL4Q",
+              "authorChannelId": {
+                "value": "UCWa8J9PDWAF1JW1jfqfiL4Q"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "everyone only caress that he/she is a army ._.",
+              "textOriginal": "everyone only caress that he/she is a army ._.",
+              "parentId": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T12:36:05.000Z",
+              "updatedAt": "2018-05-12T12:36:05.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QLcX3TOiTRjwGX0ZVTW3wA1ITgM\"",
+            "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg.8g8HHo1ZsS18g8kw7OgILB",
+            "snippet": {
+              "authorDisplayName": "Cupcake Queen",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-eG2RafOOzM0/AAAAAAAAAAI/AAAAAAAAAAA/xWZGd8az8qs/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UChYuuweQzeS9oJ-QQN1qZBQ",
+              "authorChannelId": {
+                "value": "UChYuuweQzeS9oJ-QQN1qZBQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Army hello",
+              "textOriginal": "Army hello",
+              "parentId": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T11:31:21.000Z",
+              "updatedAt": "2018-05-12T11:31:21.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9lBOktMkOooFNyoqXKfFilk4qzc\"",
+            "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg.8g8HHo1ZsS18g8hS52-uKg",
+            "snippet": {
+              "authorDisplayName": "Ariel Yang",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-qYn5-bKbfsg/AAAAAAAAAAI/AAAAAAAAAAA/0mIauC9Zc48/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCJ-SCO73DlDK2WCfol63XlA",
+              "authorChannelId": {
+                "value": "UCJ-SCO73DlDK2WCfol63XlA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "ARMYYYY I SEE YA",
+              "textOriginal": "ARMYYYY I SEE YA",
+              "parentId": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T11:00:54.000Z",
+              "updatedAt": "2018-05-12T11:00:54.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Wfzjyk44TGfvrtPADWWDnq9v9_w\"",
+            "id": "UgxTKJYrhKj1Dq_hWVx4AaABAg.8g8HHo1ZsS18g8WvXAeqYR",
+            "snippet": {
+              "authorDisplayName": "yoongyiii",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-JtAVrWeGfQQ/AAAAAAAAAAI/AAAAAAAAAAA/6GS70XKw_Z0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC1TiQSDnoKLHqsVvGGl7npQ",
+              "authorChannelId": {
+                "value": "UC1TiQSDnoKLHqsVvGGl7npQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "JungChimSugaTae my bbys ARMYYAAA",
+              "textOriginal": "JungChimSugaTae my bbys ARMYYAAA",
+              "parentId": "UgxTKJYrhKj1Dq_hWVx4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T09:20:12.000Z",
+              "updatedAt": "2018-05-12T09:20:12.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/tKSUDA29puNjCyq6nU-jsBDwiAI\"",
+      "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aC8DG5kUDdzbP-fd7nfhs3In_I8\"",
+          "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Stephanie's Musings",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-UfATgSiVL-o/AAAAAAAAAAI/AAAAAAAAAAA/BL9ujbEZQ6c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCLiJwR99qAOeZoVSu8nj0Qg",
+            "authorChannelId": {
+              "value": "UCLiJwR99qAOeZoVSu8nj0Qg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I was very sad when I learnt that Uber would be merging with Grab. I\u2019ve had nothing but positive experiences with Uber drivers. But there were so many times when I booked a ride through Grab, and then have the drivers be super creepy. One time, this guy called my number to confirm my location... Then during the ride, he started hitting on me. I told him I was happily married. He said, \u201cMarried cannot have friends?\u201d. Please lah. I\u2019m not naive. You were hitting on me. I know your intentions aren\u2019t pure. And then after the ride ended, he texted me on Whatsapp! What happened to user privacy?? I thought Grab was supposed to mask numbers. :( Another time this other Grab driver told me he was married but his wife allowed him to have girlfriends. I was like, \u201cthat\u2019s cool, bro. I\u2019m strictly monogamous with my husband.\u201d It is terrifying to be stuck in an enclosed vehicle with someone whom is trying to hit on you. :(",
+            "textOriginal": "I was very sad when I learnt that Uber would be merging with Grab. I\u2019ve had nothing but positive experiences with Uber drivers. But there were so many times when I booked a ride through Grab, and then have the drivers be super creepy. One time, this guy called my number to confirm my location... Then during the ride, he started hitting on me. I told him I was happily married. He said, \u201cMarried cannot have friends?\u201d. Please lah. I\u2019m not naive. You were hitting on me. I know your intentions aren\u2019t pure. And then after the ride ended, he texted me on Whatsapp! What happened to user privacy?? I thought Grab was supposed to mask numbers. :( Another time this other Grab driver told me he was married but his wife allowed him to have girlfriends. I was like, \u201cthat\u2019s cool, bro. I\u2019m strictly monogamous with my husband.\u201d It is terrifying to be stuck in an enclosed vehicle with someone whom is trying to hit on you. :(",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 167,
+            "publishedAt": "2018-05-12T09:30:59.000Z",
+            "updatedAt": "2018-05-12T09:30:59.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 12,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/e_z04FOBiHJCv_RZ3ZDiFwT_oHg\"",
+            "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg.8g8Y9V7Aiqp8gJfL_XCC_I",
+            "snippet": {
+              "authorDisplayName": "B for Beautiful",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-yaciB9ioENo/AAAAAAAAAAI/AAAAAAAAAAA/frocJC5j8zA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdsUtBDbts2QiBRyBe7zhMg",
+              "authorChannelId": {
+                "value": "UCdsUtBDbts2QiBRyBe7zhMg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Grammar mistake. Last sentence is \u2018who\u2019 not \u2018whom\u2019. Anyways, I never ever sat on a Uber b4 so idk the diff. Just dat sometimes  they smoke b4 they pick me up or put waaaaayyyy too much perfume and the car stinks. But I prefer yellow top taxi best cuz it\u2019s always old uncles driving it and they are always nice. Damn sad that they are gone now. Well, I did see one a few days ago near my school but that\u2019s only one and it\u2019s in a NEW car. So I still sad. \ud83d\ude1e \ud83d\ude14 \ud83d\ude22",
+              "textOriginal": "Grammar mistake. Last sentence is \u2018who\u2019 not \u2018whom\u2019. Anyways, I never ever sat on a Uber b4 so idk the diff. Just dat sometimes  they smoke b4 they pick me up or put waaaaayyyy too much perfume and the car stinks. But I prefer yellow top taxi best cuz it\u2019s always old uncles driving it and they are always nice. Damn sad that they are gone now. Well, I did see one a few days ago near my school but that\u2019s only one and it\u2019s in a NEW car. So I still sad. \ud83d\ude1e \ud83d\ude14 \ud83d\ude22",
+              "parentId": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-16T17:14:11.000Z",
+              "updatedAt": "2018-05-16T17:14:11.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/YXKvdZmoIjTXx_3IkpsdPkrcXec\"",
+            "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg.8g8Y9V7Aiqp8gDMC06Wxo1",
+            "snippet": {
+              "authorDisplayName": "Johan Hoe",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-gKC7WgX6gWs/AAAAAAAAAAI/AAAAAAAAAAA/pi2yEy8ZnDg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdFsl_-d0Jez5RSXtPTfx_g",
+              "authorChannelId": {
+                "value": "UCdFsl_-d0Jez5RSXtPTfx_g"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "It\u2019s true, grab doesn\u2019t have the masking of number in the past. Now it\u2019s similar to uber so not to worry about driver contacting u after the trip. If they do, u can make complain to grab and they will be suspended from driving until investigations are over.",
+              "textOriginal": "It\u2019s true, grab doesn\u2019t have the masking of number in the past. Now it\u2019s similar to uber so not to worry about driver contacting u after the trip. If they do, u can make complain to grab and they will be suspended from driving until investigations are over.",
+              "parentId": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T06:22:40.000Z",
+              "updatedAt": "2018-05-14T06:22:40.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/bnIsN0381ZK4DNATVnY78k5BNNQ\"",
+            "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg.8g8Y9V7Aiqp8gBYZ1MkBhd",
+            "snippet": {
+              "authorDisplayName": "xxsijiaxx",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-ddHnoH762c4/AAAAAAAAAAI/AAAAAAAAAAA/Zad9jIfBqW8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC-Zpvlhwi2kQt4DJGGHeIjQ",
+              "authorChannelId": {
+                "value": "UC-Zpvlhwi2kQt4DJGGHeIjQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Ahh yes i rmb that period of time. There was once a grab driver called me through the app, but the second call was from his private line...",
+              "textOriginal": "Ahh yes i rmb that period of time. There was once a grab driver called me through the app, but the second call was from his private line...",
+              "parentId": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-13T13:32:12.000Z",
+              "updatedAt": "2018-05-13T13:32:12.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/he15PnJxBKmdZFF4BLprRfuVRcs\"",
+            "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg.8g8Y9V7Aiqp8gBYExsE7BZ",
+            "snippet": {
+              "authorDisplayName": "Stephanie's Musings",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-UfATgSiVL-o/AAAAAAAAAAI/AAAAAAAAAAA/BL9ujbEZQ6c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCLiJwR99qAOeZoVSu8nj0Qg",
+              "authorChannelId": {
+                "value": "UCLiJwR99qAOeZoVSu8nj0Qg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "xxsijiaxx: I didn&#39;t text him. He called me in-app, and then somehow, he got my number from there. I think this was way back in the day when Grab&#39;s coding wasn&#39;t so great so their user security suffered. :/",
+              "textOriginal": "xxsijiaxx: I didn't text him. He called me in-app, and then somehow, he got my number from there. I think this was way back in the day when Grab's coding wasn't so great so their user security suffered. :/",
+              "parentId": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-13T13:29:27.000Z",
+              "updatedAt": "2018-05-13T13:29:27.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ngtpj_3mLqRzca9s_JsLstPGVx8\"",
+            "id": "Ugyr5AxVrfeZeYu9b-Z4AaABAg.8g8Y9V7Aiqp8gAhoWZ1jwC",
+            "snippet": {
+              "authorDisplayName": "xxsijiaxx",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-ddHnoH762c4/AAAAAAAAAAI/AAAAAAAAAAA/Zad9jIfBqW8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC-Zpvlhwi2kQt4DJGGHeIjQ",
+              "authorChannelId": {
+                "value": "UC-Zpvlhwi2kQt4DJGGHeIjQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "i think when you text an uber driver, it&#39;s in-app but when you text a grab driver it goes to your phone messages...",
+              "textOriginal": "i think when you text an uber driver, it's in-app but when you text a grab driver it goes to your phone messages...",
+              "parentId": "Ugyr5AxVrfeZeYu9b-Z4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-13T05:42:35.000Z",
+              "updatedAt": "2018-05-13T05:42:35.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/skOV3SuBHzLDsZtl_FLh9h_bxpo\"",
+      "id": "UgxePo3ntaKLpWy7kmJ4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QEBdwla53QX7IIJRhqoihLQKl1w\"",
+          "id": "UgxePo3ntaKLpWy7kmJ4AaABAg",
+          "snippet": {
+            "authorDisplayName": "TheaO_O",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-F7ZGjDyOUZI/AAAAAAAAAAI/AAAAAAAAAAA/9n2CNuJrjUY/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCUNNrykQb4_cKDf0X4G8-1Q",
+            "authorChannelId": {
+              "value": "UCUNNrykQb4_cKDf0X4G8-1Q"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "we want UBER !!!!!!!!!!!!",
+            "textOriginal": "we want UBER !!!!!!!!!!!!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 120,
+            "publishedAt": "2018-05-12T07:24:29.000Z",
+            "updatedAt": "2018-05-12T07:24:29.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/y_lFd7fgbupIe0EH_yWf2UifeJQ\"",
+      "id": "Ugx6yGvof_izrGeha0l4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/V4pibawAEYGhsL9EJsIg41TA5Tg\"",
+          "id": "Ugx6yGvof_izrGeha0l4AaABAg",
+          "snippet": {
+            "authorDisplayName": "DriggerTUBE",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ozB10stVmRo/AAAAAAAAAAI/AAAAAAAAAAA/yMD_tT-WB-A/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCWazGIjBb957BwMShG4hvmA",
+            "authorChannelId": {
+              "value": "UCWazGIjBb957BwMShG4hvmA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "<b>\ud83e\udd29RYAN &amp; SYLVIA\ud83e\udd29</b>",
+            "textOriginal": "*\ud83e\udd29RYAN & SYLVIA\ud83e\udd29*",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 11,
+            "publishedAt": "2018-05-12T07:39:31.000Z",
+            "updatedAt": "2018-05-12T07:39:31.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/rMeX34ihz_datdhOTs6_63ArDF4\"",
+      "id": "UgxHzYpKnSQJ725sbZ54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/tC5L32xzgi7JsEaJyauaErpj9Pw\"",
+          "id": "UgxHzYpKnSQJ725sbZ54AaABAg",
+          "snippet": {
+            "authorDisplayName": "Aniq Akmal",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-iEiyMGTScyM/AAAAAAAAAAI/AAAAAAAAAAA/NM9x5XIrLlM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCQ-eW3rlzcRry2jnX8HYSng",
+            "authorChannelId": {
+              "value": "UCQ-eW3rlzcRry2jnX8HYSng"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "We want uber back!",
+            "textOriginal": "We want uber back!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 66,
+            "publishedAt": "2018-05-12T07:13:40.000Z",
+            "updatedAt": "2018-05-12T07:13:40.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/uJmtGYhiDXo2163WWvFMvYaIQb4\"",
+      "id": "Ugzaw77iWNW4qXLAyzN4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/KWnsCiUjZ-L19Mt6pZWV-nhOd2k\"",
+          "id": "Ugzaw77iWNW4qXLAyzN4AaABAg",
+          "snippet": {
+            "authorDisplayName": "PipSaSqeak",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-I6NHnDnJbVI/AAAAAAAAAAI/AAAAAAAAAAA/CIYXuT1w1T4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCco2657Uet1Bfuza7iaHcTg",
+            "authorChannelId": {
+              "value": "UCco2657Uet1Bfuza7iaHcTg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Also Singaporean Harry Potter RETURNS!",
+            "textOriginal": "Also Singaporean Harry Potter RETURNS!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 31,
+            "publishedAt": "2018-05-12T07:06:33.000Z",
+            "updatedAt": "2018-05-12T07:06:33.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/4wtLf2l9bNF6-EvrL1NOluJ8qO8\"",
+      "id": "Ugy2h_Tyae0wSeMTibV4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/sdWF5idP4qhAUVTqpQy_ZTuhoUc\"",
+          "id": "Ugy2h_Tyae0wSeMTibV4AaABAg",
+          "snippet": {
+            "authorDisplayName": "June O",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-dqP9d6zUWUg/AAAAAAAAAAI/AAAAAAAAAAA/Bv1r6WVHUXU/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCyk8y47SH0gasYsSYFzmDPw",
+            "authorChannelId": {
+              "value": "UCyk8y47SH0gasYsSYFzmDPw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Grab is expensive even before Uber gone that is why I never use Grab and never will.",
+            "textOriginal": "Grab is expensive even before Uber gone that is why I never use Grab and never will.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 62,
+            "publishedAt": "2018-05-12T07:25:03.000Z",
+            "updatedAt": "2018-05-12T07:25:14.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/m1JUG1e8FgR7WYob9JEcbUQtQiY\"",
+            "id": "Ugy2h_Tyae0wSeMTibV4AaABAg.8g8Jk6sIPco8gWSy87nt8n",
+            "snippet": {
+              "authorDisplayName": "maomi",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DWSRt9q8apE/AAAAAAAAAAI/AAAAAAAAAAA/BwT9Q3w85cM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCkyrzMt6LbJ1fNG5b8bQyng",
+              "authorChannelId": {
+                "value": "UCkyrzMt6LbJ1fNG5b8bQyng"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "really? I found uber more ex",
+              "textOriginal": "really? I found uber more ex",
+              "parentId": "Ugy2h_Tyae0wSeMTibV4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-21T16:27:23.000Z",
+              "updatedAt": "2018-05-21T16:27:23.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/IuI3lULVHl4-co__882uhQLJS7M\"",
+            "id": "Ugy2h_Tyae0wSeMTibV4AaABAg.8g8Jk6sIPco8gDMXZEtv1F",
+            "snippet": {
+              "authorDisplayName": "Johan Hoe",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-gKC7WgX6gWs/AAAAAAAAAAI/AAAAAAAAAAA/pi2yEy8ZnDg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdFsl_-d0Jez5RSXtPTfx_g",
+              "authorChannelId": {
+                "value": "UCdFsl_-d0Jez5RSXtPTfx_g"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "It\u2019s not about the timing, it\u2019s about the demand. Uber uses an area effect surge so the price seems more fair to everyone using in that area. Grab surge is more specific so a certain amount of people will be charged at high surge and the rest around the area might not even have surge. I prefer uber surge system it\u2019s more fair to both drivers and passengers.",
+              "textOriginal": "It\u2019s not about the timing, it\u2019s about the demand. Uber uses an area effect surge so the price seems more fair to everyone using in that area. Grab surge is more specific so a certain amount of people will be charged at high surge and the rest around the area might not even have surge. I prefer uber surge system it\u2019s more fair to both drivers and passengers.",
+              "parentId": "Ugy2h_Tyae0wSeMTibV4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T06:25:37.000Z",
+              "updatedAt": "2018-05-14T06:25:37.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/3ZxcbtmR5TfHyC5HsfXnfPcbbKU\"",
+            "id": "Ugy2h_Tyae0wSeMTibV4AaABAg.8g8Jk6sIPco8g9HIZBjoIp",
+            "snippet": {
+              "authorDisplayName": "Elicia Yeo",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9HqNlTMUeYU/AAAAAAAAAAI/AAAAAAAAAAA/mhaxJGnn68I/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC3fhU4sSEOuXcL3YxdAREZw",
+              "authorChannelId": {
+                "value": "UC3fhU4sSEOuXcL3YxdAREZw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "sometimes uber is more expensive than grab lol. both apps have different pricing at different timings and sometimes grab is cheaper than uber.",
+              "textOriginal": "sometimes uber is more expensive than grab lol. both apps have different pricing at different timings and sometimes grab is cheaper than uber.",
+              "parentId": "Ugy2h_Tyae0wSeMTibV4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2018-05-12T16:22:55.000Z",
+              "updatedAt": "2018-05-12T16:22:55.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/vODJv122qXL2yeXFifKPmYOFVG0\"",
+      "id": "UgzB5YSvRdJtrScSas54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QFiQUfXsBmEnq_QJV7acRy_o_8I\"",
+          "id": "UgzB5YSvRdJtrScSas54AaABAg",
+          "snippet": {
+            "authorDisplayName": "we_are_n4k4m4",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-6jVpNSj72Mw/AAAAAAAAAAI/AAAAAAAAAAA/_jR1UtRog3c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCRY0YSgit9iC4JfSeHzzAJw",
+            "authorChannelId": {
+              "value": "UCRY0YSgit9iC4JfSeHzzAJw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I have once took a grab hitch and the other passenger sharing the same car was a chair. \ud83d\ude02 Yes, someone booked a hitch to deliver a chair.",
+            "textOriginal": "I have once took a grab hitch and the other passenger sharing the same car was a chair. \ud83d\ude02 Yes, someone booked a hitch to deliver a chair.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 52,
+            "publishedAt": "2018-05-12T07:51:32.000Z",
+            "updatedAt": "2018-05-12T07:51:32.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/NG82KX99P9TCWxLzol4HB-FOZ24\"",
+            "id": "UgzB5YSvRdJtrScSas54AaABAg.8g8Mm-CxmJ_8gJj0NJmCg_",
+            "snippet": {
+              "authorDisplayName": "Kh Bye",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-OgsX4eDipmg/AAAAAAAAAAI/AAAAAAAAAAA/TgmGe0B6vPM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCcnZ6LGbAVxk3cB-6B0vXAg",
+              "authorChannelId": {
+                "value": "UCcnZ6LGbAVxk3cB-6B0vXAg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Got a link to the episode?",
+              "textOriginal": "Got a link to the episode?",
+              "parentId": "UgzB5YSvRdJtrScSas54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-16T17:46:15.000Z",
+              "updatedAt": "2018-05-16T17:46:15.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/5WWg4KqzGk2ZdCyAhc5JJqM9MZk\"",
+            "id": "UgzB5YSvRdJtrScSas54AaABAg.8g8Mm-CxmJ_8g8qjNWgtx2",
+            "snippet": {
+              "authorDisplayName": "Ethan Low",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9hgsFdLqXuQ/AAAAAAAAAAI/AAAAAAAAAAA/5OLs5zqDubM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC_xqajPAb7OZq2U5GZA29fA",
+              "authorChannelId": {
+                "value": "UC_xqajPAb7OZq2U5GZA29fA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "There&#39;s a crimewatch episode where people used cabs as delivery for illegal vaporizers",
+              "textOriginal": "There's a crimewatch episode where people used cabs as delivery for illegal vaporizers",
+              "parentId": "UgzB5YSvRdJtrScSas54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2018-05-12T12:22:03.000Z",
+              "updatedAt": "2018-05-12T12:22:03.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9TY-lNCOf26D4gKjt_uUWyUmTzE\"",
+            "id": "UgzB5YSvRdJtrScSas54AaABAg.8g8Mm-CxmJ_8g8pJ1_FmDX",
+            "snippet": {
+              "authorDisplayName": "TheRandomStoryTeller",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-EOFzkVsY8WA/AAAAAAAAAAI/AAAAAAAAAAA/Hsag17AE27U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC2VuUQhHbtLuvj0qPal-sOQ",
+              "authorChannelId": {
+                "value": "UC2VuUQhHbtLuvj0qPal-sOQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "we_are_n4k4m4 wah grab become delivery system",
+              "textOriginal": "we_are_n4k4m4 wah grab become delivery system",
+              "parentId": "UgzB5YSvRdJtrScSas54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2018-05-12T12:09:35.000Z",
+              "updatedAt": "2018-05-12T12:09:35.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/hxAlcSI6-WxOIWJpkQz0cLAApak\"",
+            "id": "UgzB5YSvRdJtrScSas54AaABAg.8g8Mm-CxmJ_8g8Ta8bWPkM",
+            "snippet": {
+              "authorDisplayName": "animemachinex3",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-xElqB6UyG2g/AAAAAAAAAAI/AAAAAAAAAAA/-WDfhkHuQ1Q/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCfr086sxdOIVVou8U4k8p9g",
+              "authorChannelId": {
+                "value": "UCfr086sxdOIVVou8U4k8p9g"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Oh you can do that?",
+              "textOriginal": "Oh you can do that?",
+              "parentId": "UgzB5YSvRdJtrScSas54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T08:51:04.000Z",
+              "updatedAt": "2018-05-12T08:51:04.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/SaVT3TCsWATVwytnU90jynbYWSk\"",
+      "id": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aIVL7wPfKLp-H7Aby4zwoiLfUMs\"",
+          "id": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Zappin Bandit",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-c-o-W4nkS1A/AAAAAAAAAAI/AAAAAAAAAAA/zgP-lWX5o9g/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCr05OxI-k-pORBYkPswmj0Q",
+            "authorChannelId": {
+              "value": "UCr05OxI-k-pORBYkPswmj0Q"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I once took grab and this uncle was looking at us cos me amd my friends like all 3 of us guys were heading to vivocity to go lepak around there then he start asking ah boy ah why u never go schl ah My friends were like huh we just got dismiss then the uncle domt belive he say school hours awlays 6pm end then we down there like uncle we secondary students not primary students then the uncle drop us alrdy then hes like aiyo students these days ah skip school then my friend say uncle move on with the times",
+            "textOriginal": "I once took grab and this uncle was looking at us cos me amd my friends like all 3 of us guys were heading to vivocity to go lepak around there then he start asking ah boy ah why u never go schl ah My friends were like huh we just got dismiss then the uncle domt belive he say school hours awlays 6pm end then we down there like uncle we secondary students not primary students then the uncle drop us alrdy then hes like aiyo students these days ah skip school then my friend say uncle move on with the times",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 49,
+            "publishedAt": "2018-05-12T07:18:39.000Z",
+            "updatedAt": "2018-05-12T07:18:39.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/U4i3bSvFSw23z9J8N1ekMWtxIR4\"",
+            "id": "UgzlxwOKHPzE_-Vnchp4AaABAg.8g8J0AwYP6S8gJfgE9GS6h",
+            "snippet": {
+              "authorDisplayName": "B for Beautiful",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-yaciB9ioENo/AAAAAAAAAAI/AAAAAAAAAAA/frocJC5j8zA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdsUtBDbts2QiBRyBe7zhMg",
+              "authorChannelId": {
+                "value": "UCdsUtBDbts2QiBRyBe7zhMg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Eh you want to say people also can don\u2019t need say bad word one rite? Aiyo",
+              "textOriginal": "Eh you want to say people also can don\u2019t need say bad word one rite? Aiyo",
+              "parentId": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-16T17:17:08.000Z",
+              "updatedAt": "2018-05-16T17:17:08.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/EFR8dpLpzLrOS_yRaaSoXd26_ic\"",
+            "id": "UgzlxwOKHPzE_-Vnchp4AaABAg.8g8J0AwYP6S8gEuTLP5g71",
+            "snippet": {
+              "authorDisplayName": "Nurhelman Rahim",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DtAF4oJx4DQ/AAAAAAAAAAI/AAAAAAAAAAA/NKVi0wNORdI/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCmT2-8yhUYmc2tFhjqNWrdA",
+              "authorChannelId": {
+                "value": "UCmT2-8yhUYmc2tFhjqNWrdA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Ivan Seet not everyone gets A1 for English you uncultured swine.",
+              "textOriginal": "Ivan Seet not everyone gets A1 for English you uncultured swine.",
+              "parentId": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T20:50:07.000Z",
+              "updatedAt": "2018-05-14T20:50:07.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/GMdCyXAw0dobshroSLoNdzj75gE\"",
+            "id": "UgzlxwOKHPzE_-Vnchp4AaABAg.8g8J0AwYP6S8g8pJJvJbYJ",
+            "snippet": {
+              "authorDisplayName": "Fifth Harmony X BLACKPINK",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-7ud6jdzT6Mw/AAAAAAAAAAI/AAAAAAAAAAA/cHA8RGmP8KA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCrf2jUuFdt8cg7QE9AlJaRw",
+              "authorChannelId": {
+                "value": "UCrf2jUuFdt8cg7QE9AlJaRw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Rekizz Lmao ikr, the irony is real.",
+              "textOriginal": "Rekizz Lmao ikr, the irony is real.",
+              "parentId": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T12:09:37.000Z",
+              "updatedAt": "2018-05-12T12:09:37.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/3cUSAlf4H5zoZ2hOMt9K9dLRxKE\"",
+            "id": "UgzlxwOKHPzE_-Vnchp4AaABAg.8g8J0AwYP6S8g8pERC6WlJ",
+            "snippet": {
+              "authorDisplayName": "Fifth Harmony X BLACKPINK",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-7ud6jdzT6Mw/AAAAAAAAAAI/AAAAAAAAAAA/cHA8RGmP8KA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCrf2jUuFdt8cg7QE9AlJaRw",
+              "authorChannelId": {
+                "value": "UCrf2jUuFdt8cg7QE9AlJaRw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Ivan Seet Bruh please, this isn&#39;t essay writing. There is no need for proper English on YouTube.",
+              "textOriginal": "Ivan Seet Bruh please, this isn't essay writing. There is no need for proper English on YouTube.",
+              "parentId": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 3,
+              "publishedAt": "2018-05-12T12:08:57.000Z",
+              "updatedAt": "2018-05-12T12:08:57.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/T3MJsLRrK5f1spvmhoSaVW9N2_s\"",
+            "id": "UgzlxwOKHPzE_-Vnchp4AaABAg.8g8J0AwYP6S8g8pC9wnqcr",
+            "snippet": {
+              "authorDisplayName": "TheRandomStoryTeller",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-EOFzkVsY8WA/AAAAAAAAAAI/AAAAAAAAAAA/Hsag17AE27U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC2VuUQhHbtLuvj0qPal-sOQ",
+              "authorChannelId": {
+                "value": "UC2VuUQhHbtLuvj0qPal-sOQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Zappin Bandit hahahaha ya that actually happen to me also",
+              "textOriginal": "Zappin Bandit hahahaha ya that actually happen to me also",
+              "parentId": "UgzlxwOKHPzE_-Vnchp4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T12:08:38.000Z",
+              "updatedAt": "2018-05-12T12:08:38.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/6kwhtlBBLzu0Q4YEhCxHwYwMQ_M\"",
+      "id": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Z618pEzDjpGuGhDzHkMfS0C4kA4\"",
+          "id": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+          "snippet": {
+            "authorDisplayName": "PipSaSqeak",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-I6NHnDnJbVI/AAAAAAAAAAI/AAAAAAAAAAA/CIYXuT1w1T4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCco2657Uet1Bfuza7iaHcTg",
+            "authorChannelId": {
+              "value": "UCco2657Uet1Bfuza7iaHcTg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Wtf is Grab?",
+            "textOriginal": "Wtf is Grab?",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 20,
+            "publishedAt": "2018-05-12T07:05:03.000Z",
+            "updatedAt": "2018-05-12T07:05:03.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Nx3tLRWQj4JpinfAPB4bk_ywY44\"",
+            "id": "Ugz_qsCeNT6SeuPUNad4AaABAg.8g8HSYlN5wz8gBUUdBMW2b",
+            "snippet": {
+              "authorDisplayName": "Xliske",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-ZU2r676NkpE/AAAAAAAAAAI/AAAAAAAAAAA/xXWQ1pxpc-8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC37NMfi38ovIQe3ZEiSW7sg",
+              "authorChannelId": {
+                "value": "UC37NMfi38ovIQe3ZEiSW7sg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "PipSaSqeak What.",
+              "textOriginal": "PipSaSqeak What.",
+              "parentId": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-13T12:56:39.000Z",
+              "updatedAt": "2018-05-13T12:56:39.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ZhoE657xN_9n7H5BQLLGoZV3kSI\"",
+            "id": "Ugz_qsCeNT6SeuPUNad4AaABAg.8g8HSYlN5wz8g8XyeLtjMK",
+            "snippet": {
+              "authorDisplayName": "Mr. Benebatch Cumberdict",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-NioQcrie5x4/AAAAAAAAAAI/AAAAAAAAAAA/xD6HZlkWvTM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCCLJuT-cvLXRZSGLpOGUS-w",
+              "authorChannelId": {
+                "value": "UCCLJuT-cvLXRZSGLpOGUS-w"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Grab is similar to Uber, it is an online transportation.",
+              "textOriginal": "Grab is similar to Uber, it is an online transportation.",
+              "parentId": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 3,
+              "publishedAt": "2018-05-12T09:29:22.000Z",
+              "updatedAt": "2018-05-12T09:29:22.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/VKHn78jdGgKZKFjhN8PLPspj3k4\"",
+            "id": "Ugz_qsCeNT6SeuPUNad4AaABAg.8g8HSYlN5wz8g8NbHS58Sx",
+            "snippet": {
+              "authorDisplayName": "PipSaSqeak",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-I6NHnDnJbVI/AAAAAAAAAAI/AAAAAAAAAAA/CIYXuT1w1T4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCco2657Uet1Bfuza7iaHcTg",
+              "authorChannelId": {
+                "value": "UCco2657Uet1Bfuza7iaHcTg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "ADRIAN CENDANA Southern Australia m8",
+              "textOriginal": "ADRIAN CENDANA Southern Australia m8",
+              "parentId": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2018-05-12T07:58:48.000Z",
+              "updatedAt": "2018-05-12T07:58:48.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Dwfd8UnPvh3S07eeMpsOICxq0do\"",
+            "id": "Ugz_qsCeNT6SeuPUNad4AaABAg.8g8HSYlN5wz8g8N51sYUU4",
+            "snippet": {
+              "authorDisplayName": "ADRIAN CENDANA",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-jjpYIAdGimY/AAAAAAAAAAI/AAAAAAAAAAA/JHknVo3Q1W0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCDtqYQO4AGSBE9gslA71Riw",
+              "authorChannelId": {
+                "value": "UCDtqYQO4AGSBE9gslA71Riw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "PipSaSqeak So Where Are You From? IM INDONEISA",
+              "textOriginal": "PipSaSqeak So Where Are You From? IM INDONEISA",
+              "parentId": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T07:54:15.000Z",
+              "updatedAt": "2018-05-12T07:54:15.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Gi3FqlxMpVUZQ0TJ8LRJUUvbu1k\"",
+            "id": "Ugz_qsCeNT6SeuPUNad4AaABAg.8g8HSYlN5wz8g8MqtjK-zu",
+            "snippet": {
+              "authorDisplayName": "PipSaSqeak",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-I6NHnDnJbVI/AAAAAAAAAAI/AAAAAAAAAAA/CIYXuT1w1T4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCco2657Uet1Bfuza7iaHcTg",
+              "authorChannelId": {
+                "value": "UCco2657Uet1Bfuza7iaHcTg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Xliske im not from nor lice in Singapote",
+              "textOriginal": "Xliske im not from nor lice in Singapote",
+              "parentId": "Ugz_qsCeNT6SeuPUNad4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 3,
+              "publishedAt": "2018-05-12T07:52:11.000Z",
+              "updatedAt": "2018-05-12T07:52:11.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/3toZ0KfcJh1JT9p3v_09miTs8M4\"",
+      "id": "UgzTBxPuItqmPFDMDPh4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/wEFS1_2ZA_25DaY4lkki1yO1Tq4\"",
+          "id": "UgzTBxPuItqmPFDMDPh4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Juventus Tay",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-0gXk4YGojv4/AAAAAAAAAAI/AAAAAAAAAAA/55Zfk1_3aL8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCqYIFr5PjyuIXqoj6kzRwLA",
+            "authorChannelId": {
+              "value": "UCqYIFr5PjyuIXqoj6kzRwLA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Both Aiken and Rachel are from MediaCorp",
+            "textOriginal": "Both Aiken and Rachel are from MediaCorp",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 37,
+            "publishedAt": "2018-05-12T07:03:59.000Z",
+            "updatedAt": "2018-05-12T07:03:59.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/BTXTuY6H1HCsk2inyRc75mVVJtE\"",
+      "id": "Ugyrtwq7Bcdp1o8MMSh4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/8oQNOOq5nwh7hRybQdQ1sG56unM\"",
+          "id": "Ugyrtwq7Bcdp1o8MMSh4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Max Lee",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-m-fIB44uFdQ/AAAAAAAAAAI/AAAAAAAAAAA/HGBbx7bZQKg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC9xrX6rnfAQMKX5Ff1JqpvQ",
+            "authorChannelId": {
+              "value": "UC9xrX6rnfAQMKX5Ff1JqpvQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "this is not hilarious but, my father is a grab driver and one time, he had a passenger that had to quickly go the hospital to visit his mother as she was passing and my father actually went beyond the speed limit just to quickly get the passenger to the hospital. But he got a speeding ticket. Interesting story indeed.",
+            "textOriginal": "this is not hilarious but, my father is a grab driver and one time, he had a passenger that had to quickly go the hospital to visit his mother as she was passing and my father actually went beyond the speed limit just to quickly get the passenger to the hospital. But he got a speeding ticket. Interesting story indeed.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 38,
+            "publishedAt": "2018-05-12T10:35:01.000Z",
+            "updatedAt": "2018-05-12T10:35:01.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/hDhlAopur8aF4FUUFJ_oy9KLO0s\"",
+            "id": "Ugyrtwq7Bcdp1o8MMSh4AaABAg.8g8eUU4FRZJ8gWT8dJutAA",
+            "snippet": {
+              "authorDisplayName": "maomi",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DWSRt9q8apE/AAAAAAAAAAI/AAAAAAAAAAA/BwT9Q3w85cM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCkyrzMt6LbJ1fNG5b8bQyng",
+              "authorChannelId": {
+                "value": "UCkyrzMt6LbJ1fNG5b8bQyng"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "that was nice of your dad though, but yes he should also be mindful for his own life!",
+              "textOriginal": "that was nice of your dad though, but yes he should also be mindful for his own life!",
+              "parentId": "Ugyrtwq7Bcdp1o8MMSh4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-21T16:28:57.000Z",
+              "updatedAt": "2018-05-21T16:28:57.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/_pTBty1HyW5Czx8-V8G4VB3EMEs\"",
+            "id": "Ugyrtwq7Bcdp1o8MMSh4AaABAg.8g8eUU4FRZJ8g9yr_a6Wz5",
+            "snippet": {
+              "authorDisplayName": "Stephanie's Musings",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-UfATgSiVL-o/AAAAAAAAAAI/AAAAAAAAAAA/BL9ujbEZQ6c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCLiJwR99qAOeZoVSu8nj0Qg",
+              "authorChannelId": {
+                "value": "UCLiJwR99qAOeZoVSu8nj0Qg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Aiyo. So poor thing. Try to help people then kena fine. But your father also must be careful... Don&#39;t try to help people and then later end up being the one needing to go hospital also. Life only got one. Must take care.",
+              "textOriginal": "Aiyo. So poor thing. Try to help people then kena fine. But your father also must be careful... Don't try to help people and then later end up being the one needing to go hospital also. Life only got one. Must take care.",
+              "parentId": "Ugyrtwq7Bcdp1o8MMSh4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 3,
+              "publishedAt": "2018-05-12T22:52:19.000Z",
+              "updatedAt": "2018-05-12T22:52:19.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/fdwsiuCUkcxIBrWAZyorXEHbC2w\"",
+      "id": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Mo0PsCYGFQbvktKum56XUs_QKTo\"",
+          "id": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Vainicorn",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-bb3WjAcHI7I/AAAAAAAAAAI/AAAAAAAAAAA/RPV3PIdxo2M/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCbgHqfaq4yU3zYF8kCgGIwA",
+            "authorChannelId": {
+              "value": "UCbgHqfaq4yU3zYF8kCgGIwA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "should we (passengers) sit in the front seat or the back seat?",
+            "textOriginal": "should we (passengers) sit in the front seat or the back seat?",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 33,
+            "publishedAt": "2018-05-12T07:13:29.000Z",
+            "updatedAt": "2018-05-12T07:13:29.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/SevEubuU-CeBpOxJQuhyxwPv82g\"",
+            "id": "UgzmMqHfPqJMXOcZk6J4AaABAg.8g8IQMzyXeZ8gWT47lQHSn",
+            "snippet": {
+              "authorDisplayName": "maomi",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DWSRt9q8apE/AAAAAAAAAAI/AAAAAAAAAAA/BwT9Q3w85cM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCkyrzMt6LbJ1fNG5b8bQyng",
+              "authorChannelId": {
+                "value": "UCkyrzMt6LbJ1fNG5b8bQyng"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "I always seat at the back, I feel more comfortable. IDK if it&#39;s true but there used to be a law where you can&#39;t seat at the back if the front seat is empty??IDK.",
+              "textOriginal": "I always seat at the back, I feel more comfortable. IDK if it's true but there used to be a law where you can't seat at the back if the front seat is empty??IDK.",
+              "parentId": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-21T16:28:20.000Z",
+              "updatedAt": "2018-05-21T16:28:20.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/SyEg5gZECVZUFQdKvWnh5HnHW_s\"",
+            "id": "UgzmMqHfPqJMXOcZk6J4AaABAg.8g8IQMzyXeZ8gBqW7qK-wx",
+            "snippet": {
+              "authorDisplayName": "Justin Bayani",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-z1RwZmE_jxM/AAAAAAAAAAI/AAAAAAAAAAA/0gN0EXu0TUc/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC_yO7Dh9UhVPLj9Qj_lDH_Q",
+              "authorChannelId": {
+                "value": "UC_yO7Dh9UhVPLj9Qj_lDH_Q"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Front seat 100%",
+              "textOriginal": "Front seat 100%",
+              "parentId": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-13T16:17:49.000Z",
+              "updatedAt": "2018-05-13T16:17:49.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/a0L5HmPYf1MaGRnJomc-2Iu1ql8\"",
+            "id": "UgzmMqHfPqJMXOcZk6J4AaABAg.8g8IQMzyXeZ8g92aUOn0GL",
+            "snippet": {
+              "authorDisplayName": "Ricky Lai",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-oKhiV114fyk/AAAAAAAAAAI/AAAAAAAAAAA/7TKDRg9PB3Y/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCf5ls6fx7_hsyNxpjgdaY0A",
+              "authorChannelId": {
+                "value": "UCf5ls6fx7_hsyNxpjgdaY0A"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Wait it depends.<br />If u r taking *grabhitch*, sit at the front. *Unless the driver tells u to sit at the back<br />If u r taking  *grab-car/ grab-taxi/ just-grab*,<br />Sit at the back, unless the back is full/filled with 2 ppl, sit at the front.",
+              "textOriginal": "Wait it depends.\nIf u r taking *grabhitch*, sit at the front. *Unless the driver tells u to sit at the back\nIf u r taking  *grab-car/ grab-taxi/ just-grab*,\nSit at the back, unless the back is full/filled with 2 ppl, sit at the front.",
+              "parentId": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 6,
+              "publishedAt": "2018-05-12T14:14:26.000Z",
+              "updatedAt": "2018-05-12T14:14:26.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/dzf5SLf-Wm9Wus7V0eo_tl10RhQ\"",
+            "id": "UgzmMqHfPqJMXOcZk6J4AaABAg.8g8IQMzyXeZ8g8p5sCNKBk",
+            "snippet": {
+              "authorDisplayName": "TheRandomStoryTeller",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-EOFzkVsY8WA/AAAAAAAAAAI/AAAAAAAAAAA/Hsag17AE27U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC2VuUQhHbtLuvj0qPal-sOQ",
+              "authorChannelId": {
+                "value": "UC2VuUQhHbtLuvj0qPal-sOQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Vainicorn back",
+              "textOriginal": "Vainicorn back",
+              "parentId": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T12:07:47.000Z",
+              "updatedAt": "2018-05-12T12:07:47.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/5pN_q2u-LcQ0XDqzbvMuMRCMdg8\"",
+            "id": "UgzmMqHfPqJMXOcZk6J4AaABAg.8g8IQMzyXeZ8g8WsKAe9DX",
+            "snippet": {
+              "authorDisplayName": "CResceNS",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-tFpL-Lr0Dlk/AAAAAAAAAAI/AAAAAAAAAAA/oGMoFY3NffU/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCCyGQ7fiIwnMgcO5QhUM7Uw",
+              "authorChannelId": {
+                "value": "UCCyGQ7fiIwnMgcO5QhUM7Uw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Vainicorn yeah, I guess that works",
+              "textOriginal": "Vainicorn yeah, I guess that works",
+              "parentId": "UgzmMqHfPqJMXOcZk6J4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T09:19:46.000Z",
+              "updatedAt": "2018-05-12T09:19:46.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/frGzzkOT6Qsn9vEi8con98YxVKk\"",
+      "id": "Ugy_SjKfn5muAUd0Du54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/D9R7pVm5Pl_pSEeMcWDuW_oIgPk\"",
+          "id": "Ugy_SjKfn5muAUd0Du54AaABAg",
+          "snippet": {
+            "authorDisplayName": "Yanie Belle",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-0vGaAZ-MHqM/AAAAAAAAAAI/AAAAAAAAAAA/H1rHPhl6wCM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCZ-aFSkmCM6awsSuNlRgRSg",
+            "authorChannelId": {
+              "value": "UCZ-aFSkmCM6awsSuNlRgRSg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "One of my grab experience was having Franster as the grab driver \ud83e\udd23",
+            "textOriginal": "One of my grab experience was having Franster as the grab driver \ud83e\udd23",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 18,
+            "publishedAt": "2018-05-12T08:46:20.000Z",
+            "updatedAt": "2018-05-12T08:46:44.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/gtpyUd6GPZrXRjb0nYGUQri3bKs\"",
+            "id": "Ugy_SjKfn5muAUd0Du54AaABAg.8g8T2SrS_oV8gEe-MYOcHa",
+            "snippet": {
+              "authorDisplayName": "Yanie Belle",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-0vGaAZ-MHqM/AAAAAAAAAAI/AAAAAAAAAAA/H1rHPhl6wCM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCZ-aFSkmCM6awsSuNlRgRSg",
+              "authorChannelId": {
+                "value": "UCZ-aFSkmCM6awsSuNlRgRSg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "hqtai 0807 YES!",
+              "textOriginal": "hqtai 0807 YES!",
+              "parentId": "Ugy_SjKfn5muAUd0Du54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T18:26:13.000Z",
+              "updatedAt": "2018-05-14T18:26:13.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/4Gcp8M7JL9iZqtjkHN-_DUe97nQ\"",
+            "id": "Ugy_SjKfn5muAUd0Du54AaABAg.8g8T2SrS_oV8g9H9eCeTF5",
+            "snippet": {
+              "authorDisplayName": "hqtai 0807",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-RzR65KPwydI/AAAAAAAAAAI/AAAAAAAAAAA/7HVRjvd9cVk/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCSr-XyvcYb4ZHw-0VUMYQjQ",
+              "authorChannelId": {
+                "value": "UCSr-XyvcYb4ZHw-0VUMYQjQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Yanie Belle legit ah",
+              "textOriginal": "Yanie Belle legit ah",
+              "parentId": "Ugy_SjKfn5muAUd0Du54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T16:21:42.000Z",
+              "updatedAt": "2018-05-12T16:21:42.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/4uLuWfWsHia5E5zXFKDydnWYv6w\"",
+      "id": "Ugzk3_gJOZT_Lt77jGB4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/zgfFM6U3-XwPrnVYkEgNsNKqe-Q\"",
+          "id": "Ugzk3_gJOZT_Lt77jGB4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Heah Lol",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-i4JI-R3Lpn4/AAAAAAAAAAI/AAAAAAAAAAA/gqt0AnZLKUY/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCmVCmAsFJn2qBZF2EvgD8Gg",
+            "authorChannelId": {
+              "value": "UCmVCmAsFJn2qBZF2EvgD8Gg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "U mean bus not mode of transport ?",
+            "textOriginal": "U mean bus not mode of transport ?",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 17,
+            "publishedAt": "2018-05-12T07:10:46.000Z",
+            "updatedAt": "2018-05-12T07:10:46.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/PfWUNNnp4-AvNPWOcdzvimqY75g\"",
+            "id": "Ugzk3_gJOZT_Lt77jGB4AaABAg.8g8I6UBgqN28g8JovV-mJX",
+            "snippet": {
+              "authorDisplayName": "Crab Soup",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-GxvcwHM_jpY/AAAAAAAAAAI/AAAAAAAAAAA/v4BPfbudI8U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCopIY2VJxEC1gJU-FoBJeAg",
+              "authorChannelId": {
+                "value": "UCopIY2VJxEC1gJU-FoBJeAg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Heah Lol none government",
+              "textOriginal": "Heah Lol none government",
+              "parentId": "Ugzk3_gJOZT_Lt77jGB4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T07:25:42.000Z",
+              "updatedAt": "2018-05-12T07:25:42.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/n28TY_tfj_DDRbknLdDMJMoNoj4\"",
+      "id": "UgzJEA4eqQ3DChPetCp4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/uLenlMH9nWEQIxZP0dQXT9r6zN0\"",
+          "id": "UgzJEA4eqQ3DChPetCp4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Sue Goh",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-E3jAP3TA0nA/AAAAAAAAAAI/AAAAAAAAAAA/rQiKHoNW1Ps/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCFKXGZLYtrNbpLPDGPhF4dw",
+            "authorChannelId": {
+              "value": "UCFKXGZLYtrNbpLPDGPhF4dw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "HAHAHAHAHAHAHA. omg. my worst grab experience would be when i tried to book a grab taxi once and the taxi uncle started to lecture me about the danger of grabshare and grabhitch for the entire ride. :\u2019) but my favourite would be those grab drivers who really look after of the passengers\u2019 needs. once, a grab driver even switched on movie for us to watch it during a long ride.",
+            "textOriginal": "HAHAHAHAHAHAHA. omg. my worst grab experience would be when i tried to book a grab taxi once and the taxi uncle started to lecture me about the danger of grabshare and grabhitch for the entire ride. :\u2019) but my favourite would be those grab drivers who really look after of the passengers\u2019 needs. once, a grab driver even switched on movie for us to watch it during a long ride.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 15,
+            "publishedAt": "2018-05-12T10:06:00.000Z",
+            "updatedAt": "2018-05-12T10:06:00.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QPaGyAG8gKfEx7u7rW42vT06KmM\"",
+      "id": "UgxH0X2wkv9TwYLJZ614AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/fyRgBG9CioDIOOyjnla46OTNUFo\"",
+          "id": "UgxH0X2wkv9TwYLJZ614AaABAg",
+          "snippet": {
+            "authorDisplayName": "kawaiicandy pie",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-H_CCgLBTI9w/AAAAAAAAAAI/AAAAAAAAAAA/54TPA7RwkIY/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC9E6heo2dVzzHFIH7jblFzw",
+            "authorChannelId": {
+              "value": "UC9E6heo2dVzzHFIH7jblFzw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I took grab once with my friends. The driver was so cool. He loaned us data and did carpooling with us. He was da best driver. I love grabbb",
+            "textOriginal": "I took grab once with my friends. The driver was so cool. He loaned us data and did carpooling with us. He was da best driver. I love grabbb",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 13,
+            "publishedAt": "2018-05-12T12:54:02.000Z",
+            "updatedAt": "2018-05-12T12:54:02.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/IYCR771FRRFTwVs-NSsDVQe7vkQ\"",
+      "id": "UgzyKsgiXxexSAEJls94AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/UOX5WwTNdQ43-997Ja9rJ6iHK4I\"",
+          "id": "UgzyKsgiXxexSAEJls94AaABAg",
+          "snippet": {
+            "authorDisplayName": "Xavier Tan",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-hbeAcLTt_Ac/AAAAAAAAAAI/AAAAAAAAAAA/fB1VnjVEDm4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC92w7JGedt-tTgd-Ed9BtHw",
+            "authorChannelId": {
+              "value": "UC92w7JGedt-tTgd-Ed9BtHw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Only mode of transportation. Aiken doesn&#39;t drive? @@",
+            "textOriginal": "Only mode of transportation. Aiken doesn't drive? @@",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 12,
+            "publishedAt": "2018-05-12T08:27:21.000Z",
+            "updatedAt": "2018-05-12T08:27:21.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/l2znvMsv1FjrkghT2CEw5O4FFNE\"",
+            "id": "UgzyKsgiXxexSAEJls94AaABAg.8g8QsQbpZYp8gWUnIKDjnb",
+            "snippet": {
+              "authorDisplayName": "maomi",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DWSRt9q8apE/AAAAAAAAAAI/AAAAAAAAAAA/BwT9Q3w85cM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCkyrzMt6LbJ1fNG5b8bQyng",
+              "authorChannelId": {
+                "value": "UCkyrzMt6LbJ1fNG5b8bQyng"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Xavier Tan to be fair cars are expensive.",
+              "textOriginal": "Xavier Tan to be fair cars are expensive.",
+              "parentId": "UgzyKsgiXxexSAEJls94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-21T16:43:23.000Z",
+              "updatedAt": "2018-05-21T16:43:23.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/H7NorM3p3iMH3aZpE48ZiLihBJ8\"",
+      "id": "UgwWRZ4tquQLC0c6xvR4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/wmwNTPpiB3KQDMJw_stP-iohPko\"",
+          "id": "UgwWRZ4tquQLC0c6xvR4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Marcus Wijaya",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-_qF_4r9j4Nc/AAAAAAAAAAI/AAAAAAAAAAA/Jvd-w8IlbHg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCODmgYnJF6FEgByYqk_QkZQ",
+            "authorChannelId": {
+              "value": "UCODmgYnJF6FEgByYqk_QkZQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Anybody here prefers MRT? Omg! NOC members are all rich!",
+            "textOriginal": "Anybody here prefers MRT? Omg! NOC members are all rich!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 11,
+            "publishedAt": "2018-05-12T12:13:46.000Z",
+            "updatedAt": "2018-05-12T12:13:46.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9g2FuyuKxK61HoPU7rtHBmFStNU\"",
+      "id": "Ugxm5LwoQkeViDldNZ94AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/oopTfsCScAowOwRpwveapwSGoYY\"",
+          "id": "Ugxm5LwoQkeViDldNZ94AaABAg",
+          "snippet": {
+            "authorDisplayName": "It's just Casey",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-94_SnqMIukk/AAAAAAAAAAI/AAAAAAAAAAA/lx16jUGyFes/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCqFkvaev13Q13Va6fSR3_xw",
+            "authorChannelId": {
+              "value": "UCqFkvaev13Q13Va6fSR3_xw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Early squad?",
+            "textOriginal": "Early squad?",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 10,
+            "publishedAt": "2018-05-12T07:05:32.000Z",
+            "updatedAt": "2018-05-12T07:05:32.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/YwGEDgmBovHaOiQGmXS63YYzLzY\"",
+      "id": "Ugzm54lj_4R-L-_y8J14AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/NituHxf5RUJ-AlVaE9xjV_-Deqg\"",
+          "id": "Ugzm54lj_4R-L-_y8J14AaABAg",
+          "snippet": {
+            "authorDisplayName": "JYXD Lol",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-zoPUu0e5IG4/AAAAAAAAAAI/AAAAAAAAAAA/iQpIMt8Qxdo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC8sCgWZCCuP55_DnqnV52QA",
+            "authorChannelId": {
+              "value": "UC8sCgWZCCuP55_DnqnV52QA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "No more Uber!\ud83d\ude2d\ud83d\ude2d",
+            "textOriginal": "No more Uber!\ud83d\ude2d\ud83d\ude2d",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2018-05-12T07:04:41.000Z",
+            "updatedAt": "2018-05-12T07:04:41.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/N8yB6muBhOCfAYJKoPBysiX0c1g\"",
+      "id": "Ugxdvefnzw43BdFlHIx4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/AclMaRhOIHHk8l76GKYpVx1r18c\"",
+          "id": "Ugxdvefnzw43BdFlHIx4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Vic Tong",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-TPMAHNdurlY/AAAAAAAAAAI/AAAAAAAAAAA/R0PzkKNsGYY/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCuSARB6bLrbHasZ3TUNSPfw",
+            "authorChannelId": {
+              "value": "UCuSARB6bLrbHasZ3TUNSPfw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I think Spotlight is a very good program; very interesting!! Love Rachel in videos!",
+            "textOriginal": "I think Spotlight is a very good program; very interesting!! Love Rachel in videos!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2018-05-12T07:12:17.000Z",
+            "updatedAt": "2018-05-12T07:12:17.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/8f509sQtu8cUXrJ67AMGajnbGno\"",
+      "id": "UgyYCiaUK4URhCiskl54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iMep0WXBApOOyJPUYJgmzytGRoE\"",
+          "id": "UgyYCiaUK4URhCiskl54AaABAg",
+          "snippet": {
+            "authorDisplayName": "xxsijiaxx",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ddHnoH762c4/AAAAAAAAAAI/AAAAAAAAAAA/Zad9jIfBqW8/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC-Zpvlhwi2kQt4DJGGHeIjQ",
+            "authorChannelId": {
+              "value": "UC-Zpvlhwi2kQt4DJGGHeIjQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I met a really nice Grab driver once. I wanted to set behind but he asked me to sit upfront, abit creepy but i was alright with it. initially wanted to sleep through my journey but i had good conversations with the uncle. I was going to somewhere near the changi jetty point (all the way from NTU) so it took quite a while... also, the entrance into the place i was going was so far but he really made sure that i didn&#39;t have to walk too far from my spot. he drove in all the way even though the grab app had indicated that the location has arrived. i told him there&#39;s no need to turn all the way in because he needs to make a really huge u-turn if he did, but he said he&#39;ll do it for my convenience and it&#39;s his job. a very nice man and good conversations.",
+            "textOriginal": "I met a really nice Grab driver once. I wanted to set behind but he asked me to sit upfront, abit creepy but i was alright with it. initially wanted to sleep through my journey but i had good conversations with the uncle. I was going to somewhere near the changi jetty point (all the way from NTU) so it took quite a while... also, the entrance into the place i was going was so far but he really made sure that i didn't have to walk too far from my spot. he drove in all the way even though the grab app had indicated that the location has arrived. i told him there's no need to turn all the way in because he needs to make a really huge u-turn if he did, but he said he'll do it for my convenience and it's his job. a very nice man and good conversations.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 8,
+            "publishedAt": "2018-05-13T05:22:04.000Z",
+            "updatedAt": "2018-05-13T05:22:04.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QQ3s6mQ15U_Sa5T8ZmzndlN_3lA\"",
+      "id": "UgxpTAE0RMY2_wqCOoB4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/L73WTgFO0C4WLtMCFHygZxsEXZo\"",
+          "id": "UgxpTAE0RMY2_wqCOoB4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Matthew ariel",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-myyiHxgl5oU/AAAAAAAAAAI/AAAAAAAAAAA/SWL9OF0RaR4/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC6XEyMxOKbbgF1-nLf1WXoQ",
+            "authorChannelId": {
+              "value": "UC6XEyMxOKbbgF1-nLf1WXoQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "got mrt leh",
+            "textOriginal": "got mrt leh",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 8,
+            "publishedAt": "2018-05-12T07:52:36.000Z",
+            "updatedAt": "2018-05-12T07:52:36.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/HBhaVGeBBDYkIiqmUislvUp-V5w\"",
+      "id": "UgxrkOwCitKjQk6bgz94AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/SOvZEHN4nopk1yW8gA2caJEgziU\"",
+          "id": "UgxrkOwCitKjQk6bgz94AaABAg",
+          "snippet": {
+            "authorDisplayName": "cookies&cream",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-B7CIoczXdgw/AAAAAAAAAAI/AAAAAAAAAAA/3N1Pofu7GFM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCX7m7-ttmPD5Scq6TK46_HA",
+            "authorChannelId": {
+              "value": "UCX7m7-ttmPD5Scq6TK46_HA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "omg all those complaints are sooo true. my dad is a grab driver and everyday i hear thses complains. smh @yall who do those kind of things.<br />edit: the incentives are really important!! earn momey. its not easy to make money. sometimes i dont see my dad for a week cause he comes home late or either he wakes up early. like he can drive from 5am to 9pm okay.",
+            "textOriginal": "omg all those complaints are sooo true. my dad is a grab driver and everyday i hear thses complains. smh @yall who do those kind of things.\nedit: the incentives are really important!! earn momey. its not easy to make money. sometimes i dont see my dad for a week cause he comes home late or either he wakes up early. like he can drive from 5am to 9pm okay.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7,
+            "publishedAt": "2018-05-12T12:04:55.000Z",
+            "updatedAt": "2018-05-12T12:06:35.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/swiJj9AU7YoGiyLz4_90ayt48g4\"",
+            "id": "UgxrkOwCitKjQk6bgz94AaABAg.8g8olvPdG5r8hoKG_lnps2",
+            "snippet": {
+              "authorDisplayName": "Nur Nabihah",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-tSSFS-I4R1g/AAAAAAAAAAI/AAAAAAAAAAA/tvMYLDGYI8Y/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCzwyBHe0n-0WeFmsw3gGZpw",
+              "authorChannelId": {
+                "value": "UCzwyBHe0n-0WeFmsw3gGZpw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "cookies&amp;cream omg so true",
+              "textOriginal": "cookies&cream omg so true",
+              "parentId": "UgxrkOwCitKjQk6bgz94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-06-22T20:48:21.000Z",
+              "updatedAt": "2018-06-22T20:48:21.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/VLF5__yx_A2djvPF5M4RX9g5CqQ\"",
+      "id": "UgyKvSxQ_7Ou1PBLmsB4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Ogv1xdFFiG5yPFrby9osD1kLufU\"",
+          "id": "UgyKvSxQ_7Ou1PBLmsB4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Sarah Siow",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-A7Nj4Zh1FU8/AAAAAAAAAAI/AAAAAAAAAAA/sFFOaVKI4og/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCalsinQriGv0OMIHQlUVhbw",
+            "authorChannelId": {
+              "value": "UCalsinQriGv0OMIHQlUVhbw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I always take grab and uber and I always ask the Uncle what is the weirdest passenger they have met, below is my top 3 complied list. <br /><br />1. Pretty lady taking a ride to west coast, upon arriving at location, she claims she has no money and starts stripping (including her undergarments). Driver thought it was \u201charam\u201d so he gave her his number for her to contact him for payment in the future. In the end, she did contact him but for sexual favours. <br /><br />2. Driver had a hard time finding the passenger. So he calls her and realise it was a girl lying on the floor, looking at the sky. When she boarded the car, she was fully wet. (It was not raining and it was broad daylight) and later asked if she could smoke in the car. I asked the driver if she was drunk, but he said no. Neither did he dare to engage in a conversation with her. <br /><br />3. Driver picked up a person from IMH and the payment mode was cash. When the person alighted, driver did not dare to ask for payment because he was afraid the person was mentally unsound. <br /><br /><br />If these are not enough, here\u2019s my personal experience. <br />My Boyfriend and I took a share ride and when We boarded, there was a Chinese National couple. The female mentioned she was going to meet \u6d2a\u4fca\u626c and is nervous about it. on the car ride, she plays her ukelele and was singing. As it was quite tight (small car/ukelele takes up space), I told my Boyfriend who was sitting infront to help me let her know not to play the ukelele in the car. My boyfriend told her to stop playing and she was shocked. She asked her Boyfriend what my Boyfriend meant. She did indeed stop playing the ukelele. But then she started to sing her self-composed songs in the car. <a href=\"http://www.youtube.com/results?search_query=%23facepalm\">#facepalm</a> <a href=\"http://www.youtube.com/results?search_query=%23worseexperience\">#worseexperience</a>",
+            "textOriginal": "I always take grab and uber and I always ask the Uncle what is the weirdest passenger they have met, below is my top 3 complied list. \n\n1. Pretty lady taking a ride to west coast, upon arriving at location, she claims she has no money and starts stripping (including her undergarments). Driver thought it was \u201charam\u201d so he gave her his number for her to contact him for payment in the future. In the end, she did contact him but for sexual favours. \n\n2. Driver had a hard time finding the passenger. So he calls her and realise it was a girl lying on the floor, looking at the sky. When she boarded the car, she was fully wet. (It was not raining and it was broad daylight) and later asked if she could smoke in the car. I asked the driver if she was drunk, but he said no. Neither did he dare to engage in a conversation with her. \n\n3. Driver picked up a person from IMH and the payment mode was cash. When the person alighted, driver did not dare to ask for payment because he was afraid the person was mentally unsound. \n\n\nIf these are not enough, here\u2019s my personal experience. \nMy Boyfriend and I took a share ride and when We boarded, there was a Chinese National couple. The female mentioned she was going to meet \u6d2a\u4fca\u626c and is nervous about it. on the car ride, she plays her ukelele and was singing. As it was quite tight (small car/ukelele takes up space), I told my Boyfriend who was sitting infront to help me let her know not to play the ukelele in the car. My boyfriend told her to stop playing and she was shocked. She asked her Boyfriend what my Boyfriend meant. She did indeed stop playing the ukelele. But then she started to sing her self-composed songs in the car. #facepalm #worseexperience",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7,
+            "publishedAt": "2018-05-12T10:19:06.000Z",
+            "updatedAt": "2018-05-12T10:19:06.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/8tCMrc7YxQ7_JLm0DoMsQ2V_2rc\"",
+      "id": "Ugzy0ZVamQGaAZNkf4d4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/8AXV6WBwa62srHq3IHPE_FdqtJU\"",
+          "id": "Ugzy0ZVamQGaAZNkf4d4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Emma Nakamura",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-35D7zVicNfc/AAAAAAAAAAI/AAAAAAAAAAA/lYSED4ziuNw/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCL9cOODE_BQkOycrxR_E9_Q",
+            "authorChannelId": {
+              "value": "UCL9cOODE_BQkOycrxR_E9_Q"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Once I was in the back seat with my mom. It smelled like gas so she asked the diver <br />\u201c  excuse me it smells like gas in the back is there a problem?\u201d<br />Then the driver said <br />\u201c No.  it just this is a old car. Anyway this car gets checked every year but a lot of the models of this car has exploded many times. But this car is ok\u201d <br />So we are holding on to our seats and we\u2019re terrified. I\u2019m like (This guy is dumb to say this to us)\ud83d\ude30",
+            "textOriginal": "Once I was in the back seat with my mom. It smelled like gas so she asked the diver \n\u201c  excuse me it smells like gas in the back is there a problem?\u201d\nThen the driver said \n\u201c No.  it just this is a old car. Anyway this car gets checked every year but a lot of the models of this car has exploded many times. But this car is ok\u201d \nSo we are holding on to our seats and we\u2019re terrified. I\u2019m like (This guy is dumb to say this to us)\ud83d\ude30",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7,
+            "publishedAt": "2018-05-12T13:13:54.000Z",
+            "updatedAt": "2018-05-12T13:13:54.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/2ObbGBg3MiJOddZLw2XwSr0vx64\"",
+      "id": "Ugy6PqmHMhJCSuES6W54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/95Ih83iXAATljg4_OaYkLXTmexY\"",
+          "id": "Ugy6PqmHMhJCSuES6W54AaABAg",
+          "snippet": {
+            "authorDisplayName": "Johan Hoe",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-gKC7WgX6gWs/AAAAAAAAAAI/AAAAAAAAAAA/pi2yEy8ZnDg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCdFsl_-d0Jez5RSXtPTfx_g",
+            "authorChannelId": {
+              "value": "UCdFsl_-d0Jez5RSXtPTfx_g"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "As a grab driver we have to manually add in the ERP toll at the end of the trip. Please understand that we are not trying to cheat your money. It gets even more tougher when the customer is paying cash, I have foreigner customer that refused to pay after explaining to them nicely..",
+            "textOriginal": "As a grab driver we have to manually add in the ERP toll at the end of the trip. Please understand that we are not trying to cheat your money. It gets even more tougher when the customer is paying cash, I have foreigner customer that refused to pay after explaining to them nicely..",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-14T07:23:23.000Z",
+            "updatedAt": "2018-05-14T07:23:23.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/6CLgMLsHs36skcMD9jwNJND_gCo\"",
+      "id": "UgzjSEJ06X6rAF8ijp54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/AMlxPPu2QC_36YcXDRAGkoZlJq8\"",
+          "id": "UgzjSEJ06X6rAF8ijp54AaABAg",
+          "snippet": {
+            "authorDisplayName": "dotaboy888",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-9el7DwZjBC8/AAAAAAAAAAI/AAAAAAAAAAA/v_6-RQ6AsQo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCj3_hLL61sq1EnOEFX6FoqA",
+            "authorChannelId": {
+              "value": "UCj3_hLL61sq1EnOEFX6FoqA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "dont tell me what to do",
+            "textOriginal": "dont tell me what to do",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2018-05-12T08:18:29.000Z",
+            "updatedAt": "2018-05-12T08:18:29.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/pbIiDXLzGfvh06LXlyDEH9z9fwI\"",
+            "id": "UgzjSEJ06X6rAF8ijp54AaABAg.8g8PrSRfQA58gAh2maa009",
+            "snippet": {
+              "authorDisplayName": "dotaboy888",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9el7DwZjBC8/AAAAAAAAAAI/AAAAAAAAAAA/v_6-RQ6AsQo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCj3_hLL61sq1EnOEFX6FoqA",
+              "authorChannelId": {
+                "value": "UCj3_hLL61sq1EnOEFX6FoqA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "im legend ya scrub :)",
+              "textOriginal": "im legend ya scrub :)",
+              "parentId": "UgzjSEJ06X6rAF8ijp54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-13T05:35:56.000Z",
+              "updatedAt": "2018-05-13T05:35:56.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/116mUW0fCcbn0pTyNX7fctRk6dY\"",
+            "id": "UgzjSEJ06X6rAF8ijp54AaABAg.8g8PrSRfQA58gAVSK-XTbk",
+            "snippet": {
+              "authorDisplayName": "flying spaghetti monster",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-rrEeOfjYoHk/AAAAAAAAAAI/AAAAAAAAAAA/XzAEbStF5KA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCDEMgWP2g0tFkr8bIcCZaNg",
+              "authorChannelId": {
+                "value": "UCDEMgWP2g0tFkr8bIcCZaNg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "herald player:&quot;don&#39;t tell me what to do&quot;",
+              "textOriginal": "herald player:\"don't tell me what to do\"",
+              "parentId": "UgzjSEJ06X6rAF8ijp54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-13T03:45:49.000Z",
+              "updatedAt": "2018-05-13T03:45:49.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/beXyRGI62NpEMvi9ljI88h3sgyM\"",
+            "id": "UgzjSEJ06X6rAF8ijp54AaABAg.8g8PrSRfQA58g8ZOjqpqkA",
+            "snippet": {
+              "authorDisplayName": "dotaboy888",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9el7DwZjBC8/AAAAAAAAAAI/AAAAAAAAAAA/v_6-RQ6AsQo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCj3_hLL61sq1EnOEFX6FoqA",
+              "authorChannelId": {
+                "value": "UCj3_hLL61sq1EnOEFX6FoqA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "dont question me",
+              "textOriginal": "dont question me",
+              "parentId": "UgzjSEJ06X6rAF8ijp54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T09:41:48.000Z",
+              "updatedAt": "2018-05-12T09:41:48.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/U3fbIGO2yvqwgRl_x8bO250cIRc\"",
+            "id": "UgzjSEJ06X6rAF8ijp54AaABAg.8g8PrSRfQA58g8Z0yzziN4",
+            "snippet": {
+              "authorDisplayName": "extrachicken wang",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9r_mlXCl8ns/AAAAAAAAAAI/AAAAAAAAAAA/Eb4nhiq017o/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCHezIszuphFwVLTelGByRsQ",
+              "authorChannelId": {
+                "value": "UCHezIszuphFwVLTelGByRsQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "why did you watch this video then?",
+              "textOriginal": "why did you watch this video then?",
+              "parentId": "UgzjSEJ06X6rAF8ijp54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T09:38:34.000Z",
+              "updatedAt": "2018-05-12T09:38:34.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Vu_7IVGA0X3BZY58z5r2hB2IhbE\"",
+            "id": "UgzjSEJ06X6rAF8ijp54AaABAg.8g8PrSRfQA58g8XpjXl7cn",
+            "snippet": {
+              "authorDisplayName": "dotaboy888",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-9el7DwZjBC8/AAAAAAAAAAI/AAAAAAAAAAA/v_6-RQ6AsQo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCj3_hLL61sq1EnOEFX6FoqA",
+              "authorChannelId": {
+                "value": "UCj3_hLL61sq1EnOEFX6FoqA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Dont tell me what to do mang shonghoi",
+              "textOriginal": "Dont tell me what to do mang shonghoi",
+              "parentId": "UgzjSEJ06X6rAF8ijp54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T09:28:09.000Z",
+              "updatedAt": "2018-05-12T09:28:09.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/2KoD4o1mop0wVIuSuhVT7XC9zNo\"",
+      "id": "UgyLpwV055bnmlX_-uB4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/m4HlAOHGJJrBMtlcugoWFpl7Ll4\"",
+          "id": "UgyLpwV055bnmlX_-uB4AaABAg",
+          "snippet": {
+            "authorDisplayName": "hello8374",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ey3QlxIFb1M/AAAAAAAAAAI/AAAAAAAAAAA/BldPUOusk_U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCDWSKAkeFUEktn3yjuzeZ4w",
+            "authorChannelId": {
+              "value": "UCDWSKAkeFUEktn3yjuzeZ4w"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "WOW so much information.THANK YOU!",
+            "textOriginal": "WOW so much information.THANK YOU!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2018-05-12T07:15:21.000Z",
+            "updatedAt": "2018-05-12T07:15:21.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/rpU_5SlozscZcwHpdkD12bVn9Vk\"",
+      "id": "Ugya7U7Y3DmHzZP6jxN4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/gw3wQE5G3Km25uv5uK5L13CppFI\"",
+          "id": "Ugya7U7Y3DmHzZP6jxN4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Drama Queen",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-x8-xXRMgUz0/AAAAAAAAAAI/AAAAAAAAAAA/B7GwOFjWUfU/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC5xjif-xgD44-wzm9CPenHw",
+            "authorChannelId": {
+              "value": "UC5xjif-xgD44-wzm9CPenHw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "For me sometimes I prefer grab than cab since cab is go by meter and one time the driver went to purposely go 1 circle around my block to make it more expensive. I was so mad cuz I wanted to take grab and I saw the prices but there was a cab so I thought cheaper then end up more expensive than grab\ud83d\ude2d",
+            "textOriginal": "For me sometimes I prefer grab than cab since cab is go by meter and one time the driver went to purposely go 1 circle around my block to make it more expensive. I was so mad cuz I wanted to take grab and I saw the prices but there was a cab so I thought cheaper then end up more expensive than grab\ud83d\ude2d",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2018-05-12T12:17:21.000Z",
+            "updatedAt": "2018-05-12T12:17:21.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/EJ0yrSsGLAVihEmAfY0Ky7pWL7M\"",
+      "id": "UgwbMoCv2iDFjCDdYdZ4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/qd82XObLO4l0F-YnkD7yvCge-HY\"",
+          "id": "UgwbMoCv2iDFjCDdYdZ4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Rafe Ng",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-bqPwkMAOr-I/AAAAAAAAAAI/AAAAAAAAAAA/753DL02z5hA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCSd7xhVcGr8VBG_ZD9XifyQ",
+            "authorChannelId": {
+              "value": "UCSd7xhVcGr8VBG_ZD9XifyQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Where is the episode that aiken and joanna kiss \ud83d\ude0d\ud83d\ude0d",
+            "textOriginal": "Where is the episode that aiken and joanna kiss \ud83d\ude0d\ud83d\ude0d",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2018-05-12T07:20:04.000Z",
+            "updatedAt": "2018-05-12T07:20:04.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/G_3hCl2PJI6au7tWO-N_p9bZ21Q\"",
+            "id": "UgwbMoCv2iDFjCDdYdZ4AaABAg.8g8JAazxloo8g9F-EjYz_C",
+            "snippet": {
+              "authorDisplayName": "Jia Xuan",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-iy-mcewmNho/AAAAAAAAAAI/AAAAAAAAAAA/Yjb8e4gm_10/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCJpzEOvVx4QCeyjdSuYHdjg",
+              "authorChannelId": {
+                "value": "UCJpzEOvVx4QCeyjdSuYHdjg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Rafe Ng Tomorrow ? Skits are usually on Sunday",
+              "textOriginal": "Rafe Ng Tomorrow ? Skits are usually on Sunday",
+              "parentId": "UgwbMoCv2iDFjCDdYdZ4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T16:02:48.000Z",
+              "updatedAt": "2018-05-12T16:02:48.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/mJkz78ZMMKgWNOwjkreNO2kMsqs\"",
+      "id": "UgzuNBna5fWnc83BsZ54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/dPFzeVRWK7dvs6kAB9zbBiPOtVU\"",
+          "id": "UgzuNBna5fWnc83BsZ54AaABAg",
+          "snippet": {
+            "authorDisplayName": "Melrick Choo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-CiyC-UejZjs/AAAAAAAAAAI/AAAAAAAAAAA/aoTBw3inzXo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCjEbII5rXwChAAT3DWEFjEg",
+            "authorChannelId": {
+              "value": "UCjEbII5rXwChAAT3DWEFjEg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Every single time I book grab to transport my dogs n leave it in the notes to inform the driver, they will accept and then cancel or sometimes even ask me to cancel the ride. If they can&#39;t take dogs don&#39;t accept it and then expect me to cancel so that your ratings are not affected. I understand if it&#39;s a religion thing that they can&#39;t risk going near dogs but the most ironic thing is that the drivers that are picking me and my dogs are all of Islam belief \ud83d\udc4d\ud83c\udffc at least have a grab pets or something..",
+            "textOriginal": "Every single time I book grab to transport my dogs n leave it in the notes to inform the driver, they will accept and then cancel or sometimes even ask me to cancel the ride. If they can't take dogs don't accept it and then expect me to cancel so that your ratings are not affected. I understand if it's a religion thing that they can't risk going near dogs but the most ironic thing is that the drivers that are picking me and my dogs are all of Islam belief \ud83d\udc4d\ud83c\udffc at least have a grab pets or something..",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2018-05-12T08:05:57.000Z",
+            "updatedAt": "2018-05-12T08:05:57.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/F-_iupD6U33ic_e_PshHnyHBiEE\"",
+            "id": "UgzuNBna5fWnc83BsZ54AaABAg.8g8OQ_kdXUt8gDXw9XZJuG",
+            "snippet": {
+              "authorDisplayName": "Jenne Tok",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-s9gcRh7Q6B4/AAAAAAAAAAI/AAAAAAAAAAA/EOU8jSKl0DA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCrWNQfvJiU7DdxS0tR2qFPg",
+              "authorChannelId": {
+                "value": "UCrWNQfvJiU7DdxS0tR2qFPg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "You can try Ryde, another carpooling app. They have a pet friendly option. Though there aren&#39;t that many drivers yet so it might be difficult to get a ride, I still prefer it over having to call the grab driver before hand and asking if they&#39;re okay with my dog.",
+              "textOriginal": "You can try Ryde, another carpooling app. They have a pet friendly option. Though there aren't that many drivers yet so it might be difficult to get a ride, I still prefer it over having to call the grab driver before hand and asking if they're okay with my dog.",
+              "parentId": "UgzuNBna5fWnc83BsZ54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T08:05:14.000Z",
+              "updatedAt": "2018-05-14T08:05:14.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/LhiZZ60_UMFQfaugFZV75D72d50\"",
+            "id": "UgzuNBna5fWnc83BsZ54AaABAg.8g8OQ_kdXUt8gA2EISmgHV",
+            "snippet": {
+              "authorDisplayName": "Melrick Choo",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-CiyC-UejZjs/AAAAAAAAAAI/AAAAAAAAAAA/aoTBw3inzXo/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCjEbII5rXwChAAT3DWEFjEg",
+              "authorChannelId": {
+                "value": "UCjEbII5rXwChAAT3DWEFjEg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Porshey Aragon really? Wow I didn&#39;t know that, that explains \ud83d\udc4d\ud83c\udffc",
+              "textOriginal": "Porshey Aragon really? Wow I didn't know that, that explains \ud83d\udc4d\ud83c\udffc",
+              "parentId": "UgzuNBna5fWnc83BsZ54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T23:30:30.000Z",
+              "updatedAt": "2018-05-12T23:30:30.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ssOisOKoP2QN3Tv6KJCcvlHzArk\"",
+            "id": "UgzuNBna5fWnc83BsZ54AaABAg.8g8OQ_kdXUt8g9zWxgCMNy",
+            "snippet": {
+              "authorDisplayName": "Stephanie's Musings",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-UfATgSiVL-o/AAAAAAAAAAI/AAAAAAAAAAA/BL9ujbEZQ6c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCLiJwR99qAOeZoVSu8nj0Qg",
+              "authorChannelId": {
+                "value": "UCLiJwR99qAOeZoVSu8nj0Qg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "I agree with this! Uber used to have Uber pets. It was $2 extra but I very happy to pay that extra just so that I know the driver won&#39;t mind, and also because it&#39;s an added service.",
+              "textOriginal": "I agree with this! Uber used to have Uber pets. It was $2 extra but I very happy to pay that extra just so that I know the driver won't mind, and also because it's an added service.",
+              "parentId": "UgzuNBna5fWnc83BsZ54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T22:58:06.000Z",
+              "updatedAt": "2018-05-12T22:58:06.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/TokzX51qogwNSX8MLgjvyFaC-3E\"",
+            "id": "UgzuNBna5fWnc83BsZ54AaABAg.8g8OQ_kdXUt8g9lz4UjLSX",
+            "snippet": {
+              "authorDisplayName": "Porshey Aragon",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-LTU2_IQi6iA/AAAAAAAAAAI/AAAAAAAAAAA/ytAPtnWteEk/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCVUXaoyB6WCexz5iWV7_Ubw",
+              "authorChannelId": {
+                "value": "UCVUXaoyB6WCexz5iWV7_Ubw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Melrick Choo you can&#39;t really blame them, they won&#39;t be able to see your notes UNTIL they&#39;ve accepted you. Just an fyi ;)",
+              "textOriginal": "Melrick Choo you can't really blame them, they won't be able to see your notes UNTIL they've accepted you. Just an fyi ;)",
+              "parentId": "UgzuNBna5fWnc83BsZ54AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T20:59:44.000Z",
+              "updatedAt": "2018-05-12T20:59:44.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aMu0Nk0I-w2cE6dWucYmJc2KpPY\"",
+      "id": "UgwaqrlaHFYNh4ZaEpR4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/nuFHHoEojpTR_IVCoZPJ9KXkcqE\"",
+          "id": "UgwaqrlaHFYNh4ZaEpR4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Joel See",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ODW-HHIJMB0/AAAAAAAAAAI/AAAAAAAAAAA/3d9U_I7gbN0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCv7upToe0RBZWr3n3ek7Ljg",
+            "authorChannelId": {
+              "value": "UCv7upToe0RBZWr3n3ek7Ljg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "One morning i was about to take grab so i book one they cancel my trip second time also cancel third time also cancel so im so angry and i go book normal taxi from home to my school",
+            "textOriginal": "One morning i was about to take grab so i book one they cancel my trip second time also cancel third time also cancel so im so angry and i go book normal taxi from home to my school",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T09:11:44.000Z",
+            "updatedAt": "2018-05-12T09:11:44.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/RBUIdz03kM96Mi-H-ZV6JYtDzfo\"",
+      "id": "UgxfnRJHNhZsA3y1oy14AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iY8CSa-HrUhkMeOB5O6p0MEySsg\"",
+          "id": "UgxfnRJHNhZsA3y1oy14AaABAg",
+          "snippet": {
+            "authorDisplayName": "Ezra Matthias James Ho",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-YVko9lXnc7c/AAAAAAAAAAI/AAAAAAAAAAA/Y8d750usdNA/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCppv67QjmARu3NKwZdvlfBA",
+            "authorChannelId": {
+              "value": "UCppv67QjmARu3NKwZdvlfBA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "International school students would relate to this:<br />For the past year or so when I&#39;m taking a Grab / Uber (rip) to school, 95% of the Grab drivers would ask &quot;Are you Singaporean?&quot;, &quot;Why do you go to an international school when you&#39;re local&quot;, &quot;What is so different about international school from local school?&quot;, &quot;What is IB? (same)&quot;, then we&#39;d have to explain the same things over and over again lmao",
+            "textOriginal": "International school students would relate to this:\nFor the past year or so when I'm taking a Grab / Uber (rip) to school, 95% of the Grab drivers would ask \"Are you Singaporean?\", \"Why do you go to an international school when you're local\", \"What is so different about international school from local school?\", \"What is IB? (same)\", then we'd have to explain the same things over and over again lmao",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T12:08:40.000Z",
+            "updatedAt": "2018-05-12T12:08:40.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ydJsVtpcjywmhusNrsMPt1hQPSg\"",
+            "id": "UgxfnRJHNhZsA3y1oy14AaABAg.8g8pCJyNzn_8g9zHvXbSWx",
+            "snippet": {
+              "authorDisplayName": "Stephanie's Musings",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-UfATgSiVL-o/AAAAAAAAAAI/AAAAAAAAAAA/BL9ujbEZQ6c/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCLiJwR99qAOeZoVSu8nj0Qg",
+              "authorChannelId": {
+                "value": "UCLiJwR99qAOeZoVSu8nj0Qg"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "I&#39;m not an international student, but I&#39;m Eurasian. I usually get asked, &quot;What&#39;s your race?&quot; (Or the more Singaporean version.... &quot;Your mother father, what ah?&quot;) There was this one time, this taxi uncle asked, &quot;What&#39;s your NATIONALITY?&quot; So I replied, &quot;Singaporean.&quot; And he squinted at me and said, &quot;NOOO~&quot; And I was like ??? Suddenly a stranger know more about my heritage than I do. It was awkward. I didn&#39;t know how to reply to him. ... (Should&#39;ve said: &quot;Uncle, you want to see my pink IC? I thought I taking taxi... not having an interview with ICA. But okay. Sure.&quot;)",
+              "textOriginal": "I'm not an international student, but I'm Eurasian. I usually get asked, \"What's your race?\" (Or the more Singaporean version.... \"Your mother father, what ah?\") There was this one time, this taxi uncle asked, \"What's your NATIONALITY?\" So I replied, \"Singaporean.\" And he squinted at me and said, \"NOOO~\" And I was like ??? Suddenly a stranger know more about my heritage than I do. It was awkward. I didn't know how to reply to him. ... (Should've said: \"Uncle, you want to see my pink IC? I thought I taking taxi... not having an interview with ICA. But okay. Sure.\")",
+              "parentId": "UgxfnRJHNhZsA3y1oy14AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T22:56:03.000Z",
+              "updatedAt": "2018-05-12T22:56:03.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/FRgcsreiiqd6lNLQz9POzpMZ0xY\"",
+      "id": "Ugw-XkSgV7_ED7HtmmV4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/XcE8f5LTaV5anegC2th8BaPLes0\"",
+          "id": "Ugw-XkSgV7_ED7HtmmV4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Sharalyn Chan",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ZSWtnR13xtk/AAAAAAAAAAI/AAAAAAAAAAA/P1marc7hqNE/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCPzC4gzIF-H7A_8sTQtDRgw",
+            "authorChannelId": {
+              "value": "UCPzC4gzIF-H7A_8sTQtDRgw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "And there&#39;s one time when I was using the grab app to take a ride back to my hotel. That grab driver literally asked me the direction to my hotel. I wasnso mind blown by the question and the fact that he asked a foreigner for a direction. Aren&#39;t he supposed to use his GPS app???? And I literally directed him to my hotel because I kind of know the road when it almost around my hotel area and he was blaming me for my choice of hotel because it was a small hotel above the restaurant, Ginett. Ugh.",
+            "textOriginal": "And there's one time when I was using the grab app to take a ride back to my hotel. That grab driver literally asked me the direction to my hotel. I wasnso mind blown by the question and the fact that he asked a foreigner for a direction. Aren't he supposed to use his GPS app???? And I literally directed him to my hotel because I kind of know the road when it almost around my hotel area and he was blaming me for my choice of hotel because it was a small hotel above the restaurant, Ginett. Ugh.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T08:00:38.000Z",
+            "updatedAt": "2018-05-12T17:12:43.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/CDOn_OVFgGaBq5TXtSgeEckIWNY\"",
+      "id": "Ugy4RCRqWBE6MScELNx4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/-YyFJJPu5D4SPTnSk0kZkLZOO-g\"",
+          "id": "Ugy4RCRqWBE6MScELNx4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Syed Farook Khan",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-NzPZ7cBXIBY/AAAAAAAAAAI/AAAAAAAAAAA/RE_dvm1gcgI/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCZJkIZVbmVUrC_YofRhC3RQ",
+            "authorChannelId": {
+              "value": "UCZJkIZVbmVUrC_YofRhC3RQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "You guys are too lovable due to your relevant content!<br />And this is the only Singapore channel with videos coming out often!<br />Love you..keep rockin&#39;!",
+            "textOriginal": "You guys are too lovable due to your relevant content!\nAnd this is the only Singapore channel with videos coming out often!\nLove you..keep rockin'!",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T07:45:14.000Z",
+            "updatedAt": "2018-05-12T07:45:14.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ba5ahz5BQsF_hfETh5rOU4j_5w4\"",
+      "id": "Ugx26QnDUUTp0c-q3CV4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/7rrOu3TZRMrwcz0YT1QhKW2kI_g\"",
+          "id": "Ugx26QnDUUTp0c-q3CV4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Dav Teng",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-FC1dDZjcvtA/AAAAAAAAAAI/AAAAAAAAAAA/Nk_pd9AGazY/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCfawVDBdGvjkfGl7e8Yjd8Q",
+            "authorChannelId": {
+              "value": "UCfawVDBdGvjkfGl7e8Yjd8Q"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "From a grab driver: don\u2019t book for a normal car if you have 5 people and say \u201c why other Drivers can pick up you can\u2019t!\u201d Same goes for kids below 1.35m<br /><br />By the way, the fare is miserable \ud83d\ude29",
+            "textOriginal": "From a grab driver: don\u2019t book for a normal car if you have 5 people and say \u201c why other Drivers can pick up you can\u2019t!\u201d Same goes for kids below 1.35m\n\nBy the way, the fare is miserable \ud83d\ude29",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T12:46:52.000Z",
+            "updatedAt": "2018-05-12T12:46:52.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/yppeEOoDaXQgxG5_vHyvBE0Epng\"",
+      "id": "Ugy87pS8zARrCni7QKB4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9tLwi6RiJIQBV5lPNKVtI363MQw\"",
+          "id": "Ugy87pS8zARrCni7QKB4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Panda Jia",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-u-WNqC1LDEg/AAAAAAAAAAI/AAAAAAAAAAA/OOhxKnutaCw/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC7FpjpRxK_XFoRaJRy742xg",
+            "authorChannelId": {
+              "value": "UC7FpjpRxK_XFoRaJRy742xg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Grabbb",
+            "textOriginal": "Grabbb",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-12T07:08:03.000Z",
+            "updatedAt": "2018-05-12T07:08:03.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/TDjI5bjojq6I99JW0loTbMUYSuk\"",
+      "id": "Ugza-v0wlcvsEPCmuD94AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Enl0eL0sdWKoV-NGrv52FJxeA34\"",
+          "id": "Ugza-v0wlcvsEPCmuD94AaABAg",
+          "snippet": {
+            "authorDisplayName": "william geraldy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-iTkdi3qTe28/AAAAAAAAAAI/AAAAAAAAAAA/LACr0oZ3O_A/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCGY6vb6LUIxV33Fo9ZpIPjA",
+            "authorChannelId": {
+              "value": "UCGY6vb6LUIxV33Fo9ZpIPjA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "We use gojek here \ud83d\ude02",
+            "textOriginal": "We use gojek here \ud83d\ude02",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2018-05-12T07:46:21.000Z",
+            "updatedAt": "2018-05-12T07:46:21.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ERxeTwLW8KtLugDzuU71D0UiID0\"",
+            "id": "Ugza-v0wlcvsEPCmuD94AaABAg.8g8MB2z3MbC8g8n2cBnjgo",
+            "snippet": {
+              "authorDisplayName": "william geraldy",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-iTkdi3qTe28/AAAAAAAAAAI/AAAAAAAAAAA/LACr0oZ3O_A/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCGY6vb6LUIxV33Fo9ZpIPjA",
+              "authorChannelId": {
+                "value": "UCGY6vb6LUIxV33Fo9ZpIPjA"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Droid Boy ya lol",
+              "textOriginal": "Droid Boy ya lol",
+              "parentId": "Ugza-v0wlcvsEPCmuD94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T11:49:51.000Z",
+              "updatedAt": "2018-05-12T11:49:51.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/bg_3_qjmOH3LGBKxgg_JbW1Rcwk\"",
+            "id": "Ugza-v0wlcvsEPCmuD94AaABAg.8g8MB2z3MbC8g8XH3dDG_u",
+            "snippet": {
+              "authorDisplayName": "Mr. Benebatch Cumberdict",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-NioQcrie5x4/AAAAAAAAAAI/AAAAAAAAAAA/xD6HZlkWvTM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCCLJuT-cvLXRZSGLpOGUS-w",
+              "authorChannelId": {
+                "value": "UCCLJuT-cvLXRZSGLpOGUS-w"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "I sometimes prefer Grab over GO-JEK because it&#39;s cheaper. But Grab sometimes lacks on quality.",
+              "textOriginal": "I sometimes prefer Grab over GO-JEK because it's cheaper. But Grab sometimes lacks on quality.",
+              "parentId": "Ugza-v0wlcvsEPCmuD94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T09:23:17.000Z",
+              "updatedAt": "2018-05-12T09:23:17.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/eIlFc9iVUclRJ3v8yUQs7vYuTQ0\"",
+            "id": "Ugza-v0wlcvsEPCmuD94AaABAg.8g8MB2z3MbC8g8QuaUByTO",
+            "snippet": {
+              "authorDisplayName": "Droid Boy",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-aw5WJX8xVPg/AAAAAAAAAAI/AAAAAAAAAAA/MDIsWHVVBks/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UComwMNqBsPqoq1QTfKDch6Q",
+              "authorChannelId": {
+                "value": "UComwMNqBsPqoq1QTfKDch6Q"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "william geraldy yu Indonesi right\ud83d\ude02\ud83d\ude02",
+              "textOriginal": "william geraldy yu Indonesi right\ud83d\ude02\ud83d\ude02",
+              "parentId": "Ugza-v0wlcvsEPCmuD94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T08:27:39.000Z",
+              "updatedAt": "2018-05-12T08:27:39.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/EzUs9-9F3TrnsIOERsoe8BiDI-w\"",
+      "id": "UgxyJ2ZjaRrE07qMhaZ4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/CH7CB_r7v6YkYxS3KkcpMzE13bg\"",
+          "id": "UgxyJ2ZjaRrE07qMhaZ4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Dominic Freeland",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-Hq0L_nvq_Lc/AAAAAAAAAAI/AAAAAAAAAAA/_Oh7V6Q6CTM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCnxJaLgtPeNFVQGSm3_i59w",
+            "authorChannelId": {
+              "value": "UCnxJaLgtPeNFVQGSm3_i59w"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Currently in a Grab and he&#39;s blasting Metallica. Annoying AF",
+            "textOriginal": "Currently in a Grab and he's blasting Metallica. Annoying AF",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-12T14:15:01.000Z",
+            "updatedAt": "2018-05-12T14:15:01.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/GDvG7e7A44zQpGbRunzgt7Q0EvI\"",
+      "id": "UgzXMHLYXdH5Wd-abAZ4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ju03Nns0xYmugt33f5zQ85cWcFI\"",
+          "id": "UgzXMHLYXdH5Wd-abAZ4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Ella Chew",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-YAMLtyyREik/AAAAAAAAAAI/AAAAAAAAAAA/e1wjrzPARXQ/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCi2104dDjy0GGTcjfK8SONQ",
+            "authorChannelId": {
+              "value": "UCi2104dDjy0GGTcjfK8SONQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I once took a grab with 3 of my friends from my sch to a nearby mall, cuz it was heavily raining and we couldn&#39;t take the bus. The grab driver auntie was so friendly and kind!! We enjoyed the ride and we chatted with the auntie like our friends :)",
+            "textOriginal": "I once took a grab with 3 of my friends from my sch to a nearby mall, cuz it was heavily raining and we couldn't take the bus. The grab driver auntie was so friendly and kind!! We enjoyed the ride and we chatted with the auntie like our friends :)",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-12T14:04:39.000Z",
+            "updatedAt": "2018-05-12T14:04:39.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ax_GEQoqW5dOHAR8PP8amnMuIOo\"",
+      "id": "UgwI9YJzXGjdPSvQFZt4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/u4eu_1E6sJGFUCU63zPCTPud8CA\"",
+          "id": "UgwI9YJzXGjdPSvQFZt4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Roid Shafiq",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-BCtezOf_DsE/AAAAAAAAAAI/AAAAAAAAAAA/59DlrGfmhF0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCa88CzMJAWrkTqoFkU8rEbQ",
+            "authorChannelId": {
+              "value": "UCa88CzMJAWrkTqoFkU8rEbQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "If you&#39;re going to the airport, DON&#39;T GRABSHARE IF YOU&#39;RE BRINGING YOUR WHOLE CLOSET (or if you have a lot of stuff with you in general). Just be considerate and book your own ride... Other passengers might need the space too! There was once when I had to place my luggage on my lap because the other rider brought so much along with them and wanted to save a few dollars by sharing the ride...",
+            "textOriginal": "If you're going to the airport, DON'T GRABSHARE IF YOU'RE BRINGING YOUR WHOLE CLOSET (or if you have a lot of stuff with you in general). Just be considerate and book your own ride... Other passengers might need the space too! There was once when I had to place my luggage on my lap because the other rider brought so much along with them and wanted to save a few dollars by sharing the ride...",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-12T10:16:15.000Z",
+            "updatedAt": "2018-05-12T10:16:15.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Qz98Y0B8oX17ewetFhRItB2PMO8\"",
+      "id": "UgxZ5zSYpW-zSJwx51R4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/PVTl7znYRj2oTu3Mbya7M6SdhrM\"",
+          "id": "UgxZ5zSYpW-zSJwx51R4AaABAg",
+          "snippet": {
+            "authorDisplayName": "yr Jiang",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-PeZF8pZu34g/AAAAAAAAAAI/AAAAAAAAAAA/QLMEck3y0K0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCD2e4uB89fEWeDGSmNO0EnA",
+            "authorChannelId": {
+              "value": "UCD2e4uB89fEWeDGSmNO0EnA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "People that does not live in a tech country do not know anything about grab so do not need to comment what is grab",
+            "textOriginal": "People that does not live in a tech country do not know anything about grab so do not need to comment what is grab",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-12T07:10:20.000Z",
+            "updatedAt": "2018-05-12T07:10:20.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/QfOeULc6ogAo8ZbUbyP1KGZDEHo\"",
+      "id": "Ugx0K39PjlgIBIEBeet4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/4_iBhJ8XmHSsE2E-Nys5xPJl_iY\"",
+          "id": "Ugx0K39PjlgIBIEBeet4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Fab",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-Tuz9uXgG6tM/AAAAAAAAAAI/AAAAAAAAAAA/We1z79vL3MM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCp0lFwpJxYBa_r8sJ4dFtKw",
+            "authorChannelId": {
+              "value": "UCp0lFwpJxYBa_r8sJ4dFtKw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I got suspended on grab :/",
+            "textOriginal": "I got suspended on grab :/",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2018-05-12T10:54:22.000Z",
+            "updatedAt": "2018-05-12T10:54:22.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/kd5OLKeOEhrIvcZgLFqF9uHtI6Q\"",
+            "id": "Ugx0K39PjlgIBIEBeet4AaABAg.8g8gh9_UDV68g8pTHCP--s",
+            "snippet": {
+              "authorDisplayName": "TheRandomStoryTeller",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-EOFzkVsY8WA/AAAAAAAAAAI/AAAAAAAAAAA/Hsag17AE27U/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC2VuUQhHbtLuvj0qPal-sOQ",
+              "authorChannelId": {
+                "value": "UC2VuUQhHbtLuvj0qPal-sOQ"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Suspisious",
+              "textOriginal": "Suspisious",
+              "parentId": "Ugx0K39PjlgIBIEBeet4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2018-05-12T12:10:58.000Z",
+              "updatedAt": "2018-05-12T12:10:58.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9K_YPlzy75C3oa0YuUYfB0ZzLQM\"",
+            "id": "Ugx0K39PjlgIBIEBeet4AaABAg.8g8gh9_UDV68g8p9ufua7Y",
+            "snippet": {
+              "authorDisplayName": "Rachel Wan Spotlight NOC",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-CRtwmFQcCTk/AAAAAAAAAAI/AAAAAAAAAAA/q8GNs_3tsi0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCcGPfeR_Pwcme0OQLoxXXrw",
+              "authorChannelId": {
+                "value": "UCcGPfeR_Pwcme0OQLoxXXrw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Fab What did you do? \ud83d\ude02",
+              "textOriginal": "Fab What did you do? \ud83d\ude02",
+              "parentId": "Ugx0K39PjlgIBIEBeet4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T12:08:20.000Z",
+              "updatedAt": "2018-05-12T12:08:20.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ixVzYzGvtkkqL5-E4NrVXz-x9nM\"",
+            "id": "Ugx0K39PjlgIBIEBeet4AaABAg.8g8gh9_UDV68g8ht5pAVed",
+            "snippet": {
+              "authorDisplayName": "159ljy",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-KCElFMER04k/AAAAAAAAAAI/AAAAAAAAAAA/TaEcHHQJr94/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCRjC1SetnHAxOoqgKrq8Wiw",
+              "authorChannelId": {
+                "value": "UCRjC1SetnHAxOoqgKrq8Wiw"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "how come?",
+              "textOriginal": "how come?",
+              "parentId": "Ugx0K39PjlgIBIEBeet4AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-12T11:04:44.000Z",
+              "updatedAt": "2018-05-12T11:04:44.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/oH8rZtwetU-Kk_RD74vHLSo7H74\"",
+      "id": "UgwT1F9LXflxGb-N8Fx4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/P6kCpC2iglPrCR2C9lf0Hvy6R30\"",
+          "id": "UgwT1F9LXflxGb-N8Fx4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Kingsley \u2022\u1d25\u2022",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-aff5A65vZk4/AAAAAAAAAAI/AAAAAAAAAAA/6wB_Bz1Qv7s/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCx0vLW8M7EKVWPoOFRkSmAA",
+            "authorChannelId": {
+              "value": "UCx0vLW8M7EKVWPoOFRkSmAA"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I had a driver go top up petrol and go toilet during my trip. The car also smell like crap. Had a headache from it and he was also driving very slow I think below normal speed limit like road hogging. Walaoeh.",
+            "textOriginal": "I had a driver go top up petrol and go toilet during my trip. The car also smell like crap. Had a headache from it and he was also driving very slow I think below normal speed limit like road hogging. Walaoeh.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-13T16:21:07.000Z",
+            "updatedAt": "2018-05-13T16:21:07.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/mivH5IJJGm9Y8TUmrQh8UB7WMGc\"",
+      "id": "Ugw8_Bk3KhkgHkWC63J4AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/YpZdHtk3Mse6e4v512FK8PMuua8\"",
+          "id": "Ugw8_Bk3KhkgHkWC63J4AaABAg",
+          "snippet": {
+            "authorDisplayName": "Jesslyn WMC",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-aD80hV8kNqg/AAAAAAAAAAI/AAAAAAAAAAA/AVTO_19gkTI/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC2e-8TAXHeWKh2BJpHSukdw",
+            "authorChannelId": {
+              "value": "UC2e-8TAXHeWKh2BJpHSukdw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Good information",
+            "textOriginal": "Good information",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-12T10:15:49.000Z",
+            "updatedAt": "2018-05-12T10:15:49.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/uypnEkPPzyLs5q30BMus16nJ16c\"",
+      "id": "Ugx6382qNw9sQYobrd94AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/AxsmhrqcmVyE2s5cunGrJvgpY64\"",
+          "id": "Ugx6382qNw9sQYobrd94AaABAg",
+          "snippet": {
+            "authorDisplayName": "Autumn 324",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-DXdZDHssPTw/AAAAAAAAAAI/AAAAAAAAAAA/puIHeNRTgSg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCkaq1ncScgAk6ty9i6HqXPw",
+            "authorChannelId": {
+              "value": "UCkaq1ncScgAk6ty9i6HqXPw"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Oops,i eat in the car\ud83d\ude02",
+            "textOriginal": "Oops,i eat in the car\ud83d\ude02",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-12T07:04:24.000Z",
+            "updatedAt": "2018-05-12T07:04:24.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/vR2cnJ93YamVQ7r2Hd_XdFVgv8A\"",
+            "id": "Ugx6382qNw9sQYobrd94AaABAg.8g8HNs0Y87L8gDPBYiqFZz",
+            "snippet": {
+              "authorDisplayName": "Johan Hoe",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-gKC7WgX6gWs/AAAAAAAAAAI/AAAAAAAAAAA/pi2yEy8ZnDg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdFsl_-d0Jez5RSXtPTfx_g",
+              "authorChannelId": {
+                "value": "UCdFsl_-d0Jez5RSXtPTfx_g"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Autumn 324 just inform the driver &amp; don\u2019t messed up the car, I believe most drivers are okay with it.",
+              "textOriginal": "Autumn 324 just inform the driver & don\u2019t messed up the car, I believe most drivers are okay with it.",
+              "parentId": "Ugx6382qNw9sQYobrd94AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T06:48:50.000Z",
+              "updatedAt": "2018-05-14T06:48:50.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/zH1EC6Mpx7nUrrzaWaKp_nGyZSY\"",
+      "id": "Ugxw3OOvcdEtY3-gdw54AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/qagbD7_yCpMBOiZ7ArS6GrlqBSk\"",
+          "id": "Ugxw3OOvcdEtY3-gdw54AaABAg",
+          "snippet": {
+            "authorDisplayName": "chanyeology",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-myzjAuMkR_k/AAAAAAAAAAI/AAAAAAAAAAA/ZYGFbT1SaiQ/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCv2kDdvzafulCIk_ERAOZxg",
+            "authorChannelId": {
+              "value": "UCv2kDdvzafulCIk_ERAOZxg"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "Grab in Singapore is so different than in the Philippines \ud83d\ude02 we only have GrabExpress, GrabCar (6 seaters) and GrabTaxi.. but I guess regulations are also different here that&#39;s why we don&#39;t have GrabFamily or GrabHitch... :3 but the experiences are still very similar lmao and just like Aiken, I take Grab going home or going to school \ud83d\ude02\ud83d\ude02",
+            "textOriginal": "Grab in Singapore is so different than in the Philippines \ud83d\ude02 we only have GrabExpress, GrabCar (6 seaters) and GrabTaxi.. but I guess regulations are also different here that's why we don't have GrabFamily or GrabHitch... :3 but the experiences are still very similar lmao and just like Aiken, I take Grab going home or going to school \ud83d\ude02\ud83d\ude02",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-13T07:52:20.000Z",
+            "updatedAt": "2018-05-13T07:52:20.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/G2HmXX-3QbrAL5Hh6QK-8k9SqQk\"",
+      "id": "UgxRj3MoA3iBNa3Xm314AaABAg",
+      "snippet": {
+        "videoId": "O_mGWr3LN7s",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aKksGR95lC-BI0jFMC3lXRpRc8U\"",
+          "id": "UgxRj3MoA3iBNa3Xm314AaABAg",
+          "snippet": {
+            "authorDisplayName": "Clara Choo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-X1q1VCvwmkI/AAAAAAAAAAI/AAAAAAAAAAA/6MNhldvCmrE/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCsXoA3S6K7inJ4hW3roLENQ",
+            "authorChannelId": {
+              "value": "UCsXoA3S6K7inJ4hW3roLENQ"
+            },
+            "videoId": "O_mGWr3LN7s",
+            "textDisplay": "I was so freaked out once when I had a late night ride home and my driver was ranting smth he was angry abt and told me he has a knife and can kill anyone if he wants to. He also said he raped many women before. Sigh. I was so grateful I got home safely that day. But lodged a complaint about the driver.",
+            "textOriginal": "I was so freaked out once when I had a late night ride home and my driver was ranting smth he was angry abt and told me he has a knife and can kill anyone if he wants to. He also said he raped many women before. Sigh. I was so grateful I got home safely that day. But lodged a complaint about the driver.",
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2018-05-13T17:55:01.000Z",
+            "updatedAt": "2018-05-13T17:55:01.000Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/FyBeOPh8IPNl34fVIf5NTteEsd8\"",
+            "id": "UgxRj3MoA3iBNa3Xm314AaABAg.8gC0cywSn6F8gWTvNDIIi4",
+            "snippet": {
+              "authorDisplayName": "maomi",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-DWSRt9q8apE/AAAAAAAAAAI/AAAAAAAAAAA/BwT9Q3w85cM/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCkyrzMt6LbJ1fNG5b8bQyng",
+              "authorChannelId": {
+                "value": "UCkyrzMt6LbJ1fNG5b8bQyng"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "WTF he sounds mental. he should go to jail. carrying a knife is illegal. raping?! that&#39;s even worse!!!",
+              "textOriginal": "WTF he sounds mental. he should go to jail. carrying a knife is illegal. raping?! that's even worse!!!",
+              "parentId": "UgxRj3MoA3iBNa3Xm314AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-21T16:35:44.000Z",
+              "updatedAt": "2018-05-21T16:35:44.000Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/d97ufjmrUUnBFkf8pUW6nwqozTA\"",
+            "id": "UgxRj3MoA3iBNa3Xm314AaABAg.8gC0cywSn6F8gDPV0-8Y3T",
+            "snippet": {
+              "authorDisplayName": "Johan Hoe",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/-gKC7WgX6gWs/AAAAAAAAAAI/AAAAAAAAAAA/pi2yEy8ZnDg/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCdFsl_-d0Jez5RSXtPTfx_g",
+              "authorChannelId": {
+                "value": "UCdFsl_-d0Jez5RSXtPTfx_g"
+              },
+              "videoId": "O_mGWr3LN7s",
+              "textDisplay": "Clara Choo that\u2019s a problematic driver.",
+              "textOriginal": "Clara Choo that\u2019s a problematic driver.",
+              "parentId": "UgxRj3MoA3iBNa3Xm314AaABAg",
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2018-05-14T06:51:29.000Z",
+              "updatedAt": "2018-05-14T06:51:29.000Z"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
