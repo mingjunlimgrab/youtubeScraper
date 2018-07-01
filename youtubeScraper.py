@@ -3,6 +3,9 @@ import certifi
 import json
 import pandas as pd
 import emoji
+import rfc3339
+import datetime
+from urllib.parse import quote_plus
 
 
 # import textblob
@@ -19,9 +22,12 @@ def remove_emoji(text):
 
 # Modifyable search parameters (CHANGE ME)
 search_params = 'Grab+mod+app'  # Params seperated by + (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’)
-num_pages = 1000
+num_pages = 15
 results_per_page = 50
 page_to_start = False # set to False if start from page 1
+
+time_delta = 15 # Days between each search frame
+periods = 48 # Total time searched = periods * time_delta days before today's date.
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.
@@ -52,9 +58,16 @@ except:
 base_url = 'https://www.googleapis.com/youtube/v3/search?'
 api_key = 'AIzaSyDlITOYKP8ABriX7UZisXTF9DDtTfma480'
 
-remainder = 'part=snippet&maxResults=' + str(results_per_page) + '&' + 'q=' + search_params + '&key=' + api_key
+remainder = 'part=snippet&maxResults=' + str(results_per_page) + '&q=' + search_params + '&key=' + api_key
+timenow = datetime.date.today()
+deltatime = datetime.timedelta(days=time_delta)
+nexttime = timenow - deltatime
+publishedBefore = quote_plus(rfc3339.rfc3339(timenow))
+publishedAfter = quote_plus(rfc3339.rfc3339(nexttime))
+timeinfo = '&publishedBefore=' + publishedBefore + '&publishedAfter=' + publishedAfter
+
 if not page_to_start:
-    url = base_url + remainder
+    url = base_url + remainder + timeinfo
 else:
     url = base_url + 'pageToken=' + str(page_to_start or tokensSeen[-1] ) + '&' + remainder
 
@@ -63,35 +76,44 @@ count = 0
 tokenCount = 0
 pagesScanned = 0
 
+
 # scraping videos related to 'Grab'
 # range is the the number of pages to search through
-for i in range(num_pages):
-    # opening the YouTube API
-    try:
-        http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
-        r = http.request('GET', url)
-        response = r.data
-        data = json.loads(response)
-        items = data['items']
-        next_page_token = data['nextPageToken']
-        if next_page_token not in tokensSeen:
-            tokensSeen.append(next_page_token)
-            tokenCount += 1
+for z in range(periods):
+    for i in range(num_pages):
+        # opening the YouTube API
+        try:
+            http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+            print(url)
+            r = http.request('GET', url)
+            response = r.data
+            data = json.loads(response)
+            items = data['items']
+            next_page_token = data['nextPageToken']
+            if next_page_token not in tokensSeen:
+                tokensSeen.append(next_page_token)
+                tokenCount += 1
 
-        for item in items:
-            if item['id']['kind'] == 'youtube#video' and item['id']['videoId'] not in seen:
-                videoid = item['id']['videoId']
-                video_id.append(videoid)
-                snippet = item['snippet']
-                title.append(remove_emoji(snippet['title']))
-                description.append(remove_emoji(snippet['description']))
-                published_at.append(snippet['publishedAt'])
-                count += 1
+            for item in items:
+                if item['id']['kind'] == 'youtube#video' and item['id']['videoId'] not in seen:
+                    videoid = item['id']['videoId']
+                    video_id.append(videoid)
+                    snippet = item['snippet']
+                    title.append(remove_emoji(snippet['title']))
+                    description.append(remove_emoji(snippet['description']))
+                    published_at.append(snippet['publishedAt'])
+                    count += 1
 
-        url = base_url + 'pageToken=' + str(next_page_token) + '&' + remainder
-        pagesScanned += 1
-    except:
-        break
+            url = base_url + 'pageToken=' + str(next_page_token) + timeinfo + '&' + remainder
+            pagesScanned += 1
+        except:
+            break
+    nexttime = nexttime - deltatime
+    timenow = timenow - deltatime
+    publishedBefore = quote_plus(rfc3339.rfc3339(timenow))
+    publishedAfter = quote_plus(rfc3339.rfc3339(nexttime))
+    timeinfo = '&publishedBefore=' + publishedBefore + '&publishedAfter=' + publishedAfter
+    url = base_url + remainder + timeinfo
 
 # formatting data
 df = pd.DataFrame(published_at, columns=['published_at'])
