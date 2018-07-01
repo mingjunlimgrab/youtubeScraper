@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rfc3339.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YouTube Scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments_file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_dump.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mein.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleData.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/youtubeScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubeScraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="youtubeScraper.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="youtubeScraper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+            <state relative-caret-position="636">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -49,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40580" />
+            <state relative-caret-position="-157091" />
           </provider>
         </entry>
       </file>
@@ -188,7 +193,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/youtubeScraper.py</url>
-          <line>107</line>
+          <line>91</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -282,14 +287,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
+    <entry file="file://$PROJECT_DIR$/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-157091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tokensSeen.csv">
@@ -299,9 +299,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
+    <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40580" />
+        <state relative-caret-position="636">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

@@ -24,10 +24,9 @@ def remove_emoji(text):
 search_params = 'Grab+mod+app'  # Params seperated by + (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’)
 num_pages = 15
 results_per_page = 50
-page_to_start = False # set to False if start from page 1
 
 time_delta = 15 # Days between each search frame
-periods = 48 # Total time searched = periods * time_delta days before today's date.
+periods = 1 # Total time searched = periods * time_delta days before today's date.
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.
@@ -46,15 +45,6 @@ except:
     published_at = []
     print('no file found')
 
-try:
-    tokn = pd.read_csv('tokensSeen.csv')
-    print('managed to load!')
-    tolkien = tokn['0']
-    tokensSeen = tolkien.tolist()
-except:
-    print('tokens seen not found')
-    tokensSeen = []
-
 base_url = 'https://www.googleapis.com/youtube/v3/search?'
 api_key = 'AIzaSyDlITOYKP8ABriX7UZisXTF9DDtTfma480'
 
@@ -66,10 +56,7 @@ publishedBefore = quote_plus(rfc3339.rfc3339(timenow))
 publishedAfter = quote_plus(rfc3339.rfc3339(nexttime))
 timeinfo = '&publishedBefore=' + publishedBefore + '&publishedAfter=' + publishedAfter
 
-if not page_to_start:
-    url = base_url + remainder + timeinfo
-else:
-    url = base_url + 'pageToken=' + str(page_to_start or tokensSeen[-1] ) + '&' + remainder
+url = base_url + remainder + timeinfo
 
 # To track number of additions to Database
 count = 0
@@ -90,9 +77,6 @@ for z in range(periods):
             data = json.loads(response)
             items = data['items']
             next_page_token = data['nextPageToken']
-            if next_page_token not in tokensSeen:
-                tokensSeen.append(next_page_token)
-                tokenCount += 1
 
             for item in items:
                 if item['id']['kind'] == 'youtube#video' and item['id']['videoId'] not in seen:
@@ -121,9 +105,6 @@ df['video_id'] = video_id
 df['title'] = title
 df['description'] = description
 
-tokendf = pd.DataFrame(tokensSeen)
-tokendf.to_csv('tokensSeen.csv')
-print(str(tokenCount) + " tokens added!")
 print(str(count) + " results added!")
 print(str(pagesScanned) + ' pages Scanned!')
 df.to_csv('test.csv')
