@@ -1,8 +1,12 @@
 import csv
 import pandas as pd
-import langid
+from langdetect import detect
 
-df = pd.read_csv('/Users/claudia.seow/Desktop/YouTube Scraper/Repo/test.csv')
+#Parameters#
+fileToRead = 'test.csv'
+fileToWrite = 'EN_videos2.csv'
+
+df = pd.read_csv(fileToRead)
 
 EN_published_at = []
 EN_video_id = []
@@ -12,7 +16,9 @@ EN_description = []
 index = 0
 for title in df['title']:
     try:
-        if langid.classify(title)[0] == 'en':
+        term = title + ' ' + df['description'][index]
+        print(term)
+        if detect(term) == 'en':
             EN_published_at.append(df['published_at'][index])
             EN_video_id.append(df['video_id'][index])
             EN_title.append(df['title'][index])
@@ -42,4 +48,4 @@ EN_df['EN_video_id']=EN_video_id
 EN_df['EN_title']=EN_title
 EN_df['EN_description']=EN_description
 
-EN_df.to_csv('/Users/claudia.seow/Desktop/YouTube Scraper/EN_videos2.csv')
+EN_df.to_csv(fileToWrite)

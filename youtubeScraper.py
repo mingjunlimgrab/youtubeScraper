@@ -26,7 +26,7 @@ num_pages = 15
 results_per_page = 50
 
 time_delta = 15 # Days between each search frame
-periods = 1 # Total time searched = periods * time_delta days before today's date.
+periods = 48 # Total time searched = periods * time_delta days before today's date.
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.
