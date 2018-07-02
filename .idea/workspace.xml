@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/langdetectFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN_videos.csv" beforeDir="false" afterPath="$PROJECT_DIR$/EN_videos.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EN_videos2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/EN_videos2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouTube Scraper Sift Out English.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/langdetectFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/langdetectFilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/langidFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/langidFilter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youtubeScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubeScraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="youtubeScraper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-951">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="1536">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -31,20 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="englishFilter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/englishFilter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="langdetectFilter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="langdetectFilter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="-243">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -52,10 +41,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EN_videos.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EN_videos.csv">
+      <file leaf-file-name="langidFilter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/langidFilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113021" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -71,6 +65,13 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EN_videos.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EN_videos.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225233" />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tokensSeen.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tokensSeen.csv">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,12 +81,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
+            <state relative-caret-position="4254">
               <caret line="10735" column="37" selection-start-line="10735" selection-start-column="37" selection-end-line="10735" selection-end-column="37" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test2.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-347108" />
           </provider>
         </entry>
       </file>
@@ -106,11 +114,12 @@
       <list>
         <option value="$PROJECT_DIR$/YouTube Scraper.py" />
         <option value="$PROJECT_DIR$/rfc3339.py" />
-        <option value="$PROJECT_DIR$/youtubeScraper.py" />
         <option value="$PROJECT_DIR$/englishFilter.py" />
         <option value="$PROJECT_DIR$/EN_videos.csv" />
         <option value="$PROJECT_DIR$/EN_videos2.csv" />
+        <option value="$PROJECT_DIR$/youtubeScraper.py" />
         <option value="$PROJECT_DIR$/langdetectFilter.py" />
+        <option value="$PROJECT_DIR$/langidFilter.py" />
       </list>
     </option>
   </component>
@@ -156,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.langdetectFilter">
+  <component name="RunManager" selected="Python.langidFilter">
     <configuration name="englishFilter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,6 +202,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="langidFilter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="youtubeScraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langidFilter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="youtubeScraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,12 +242,14 @@
       <item itemvalue="Python.youtubeScraper" />
       <item itemvalue="Python.englishFilter" />
       <item itemvalue="Python.langdetectFilter" />
+      <item itemvalue="Python.langidFilter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.langidFilter" />
         <item itemvalue="Python.langdetectFilter" />
-        <item itemvalue="Python.englishFilter" />
         <item itemvalue="Python.youtubeScraper" />
+        <item itemvalue="Python.englishFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -265,13 +294,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/youtubeScraper.py</url>
-          <line>91</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
@@ -352,13 +374,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rfc3339.py">
+    <entry file="file://$PROJECT_DIR$/YouTube Scraper Sift Out English.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="292" column="19" selection-start-line="292" selection-start-column="19" selection-end-line="292" selection-end-column="19" />
+        <state>
           <folding>
-            <element signature="e#1076#1091#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EN_videos2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128364" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -369,54 +402,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YouTube Scraper Sift Out English.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-951">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="1536">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="10735" column="37" selection-start-line="10735" selection-start-column="37" selection-end-line="10735" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/englishFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EN_videos2.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EN_videos.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113021" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="-243">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/langidFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfc3339.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="292" column="19" selection-start-line="292" selection-start-column="19" selection-end-line="292" selection-end-column="19" />
+          <folding>
+            <element signature="e#1076#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EN_videos.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4254">
+          <caret line="10735" column="37" selection-start-line="10735" selection-start-column="37" selection-end-line="10735" selection-end-column="37" />
         </state>
       </provider>
     </entry>

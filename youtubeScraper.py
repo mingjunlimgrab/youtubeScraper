@@ -21,12 +21,14 @@ def remove_emoji(text):
 ############################## START OF MAIN FUNCTION #######################################
 
 # Modifyable search parameters (CHANGE ME)
-search_params = 'Grab+mod+app'  # Params seperated by + (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’)
-num_pages = 15
+search_params = 'Grab'  # Params seperated by + (eg. ‘Grab+fake+app’ or ‘Grab+tutorial’)
+num_pages = 20
 results_per_page = 50
 
 time_delta = 15 # Days between each search frame
 periods = 48 # Total time searched = periods * time_delta days before today's date.
+
+writeFile = 'test2.csv'
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.
@@ -107,7 +109,8 @@ df['description'] = description
 
 print(str(count) + " results added!")
 print(str(pagesScanned) + ' pages Scanned!')
-df.to_csv('test.csv')
+df.to_csv(writeFile)
+
 ################################ END OF MAIN FUNCTION ################################
 
 

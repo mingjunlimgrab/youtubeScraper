@@ -3,7 +3,7 @@ import pandas as pd
 import langid
 
 #Parameters#
-fileToRead = 'test.csv'
+fileToRead = 'test2.csv'
 fileToWrite = 'EN_videos.csv'
 df = pd.read_csv(fileToRead)
 

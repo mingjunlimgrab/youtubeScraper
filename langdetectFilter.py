@@ -3,7 +3,7 @@ import pandas as pd
 from langdetect import detect
 
 #Parameters#
-fileToRead = 'test.csv'
+fileToRead = 'test2.csv'
 fileToWrite = 'EN_videos2.csv'
 
 df = pd.read_csv(fileToRead)
