@@ -4,15 +4,15 @@ import csv
 
 fileToRead = 'langidBatch2.csv'
 fileToWrite = 'mjRelevance1.csv'
-indexToStart = 50
-indexToEnd = 100
-nextIndexToWrite = 30
+indexToStart = 450
+indexToEnd = 500
+nextIndexToWrite = 396
 
 #Hotkeys
-YES = '1'
+YES = '3'
 NO = '4'
 NOTENG = 'c'
-SHOW = '3'
+SHOW = '/'
 acceptable = [YES, NO, NOTENG, SHOW]
 
 def alreadyInitialized():

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/langidFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/langidFilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mjRelevance1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mjRelevance1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mjRelevanceWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/mjRelevanceWriter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,15 +41,17 @@
       <file leaf-file-name="mjRelevanceWriter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="mjRelevance1.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjRelevance1.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5471" />
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="langidFilter.py" pinned="false" current-in-tab="false">
@@ -283,7 +285,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -483,12 +484,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mjRelevance1.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5471" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        <state relative-caret-position="90">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
