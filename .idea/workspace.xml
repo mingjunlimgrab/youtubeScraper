@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/relevanceSorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/claudiaRelevanceWriter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/relevanceSorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/relevanceSorter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="relevanceSorter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relevanceSorter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+            <state relative-caret-position="180">
+              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -39,14 +37,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="onlysorted02k.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/onlysorted02k.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="zeroTo2k.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zeroTo2k.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18133" />
+            <state relative-caret-position="-18295" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sorted02k.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sorted02k.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sorted02k.csv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -89,18 +92,6 @@
               <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rfc3339.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rfc3339.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="292" column="19" selection-start-line="292" selection-start-column="19" selection-end-line="292" selection-end-column="19" />
-              <folding>
-                <element signature="e#1076#1091#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -529,22 +520,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sorted02k.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zeroTo2k.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18295" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/relevanceSorter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        <state relative-caret-position="180">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zeroTo2k.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18133" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sorted02k.csv">
+    <entry file="file://$PROJECT_DIR$/onlysorted02k.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
