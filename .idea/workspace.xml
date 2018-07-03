@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2 updated).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relevanceBatch2 (1000 to 2000).csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance).py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,13 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="langdetectFilter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="langdetectFilter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
+            <state relative-caret-position="-243">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YouTube Videos Scraper (sorting relevance 2 updated).py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2 updated).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +108,7 @@
         <option value="$PROJECT_DIR$/youtubeScraper.py" />
         <option value="$PROJECT_DIR$/langdetectFilter.py" />
         <option value="$PROJECT_DIR$/langidFilter.py" />
+        <option value="$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2 updated).py" />
       </list>
     </option>
   </component>
@@ -425,10 +440,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="-243">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2 updated).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
