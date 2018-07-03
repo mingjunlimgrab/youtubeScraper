@@ -3,7 +3,7 @@ import pandas as pd
 import langid
 
 #Parameters#
-fileToRead = 'test2.csv'
+fileToRead = 'grab+app+mod.csv'
 fileToWrite = 'EN_videos.csv'
 df = pd.read_csv(fileToRead)
 
