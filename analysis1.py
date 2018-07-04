@@ -3,8 +3,9 @@ from nltk.corpus import stopwords
 import pandas as pd
 import nltk
 import random
+import mjutils
 
-df = pd.read_csv("/Users/claudia.seow/Desktop/youtubeScraper/sorted02k.csv")
+df = pd.read_csv("manuallyClassifiedData/sorted02k.csv")
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -54,10 +55,14 @@ def algorithm(args):
 
 for title in df['title']:
     tokenized = []
+    title = mjutils.dehypdeslash(title)
     words = word_tokenize(title)
-    for word in words:
-        if word not in stop_words:
-            tokenized.append(word.lower())
+    tokenized = [word for word in words if word not in stop_words]
+    fleg = False
+    for word in tokenized:
+        if word in FLAG:
+            fleg = True
+            break
     keywords = {}
     for w in tokenized:
         if w in SCORE_DICT.keys():
@@ -69,4 +74,8 @@ for title in df['title']:
     args = []
     for i in final_keywords.values():
         args.append(i)
-    print(title + '  ' + str(algorithm(args)))
+    if not fleg:
+        print(title + '  ' + str(algorithm(args)))
+    else:
+        print(title + '  ' + '0 -- FLAGGED')
+    fleg = False
