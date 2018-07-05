@@ -1,12 +1,17 @@
 import pandas as pd
 import webbrowser
 import csv
+from mjutils import flagger, dehypdeslash, grabCheck
 
-fileToRead = 'langidBatch2.csv'
-fileToWrite = 'mjRelevance1.csv'
-indexToStart = 450
-indexToEnd = 500
-nextIndexToWrite = 396
+FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', 'mall grab', 'grab lab', 'boob',
+        'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite',
+        'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn'}
+
+fileToRead = 'languageFilteredData/langidBatch2.csv'
+fileToWrite = 'mj2000plus.csv'
+indexToStart = 2251
+indexToEnd = 2500
+nextIndexToWrite = 0
 
 #Hotkeys
 YES = '3'
@@ -22,9 +27,19 @@ def alreadyInitialized():
     index = indexToStart
     i = nextIndexToWrite
     for id in df['EN_video_id'][index: indexToEnd]:
+        newtitlething = dehypdeslash(df['EN_title'][index])
+        fleg = flagger(newtitlething.lower(), FLAG) and grabCheck(newtitlething.lower())
         row = []
         print(df['EN_title'][index])
         value = False
+        if not fleg:
+            row.append(df['EN_published_at'][index])
+            row.append(df['EN_video_id'][index])
+            row.append(df['EN_title'][index])
+            row.append(df['EN_description'][index])
+            row.append('0')
+            index += 1
+            continue
         while value not in acceptable:
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES )
             value = input('relevance ')
@@ -86,9 +101,19 @@ def initialization():
     relevance = []
     index = indexToStart #index to start from
     for id in df['EN_video_id'][index: indexToEnd]:
+        newtitlething = dehypdeslash(df['EN_title'][index])
+        fleg = flagger(newtitlething.lower(), FLAG) and grabCheck(newtitlething.lower())
         row = []
         print(df['EN_title'][index])
         value = False
+        if not fleg:
+            published_at.append(df['EN_published_at'][index])
+            video_id.append(df['EN_video_id'][index])
+            title.append(df['EN_title'][index])
+            description.append(df['EN_description'][index])
+            relevance.append('0')
+            index += 1
+            continue
         while value not in acceptable:
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES)
             value = input('relevance ')
@@ -109,9 +134,9 @@ def initialization():
                 title.append(df['EN_title'][index])
                 description.append(df['EN_description'][index])
                 if value == YES:
-                    row.append('1')
+                    relevance.append('1')
                 else:
-                    row.append('0')
+                    relevance.append('0')
                 index += 1
         elif value == NOTENG:
             index += 1
@@ -122,9 +147,9 @@ def initialization():
             title.append(df['EN_title'][index])
             description.append(df['EN_description'][index])
             if value == YES:
-                row.append('1')
+                relevance.append('1')
             else:
-                row.append('0')
+                relevance.append('0')
             index += 1
     # create new file
     new_df = pd.DataFrame(published_at, columns=['published_at'])
