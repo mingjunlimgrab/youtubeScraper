@@ -9,8 +9,8 @@ FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', '
 
 fileToRead = 'languageFilteredData/langidBatch2.csv'
 fileToWrite = 'mj2000plus.csv'
-indexToStart = 2501
-indexToEnd = 3000
+indexToStart = 2000
+indexToEnd = 2030
 nextIndexToWrite = 0
 
 #Hotkeys
@@ -33,6 +33,7 @@ def alreadyInitialized():
         print(df['EN_title'][index])
         value = False
         if not fleg:
+            row.append(i)
             row.append(df['EN_published_at'][index])
             row.append(df['EN_video_id'][index])
             row.append(df['EN_title'][index])
@@ -95,6 +96,8 @@ def alreadyInitialized():
 def initialization():
     df = pd.read_csv(fileToRead)
 
+
+    indices = []
     published_at = []
     video_id = []
     title = []
@@ -162,5 +165,15 @@ def initialization():
     new_df.to_csv((fileToWrite))
 
 #### MAIN ####
+initializedOrNot = False
+try:
+    df = pd.read_csv(fileToRead)
+    initializedOrNot = True
+except:
+    initializedOrNot = False
 
-alreadyInitialized()
+if initializedOrNot:
+    alreadyInitialized()
+else:
+    initialization()
+
