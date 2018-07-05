@@ -9,8 +9,8 @@ FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', '
 
 fileToRead = 'languageFilteredData/langidBatch2.csv'
 fileToWrite = 'mj2000plus.csv'
-indexToStart = 2000
-indexToEnd = 2030
+indexToStart = 2051
+indexToEnd = 2100
 nextIndexToWrite = 0
 
 #Hotkeys
@@ -18,7 +18,7 @@ YES = '3'
 NO = '4'
 NOTENG = 'c'
 SHOW = '/'
-acceptable = [YES, NO, NOTENG, SHOW]
+acceptable = [YES, NO, NOTENG, SHOW, 'exit']
 
 def alreadyInitialized():
     # open 'English only' csv file
@@ -46,6 +46,17 @@ def alreadyInitialized():
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES )
             value = input('relevance ')
         # open the link if you can't determine relevancy from title
+        if value == 'exit':
+            print('Stopping process at Index: ' + str(index))
+            with open(fileToWrite, 'a') as file:
+                writer = csv.writer(file)
+                for j in rows:
+                    try:
+                        writer.writerow(j)
+                    except:
+                        continue
+            return
+
         if value == SHOW:
             webbrowser.open_new_tab('https://www.youtube.com/watch?v=' + str(id))
             value = False
@@ -122,6 +133,15 @@ def initialization():
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES)
             value = input('relevance ')
         # open the link if you can't determine relevancy from title
+        if value == 'exit':
+            new_df = pd.DataFrame(published_at, columns=['published_at'])
+            new_df['video_id'] = video_id
+            new_df['title'] = title
+            new_df['description'] = description
+            new_df['relevance'] = relevance
+            return
+
+            new_df.to_csv((fileToWrite))
         if value == SHOW:
             webbrowser.open_new_tab('https://www.youtube.com/watch?v=' + str(id))
             value = False
