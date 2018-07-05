@@ -9,8 +9,8 @@ FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', '
 
 fileToRead = 'languageFilteredData/langidBatch2.csv'
 fileToWrite = 'mj2000plus.csv'
-indexToStart = 2251
-indexToEnd = 2500
+indexToStart = 2501
+indexToEnd = 3000
 nextIndexToWrite = 0
 
 #Hotkeys
@@ -38,6 +38,7 @@ def alreadyInitialized():
             row.append(df['EN_title'][index])
             row.append(df['EN_description'][index])
             row.append('0')
+            rows.append(row)
             index += 1
             continue
         while value not in acceptable:
