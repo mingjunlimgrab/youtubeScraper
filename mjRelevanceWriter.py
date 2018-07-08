@@ -3,14 +3,14 @@ import webbrowser
 import csv
 from mjutils import flagger, dehypdeslash, grabCheck
 
-FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', 'mall grab', 'grab lab', 'boob',
-        'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite',
-        'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn'}
+FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', 'mall grab', 'grab lab', 'boob', 'grab knife', 'grab it now', 'grab bag',
+        'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite', 'grab and go', 'grab the bottle', 'land grab',
+        'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn', 'grab the bottle', 'smash and grab'}
 
 fileToRead = 'languageFilteredData/langidBatch2.csv'
 fileToWrite = 'mj2000plus.csv'
-indexToStart = 2051
-indexToEnd = 2100
+indexToStart = 14500
+indexToEnd = 15000
 nextIndexToWrite = 0
 
 #Hotkeys
@@ -18,7 +18,9 @@ YES = '3'
 NO = '4'
 NOTENG = 'c'
 SHOW = '/'
-acceptable = [YES, NO, NOTENG, SHOW, 'exit']
+EXIT = 'exit'
+BACK = 'prev'
+acceptable = [YES, NO, NOTENG, SHOW, EXIT, BACK]
 
 def alreadyInitialized():
     # open 'English only' csv file
@@ -46,7 +48,11 @@ def alreadyInitialized():
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES )
             value = input('relevance ')
         # open the link if you can't determine relevancy from title
-        if value == 'exit':
+        if value == BACK:
+            rows.pop()
+            index -= 1
+            continue
+        if value == EXIT:
             print('Stopping process at Index: ' + str(index))
             with open(fileToWrite, 'a') as file:
                 writer = csv.writer(file)
@@ -133,7 +139,7 @@ def initialization():
             print("Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES)
             value = input('relevance ')
         # open the link if you can't determine relevancy from title
-        if value == 'exit':
+        if value == EXIT:
             new_df = pd.DataFrame(published_at, columns=['published_at'])
             new_df['video_id'] = video_id
             new_df['title'] = title

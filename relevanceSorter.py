@@ -2,8 +2,8 @@ import pandas as pd
 import webbrowser
 import csv
 
-fileToRead = 'zeroTo2k.csv'
-fileToWrite = 'onlysorted02k.csv'
+fileToRead = 'manuallyClassfiedData/zeroTo2k.csv'
+fileToWrite = 'manuallyClassifiedData/onlysorted02k.csv'
 
 df = pd.read_csv(fileToRead)
 
