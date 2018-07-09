@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/mjutils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis1updated.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis1updated.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mj2000plus.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mj2000plus.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mjRelevanceWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/mjRelevanceWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relevanceSorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/relevanceSorter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="analysis1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="104" />
+            <state relative-caret-position="-198">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -40,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analysis1updated.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="analysis1updated.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analysis1updated.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sorted02k.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manuallyClassifiedData/sorted02k.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -52,15 +64,10 @@
       <file leaf-file-name="relevanceSorter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relevanceSorter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-654">
+            <state relative-caret-position="-498">
               <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mjutils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjutils.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="langdetectFilter.py" pinned="false" current-in-tab="false">
@@ -75,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mjRelevanceWriter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mjRelevanceWriter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -87,11 +94,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mjutils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mjutils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mj2000plus.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mj2000plus.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6032">
-              <caret line="7660" column="108" selection-start-line="7660" selection-start-column="108" selection-end-line="7660" selection-end-column="108" />
+            <state>
+              <caret column="50" selection-start-column="50" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -139,20 +155,18 @@
         <option value="$PROJECT_DIR$/sorted02k.csv" />
         <option value="$PROJECT_DIR$/whatever.py" />
         <option value="$PROJECT_DIR$/analysis1.py" />
-        <option value="$PROJECT_DIR$/mjutils.py" />
-        <option value="$PROJECT_DIR$/analysis1updated.py" />
-        <option value="$PROJECT_DIR$/mj2000plus.csv" />
         <option value="$PROJECT_DIR$/YouTube Videos Scraper (sorting relevance 2 updated).py" />
         <option value="$PROJECT_DIR$/relevanceSorter.py" />
         <option value="$PROJECT_DIR$/mjRelevanceWriter.py" />
+        <option value="$PROJECT_DIR$/mjutils.py" />
+        <option value="$PROJECT_DIR$/analysis1updated.py" />
+        <option value="$PROJECT_DIR$/mj2000plus.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="760" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mjRelevanceWriter">
+  <component name="RunManager" selected="Python.analysis1updated">
     <configuration name="analysis1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,8 +314,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mjRelevanceWriter" />
         <item itemvalue="Python.analysis1updated" />
+        <item itemvalue="Python.mjRelevanceWriter" />
         <item itemvalue="Python.relevanceSorter" />
         <item itemvalue="Python.analysis1" />
         <item itemvalue="Python.whatever" />
@@ -322,12 +336,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="760" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" x="-21" y="22" width="1440" height="330" id="Run" order="2" visible="true" weight="0.40670553" />
+      <window_info active="true" anchor="bottom" x="-21" y="22" width="1440" height="330" id="Run" order="2" visible="true" weight="0.32900944" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -352,13 +367,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mj2000plus.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67350">
-          <caret line="4490" column="84" selection-start-line="4490" selection-start-column="84" selection-end-line="4490" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/langidFilter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -403,6 +411,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,26 +580,6 @@
     <entry file="file://$PROJECT_DIR$/zeroTo2k.csv" />
     <entry file="file://$PROJECT_DIR$/whatever.py" />
     <entry file="file://$PROJECT_DIR$/onlysorted02k.csv" />
-    <entry file="file://$PROJECT_DIR$/analysis1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="104" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/langidFilter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -606,8 +597,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjutils.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/langdetectFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,33 +627,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysis1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mj2000plus.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuallyClassifiedData/sorted02k.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/relevanceSorter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654">
+        <state relative-caret-position="-498">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis1updated.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mj2000plus.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6032">
-          <caret line="7660" column="108" selection-start-line="7660" selection-start-column="108" selection-end-line="7660" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

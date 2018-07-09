@@ -5,7 +5,7 @@ import nltk
 import random
 from mjutils import dehypdeslash, flagger, grabCheck
 
-df = pd.read_csv("manuallyClassifiedData/sorted02k.csv")
+df = pd.read_csv("mj2000plus.csv")
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
