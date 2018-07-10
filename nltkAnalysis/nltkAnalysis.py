@@ -20,6 +20,7 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'our', 'mightn', 'only', 'so', 'under', 'other', 'their', "you'd", 'o', 'those', 'mustn', 'weren',
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
+# wb - write, rb - read
 f = open('my_classifier.pickle', 'rb')
 wf = open('word_features.pickle', 'rb')
 classifier = pickle.load(f)
@@ -51,7 +52,7 @@ def document_features(doc):
     for (word, freq) in word_features:
         features['contains({})'.format(word)] = (word in doc_words)
     return features
-#
+
 # df = pd.read_csv("/Users/claudia.seow/PycharmProjects/new/sorted_data.csv")
 #
 # documents = []
@@ -68,15 +69,37 @@ def document_features(doc):
 #             lib.append(lowercase_word)
 #     documents.append((tokenize, df['relevance'][index]))
 #     index += 1
+
+# option 1 splits data 'evenly'
+# rel = []
+# irr = []
+# for item in documents:
+#     if item[1] == 1:
+#         rel.append(item)
+#     else:
+#         irr.append(item)
 #
-# random.shuffle(documents)
+# random.shuffle(rel)
+# random.shuffle(irr)
+#
 # all_words = nltk.FreqDist(w for w in lib)
 # word_features = list(all_words.most_common(2000))
 #
+# rel_featuresets = [(document_features(d), c) for (d, c) in rel]
+# irr_featuresets = [(document_features(d), c) for (d, c) in irr]
+#
+# train_set = rel_featuresets[:373] + irr_featuresets[:10418]
+# test_set = rel_featuresets[373:] + irr_featuresets[10418:]
+
+# option 2 shuffles data without splitting
+# random.shuffle(documents)
+# all_words = nltk.FreqDist(w for w in lib)
+# word_features = list(all_words.most_common(2000))
 # featuresets = [(document_features(d), c) for (d, c) in documents]
 # train_set, test_set = featuresets[:12000], featuresets[12000:]
-# classifier = nltk.NaiveBayesClassifier.train(train_set)
 
+# trains data and prints accuracy
+# classifier = nltk.NaiveBayesClassifier.train(train_set)
 # print(nltk.classify.accuracy(classifier, test_set))
 # classifier.show_most_informative_features(5)
 
@@ -91,7 +114,9 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'Grab Mod 3.2',
 
 predictor(predicting_titles)
 
+# for loading in data
 # pickle.dump(classifier, f)
 # pickle.dump(word_features, wf)
+
 f.close()
 wf.close()
