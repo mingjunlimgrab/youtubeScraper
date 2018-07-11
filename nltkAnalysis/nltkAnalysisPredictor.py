@@ -1,6 +1,3 @@
-import nltk
-import random
-import pandas as pd
 from nltk.tokenize import word_tokenize
 import pickle
 
@@ -57,23 +54,32 @@ def document_features(doc):
         features['contains({})'.format(word)] = (word in doc_words)
     return features
 
-# print(nltk.classify.accuracy(classifier, test_set))
-# classifier.show_most_informative_features(5)
-
 def predictor(titles):
     for title in titles:
         cleaned = clean(title)
         d_f = document_features(cleaned)
-        print(d_f)
-        # featurized = {c: True for c in d_f}
-        # print(featurized)
-#         print(title + ' ' + str(classifier.classify(featurized)))
-#
-predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'Grab Mod 3.2',
-                     'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
-                     'Uber Agrees to Sell Southeast Asian Operations to Rival Grab', 'grab gps tutorial']
+        print(title + ': ' + str(classifier.classify(d_f)))
+
+def truth_predictor(titles):
+    for title in titles:
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        featurized = {}
+        for feature in d_f:
+            if d_f[feature] == True:
+                featurized[feature] = True
+        print(title + ': ' + str(classifier.classify(featurized)))
+
+predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'what happens when i grab my dog\'s tail',
+                     'How to grab coupons', 'Grab Mod 3.2', 'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
+                     'grab premium kuala lumpur', 'Uber Agrees to Sell Southeast Asian Operations to Rival Grab',
+                     'grab gps tutorial', 'grab driver tutorial', 'spotlight: grab dos & don\'ts', 'grabtaxi new driver training video',
+                     '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
+                     'ride hailing company grab', 'no auto food grab mod']
 
 predictor(predicting_titles)
+print("\n")
+truth_predictor(predicting_titles)
 
 f.close()
 wf.close()
