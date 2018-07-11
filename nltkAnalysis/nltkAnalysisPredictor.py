@@ -20,10 +20,15 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'our', 'mightn', 'only', 'so', 'under', 'other', 'their', "you'd", 'o', 'those', 'mustn', 'weren',
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
-f = open('my_classifier.pickle', 'wb')
-wf = open('word_features.pickle', 'wb')
-tr = open('train_set.pickle', 'wb')
-te = open('test_set.pickle', 'wb')
+f = open('my_classifier.pickle', 'rb')
+wf = open('word_features.pickle', 'rb')
+tr = open('train_set.pickle', 'rb')
+te = open('test_set.pickle', 'rb')
+
+classifier = pickle.load(f)
+word_features = pickle.load(wf)
+train_set = pickle.load(tr)
+test_set = pickle.load(te)
 
 def dehypdeslash(title):
     result1 = title
@@ -52,72 +57,23 @@ def document_features(doc):
         features['contains({})'.format(word)] = (word in doc_words)
     return features
 
-df = pd.read_csv("sorted_data.csv")
-
-documents = []
-lib = []
-index = 0
-for title in df['title']:
-    tokenize = []
-    title = dehypdeslash(title)
-    words = word_tokenize(title)
-    for word in words:
-        lowercase_word = word.lower()
-        if lowercase_word not in stop_words:
-            tokenize.append(lowercase_word)
-            lib.append(lowercase_word)
-    documents.append((tokenize, df['relevance'][index]))
-    index += 1
-
-# option 1 splits data 'evenly'
-rel = []
-irr = []
-for item in documents:
-    if item[1] == 1:
-        rel.append(item)
-    else:
-        irr.append(item)
-
-random.shuffle(rel)
-random.shuffle(irr)
-
-all_words = nltk.FreqDist(w for w in lib)
-word_features = list(all_words.most_common(3000))
-
-rel_featuresets = [(document_features(d), c) for (d, c) in rel]
-irr_featuresets = [(document_features(d), c) for (d, c) in irr]
-
-train_set = rel_featuresets[:373] + irr_featuresets[:10418]
-test_set = rel_featuresets[373:] + irr_featuresets[10418:]
-
-# option 2 shuffles data without splitting
-# random.shuffle(documents)
-# all_words = nltk.FreqDist(w for w in lib)
-# word_features = list(all_words.most_common(2000))
-# featuresets = [(document_features(d), c) for (d, c) in documents]
-# train_set, test_set = featuresets[:12000], featuresets[12000:]
-
-# trains data and prints accuracy
-classifier = nltk.NaiveBayesClassifier.train(train_set)
-print(nltk.classify.accuracy(classifier, test_set))
-classifier.show_most_informative_features(5)
+# print(nltk.classify.accuracy(classifier, test_set))
+# classifier.show_most_informative_features(5)
 
 def predictor(titles):
     for title in titles:
         cleaned = clean(title)
-        print(title + ' ' + str(classifier.classify(document_features(cleaned))))
-
+        d_f = document_features(cleaned)
+        print(d_f)
+        # featurized = {c: True for c in d_f}
+        # print(featurized)
+#         print(title + ' ' + str(classifier.classify(featurized)))
+#
 predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'Grab Mod 3.2',
                      'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
                      'Uber Agrees to Sell Southeast Asian Operations to Rival Grab', 'grab gps tutorial']
 
 predictor(predicting_titles)
-
-# for loading in data
-pickle.dump(classifier, f)
-pickle.dump(word_features, wf)
-pickle.dump(train_set, tr)
-pickle.dump(test_set, te)
 
 f.close()
 wf.close()
