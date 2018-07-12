@@ -88,7 +88,6 @@ def append_truth_predictor(titlesWithRelevance):
         if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
             toprint.append(thingy)
     for item in toprint:
-        print(item[1] == item[2])
         print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
 
@@ -109,12 +108,12 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
             rel.append(item)
         else:
             irr.append(item)
-    print(len(rel))
-    print(len(irr))
     random.shuffle(rel)
     random.shuffle(irr)
     eightyPercentRel = int(len(rel) * 0.8)
     eightyPercentIrr = int(len(irr) * 0.8)
+    print(len(rel[eightyPercentRel:]))
+    print(len(irr[eightyPercentIrr:]))
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
 
@@ -128,7 +127,7 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
-test_set = create_test_set('sorted2konwards.csv')
+test_set = create_test_set('sorted_data.csv')
 append_truth_predictor(test_set)
 
 f.close()

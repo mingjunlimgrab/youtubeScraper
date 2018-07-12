@@ -26,14 +26,16 @@ num_pages = 20
 results_per_page = 50
 
 time_delta = 15 # Days between each search frame
-periods = 48 # Total time searched = periods * time_delta days before today's date.
+periods = 200 # Total time searched = periods * time_delta days before today's date.
+start_period = 96
 
-writeFile = 'test2.csv'
+writeFile = 'rawVideoData/grab2.csv'
+readFile = 'rawVideoData/grab2.csv'
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.
 try:
-    old_df = pd.read_csv('test.csv')
+    old_df = pd.read_csv(readFile)
     video_id = (old_df['video_id']).tolist()
     title = (old_df['title']).tolist()
     description = (old_df['description']).tolist()
@@ -54,6 +56,11 @@ remainder = 'part=snippet&maxResults=' + str(results_per_page) + '&q=' + search_
 timenow = datetime.date.today()
 deltatime = datetime.timedelta(days=time_delta)
 nexttime = timenow - deltatime
+publishedBefore = quote_plus(rfc3339.rfc3339(timenow))
+publishedAfter = quote_plus(rfc3339.rfc3339(nexttime))
+for i in range(start_period):
+    nexttime = nexttime - deltatime
+    timenow = timenow - deltatime
 publishedBefore = quote_plus(rfc3339.rfc3339(timenow))
 publishedAfter = quote_plus(rfc3339.rfc3339(nexttime))
 timeinfo = '&publishedBefore=' + publishedBefore + '&publishedAfter=' + publishedAfter
