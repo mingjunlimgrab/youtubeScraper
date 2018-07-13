@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/youtubeScraperOnlyNew.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/langidFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/langidFilter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youtubeScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubeScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,46 +38,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analysis1updated2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis1updated2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mjutils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjutils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nltkAnalysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="90" selection-start-line="90" selection-end-line="90" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nltkAnalysisPredictor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
+            <state relative-caret-position="297">
+              <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nltkAnalysisPredictorMJ.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1722">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnsembleAnalysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1744">
+              <caret line="192" column="10" selection-start-line="192" selection-start-column="10" selection-end-line="192" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="langidBatch3.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="langidBatch3.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/languageFilteredData/langidBatch3.csv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -167,6 +163,7 @@
         <option value="$PROJECT_DIR$/youtubeScraperOnlyNew.py" />
         <option value="$PROJECT_DIR$/youtubeScraper.py" />
         <option value="$PROJECT_DIR$/langidFilter.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -192,6 +189,16 @@
               <item name="youtubeScraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="youtubeScraper" type="462c0819:PsiDirectoryNode" />
               <item name="languageFilteredData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youtubeScraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youtubeScraper" type="462c0819:PsiDirectoryNode" />
+              <item name="manuallyClassifiedData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youtubeScraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youtubeScraper" type="462c0819:PsiDirectoryNode" />
+              <item name="nltkAnalysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youtubeScraper" type="b2602c69:ProjectViewProjectNode" />
@@ -226,8 +233,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.langidFilter">
-    <configuration name="analysis1updated" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.EnsembleAnalysis">
+    <configuration name="EnsembleAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,11 +242,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nltkAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis1updated.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +270,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="nltkAnalysisPredictor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="nltkAnalysisPredictorMJ" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,7 +282,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,19 +325,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.analysis1updated" />
-      <item itemvalue="Python.nltkAnalysisPredictor" />
       <item itemvalue="Python.youtubeScraperOnlyNew" />
       <item itemvalue="Python.youtubeScraper" />
       <item itemvalue="Python.langidFilter" />
+      <item itemvalue="Python.nltkAnalysisPredictorMJ" />
+      <item itemvalue="Python.EnsembleAnalysis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.EnsembleAnalysis" />
+        <item itemvalue="Python.nltkAnalysisPredictorMJ" />
         <item itemvalue="Python.langidFilter" />
         <item itemvalue="Python.youtubeScraper" />
         <item itemvalue="Python.youtubeScraperOnlyNew" />
-        <item itemvalue="Python.nltkAnalysisPredictor" />
-        <item itemvalue="Python.analysis1updated" />
       </list>
     </recent_temporary>
   </component>
@@ -379,43 +386,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/langidFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjRelevanceWriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/youtubeScraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/relevanceSorter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -612,16 +582,6 @@
         <state relative-caret-position="-176843" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/analysis1updated2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -681,6 +641,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/languageFilteredData/langidBatch3.csv">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkAnalysis/sorted2konwards.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1744">
+          <caret line="192" column="10" selection-start-line="192" selection-start-column="10" selection-end-line="192" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1722">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
