@@ -7,7 +7,7 @@ FLAG = {}
 
 fileToRead = 'nltkAnalysis/sorted_data2.csv'
 fileToWrite = 'onlyPositives.csv'
-indexToStart = 38
+indexToStart = 187
 nextIndexToWrite = 0
 
 #Hotkeys
