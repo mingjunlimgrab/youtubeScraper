@@ -80,14 +80,14 @@ for title in df['title']:
         if lowercase_word not in stop_words:
             tokenize.append(lowercase_word)
             lib.append(lowercase_word)
-    documents.append((tokenize, df['relevance'][index]))
+    documents.append([title, tokenize, df['relevance'][index]])
     index += 1
 
 # option 1 splits data 'evenly'
 rel = []
 irr = []
 for item in documents:
-    if item[1] == 1:
+    if item[2] == 1:
         rel.append(item)
     else:
         irr.append(item)
@@ -97,12 +97,16 @@ random.shuffle(irr)
 
 all_words = nltk.FreqDist(w for w in lib)
 word_features = list(all_words.most_common(3000))
+rel_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in rel]
+irr_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in irr]
 
-rel_featuresets = [(document_features(d), c) for (d, c) in rel]
-irr_featuresets = [(document_features(d), c) for (d, c) in irr]
+twentyRel = int(len(rel_featuresets) * 0.2)
+twentyIrr = int(len(irr_featuresets) * 0.2)
+train_set_save = rel_featuresets[:twentyRel] + irr_featuresets[:twentyIrr]
+test_set_save = rel_featuresets[twentyRel:] + irr_featuresets[twentyIrr:]
 
-train_set = rel_featuresets[:373] + irr_featuresets[:10418]
-test_set = rel_featuresets[373:] + irr_featuresets[10418:]
+train_set = [item[1] for item in train_set_save]
+test_set = [item[1] for item in train_set_save]
 
 # option 2 shuffles data without splitting
 # random.shuffle(documents)
@@ -159,8 +163,8 @@ pickle.dump(SVC_classifier, svc)
 pickle.dump(LinearSVC_classifier, lsvc)
 pickle.dump(voted_classifier, vc)
 pickle.dump(word_features, wf)
-pickle.dump(train_set, tr)
-pickle.dump(test_set, te)
+pickle.dump(train_set_save, tr)
+pickle.dump(test_set_save, te)
 
 c.close()
 mnb.close()
