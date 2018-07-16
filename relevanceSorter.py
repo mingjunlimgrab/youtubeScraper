@@ -2,8 +2,8 @@ import pandas as pd
 import webbrowser
 import csv
 
-fileToRead = 'manuallyClassfiedData/zeroTo2k.csv'
-fileToWrite = 'manuallyClassifiedData/onlysorted02k.csv'
+fileToRead = 'nltkAnalysis/sorted_data.csv'
+fileToWrite = 'nltkAnalysis/sorted_data2.csv'
 
 df = pd.read_csv(fileToRead)
 
@@ -20,13 +20,15 @@ zero_description = []
 zero_relevance = []
 
 index = 0
+
 for index in range(len(df['title'])):
-    if df['relevance'][index] == '1':
+    if df['relevance'][index] == 1:
         one_published_at.append(df['published_at'][index])
         one_video_id.append(df['video_id'][index])
         one_title.append(df['title'][index])
         one_description.append(df['description'][index])
         one_relevance.append(df['relevance'][index])
+        print(df['title'][index])
     else:
         zero_published_at.append(df['published_at'][index])
         zero_video_id.append(df['video_id'][index])
@@ -37,6 +39,7 @@ for index in range(len(df['title'])):
 num_ones = len(one_video_id)
 num_zeros = len(zero_video_id)
 percentYield = (num_ones * 100)/(num_ones + num_zeros)
+print(percentYield)
 
 new_df = pd.DataFrame(one_published_at, columns=['published_at'])
 new_df['video_id'] = one_video_id

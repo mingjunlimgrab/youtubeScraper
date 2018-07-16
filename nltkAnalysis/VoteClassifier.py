@@ -20,3 +20,6 @@ class VoteClassifier(ClassifierI):
         choice_votes = votes.count(mode(votes))
         conf = choice_votes / len(votes)
         return conf
+
+    def weightedClassify(self, features):
+        score = 0

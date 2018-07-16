@@ -141,11 +141,11 @@ LinearSVC_classifier.train(train_set)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, test_set)))
 
 voted_classifier = VoteClassifier(classifier,
-                                  MNB_classifier,
-                                  BernoulliNB_classifier,
-                                  LogisticRegression_classifier,
+                                  #MNB_classifier,
+                                  #BernoulliNB_classifier,
+                                  #LogisticRegression_classifier,
                                   SGD_classifier,
-                                  SVC_classifier,
+                                  #SVC_classifier,
                                   LinearSVC_classifier)
 print("voted_classifier accuracy:", (nltk.classify.accuracy(voted_classifier, test_set)))
 

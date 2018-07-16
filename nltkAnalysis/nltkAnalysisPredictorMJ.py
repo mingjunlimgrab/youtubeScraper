@@ -99,11 +99,14 @@ def append_truth_predictor(titlesWithRelevance, classifier):
         for feature in d_f:
             if d_f[feature] == True:
                 featurized[feature] = True
-        thingy.append(classifier.classify(featurized))
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(featurized)
+        else:
+            thingy.append(classifier.classify(featurized))
         if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
             toprint.append(thingy)
-    for item in toprint:
-        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    # for item in toprint:
+    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
@@ -147,9 +150,13 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
 # print("\n")
 # truth_predictor(predicting_titles)
 test_set = create_test_set('sorted_data.csv')
-append_truth_predictor(test_set, vote_classifier)
-
-
+append_truth_predictor(test_set, classifier)
+append_truth_predictor(test_set, MNB_classifier)
+append_truth_predictor(test_set, BernoulliNB_classifier)
+append_truth_predictor(test_set, LogisticRegression)
+append_truth_predictor(test_set, SGD_classifier)
+append_truth_predictor(test_set, SVC_classifier)
+append_truth_predictor(test_set, LinearSVC_classifier)
 
 c.close()
 mnb.close()
