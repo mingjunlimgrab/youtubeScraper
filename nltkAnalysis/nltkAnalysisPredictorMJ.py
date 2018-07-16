@@ -3,6 +3,7 @@ import pickle
 import random
 import pandas as pd
 import numpy as np
+from nltkAnalysis.VoteClassifier import VoteClassifier
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -39,7 +40,7 @@ LogisticRegression = pickle.load(lg)
 SGD_classifier = pickle.load(sgd)
 SVC_classifier = pickle.load(svc)
 LinearSVC_classifier = pickle.load(lsvc)
-VoteClassifier = pickle.load(vc)
+vote_classifier = pickle.load(vc)
 word_features = pickle.load(wf)
 train_set = pickle.load(tr)
 test_set = pickle.load(te)
@@ -75,7 +76,7 @@ def predictor(titles):
     for title in titles:
         cleaned = clean(title)
         d_f = document_features(cleaned)
-        print(title + ': ' + str(classifier.classify(d_f)))
+        print(title + ': ' + str(vote_classifier.classify(d_f)))
 
 def truth_predictor(titles):
     for title in titles:
@@ -85,10 +86,10 @@ def truth_predictor(titles):
         for feature in d_f:
             if d_f[feature] == True:
                 featurized[feature] = True
-        print(title + ': ' + str(classifier.classify(featurized)))
+        print(title + ': ' + str(vote_classifier.classify(featurized)))
 
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
-def append_truth_predictor(titlesWithRelevance):
+def append_truth_predictor(titlesWithRelevance, classifier):
     toprint = []
     for thingy in titlesWithRelevance:
         title = thingy[0]
@@ -103,6 +104,10 @@ def append_truth_predictor(titlesWithRelevance):
             toprint.append(thingy)
     for item in toprint:
         print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
 
 
@@ -142,7 +147,9 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
 # print("\n")
 # truth_predictor(predicting_titles)
 test_set = create_test_set('sorted_data.csv')
-append_truth_predictor(test_set)
+append_truth_predictor(test_set, vote_classifier)
+
+
 
 c.close()
 mnb.close()

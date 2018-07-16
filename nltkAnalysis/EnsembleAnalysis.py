@@ -6,8 +6,7 @@ from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC
-from nltk.classify import ClassifierI
-from statistics import mode
+from nltkAnalysis.VoteClassifier import VoteClassifier
 import pickle
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
@@ -38,25 +37,7 @@ wf = open('word_features.pickle', 'wb')
 tr = open('train_set.pickle', 'wb')
 te = open('test_set.pickle', 'wb')
 
-class VoteClassifier(ClassifierI):
-    def __init__(self, *classifiers):
-        self._classifiers = classifiers
 
-    def classify(self, features):
-        votes = []
-        for c in self._classifiers:
-            v = c.classify(features)
-            votes.append(v)
-        return mode(votes)
-
-    def confidence(self, features):
-        votes = []
-        for c in self._classifiers:
-            v = c.classify(features)
-            votes.append(v)
-        choice_votes = votes.count(mode(votes))
-        conf = choice_votes / len(votes)
-        return conf
 
 def dehypdeslash(title):
     result1 = title
@@ -176,7 +157,7 @@ pickle.dump(LogisticRegression_classifier, lg)
 pickle.dump(SGD_classifier, sgd)
 pickle.dump(SVC_classifier, svc)
 pickle.dump(LinearSVC_classifier, lsvc)
-pickle.dump(VoteClassifier, vc)
+pickle.dump(voted_classifier, vc)
 pickle.dump(word_features, wf)
 pickle.dump(train_set, tr)
 pickle.dump(test_set, te)
