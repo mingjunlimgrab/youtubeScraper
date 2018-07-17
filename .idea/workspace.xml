@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/BernoulliNB_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/BernoulliNB_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/LinearSVC_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/LinearSVC_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/LogisticRegression_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/LogisticRegression_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/MNB_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/MNB_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/SGD_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/SGD_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/SVC_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/SVC_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/VoteClassifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/VoteClassifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py" afterDir="false" />
-    </list>
+    <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +14,7 @@
       <file leaf-file-name="nltkAnalysisPredictorMJ.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
+            <state relative-caret-position="-640">
               <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -679,7 +667,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
+        <state relative-caret-position="-640">
           <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
