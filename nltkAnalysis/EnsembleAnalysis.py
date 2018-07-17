@@ -6,7 +6,6 @@ from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC
-from nltkAnalysis.VoteClassifier import VoteClassifier
 import pickle
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
@@ -30,14 +29,10 @@ mnb = open('MNB_classifier.pickle', 'wb')
 bnb = open('BernoulliNB_classifier.pickle', 'wb')
 lg = open('LogisticRegression_classifier.pickle', 'wb')
 sgd = open('SGD_classifier.pickle', 'wb')
-svc = open('SVC_classifier.pickle', 'wb')
 lsvc = open('LinearSVC_classifier.pickle', 'wb')
-vc = open('VoteClassifier.pickle', 'wb')
 wf = open('word_features.pickle', 'wb')
 tr = open('train_set.pickle', 'wb')
 te = open('test_set.pickle', 'wb')
-
-
 
 def dehypdeslash(title):
     result1 = title
@@ -97,6 +92,12 @@ random.shuffle(irr)
 
 all_words = nltk.FreqDist(w for w in lib)
 word_features = list(all_words.most_common(3000))
+# new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab app', 100), ('surge pricing', 100),
+#              ('grab mod', 100), ('grab food', 100)]
+#
+# for word in new_words:
+#     word_features.append(word)
+#
 rel_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in rel]
 irr_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in irr]
 
@@ -106,7 +107,7 @@ train_set_save = rel_featuresets[twentyRel:] + irr_featuresets[twentyIrr:]
 test_set_save = rel_featuresets[:twentyRel] + irr_featuresets[:twentyIrr]
 
 train_set = [item[1] for item in train_set_save]
-test_set = [item[1] for item in train_set_save]
+test_set = [item[1] for item in test_set_save]
 
 train_set_save_final = [[item[0], item[1][1]] for item in train_set_save]
 test_set_save_final = [[item[0], item[1][1]] for item in test_set_save]
@@ -139,22 +140,17 @@ SGD_classifier = SklearnClassifier(SGDClassifier())
 SGD_classifier.train(train_set)
 print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, test_set)))
 
-SVC_classifier = SklearnClassifier(SVC())
-SVC_classifier.train(train_set)
-print("SVC_classifier accuracy:", (nltk.classify.accuracy(SVC_classifier, test_set)))
-
-LinearSVC_classifier = SklearnClassifier(LinearSVC())
-LinearSVC_classifier.train(train_set)
+LinearSVC_classifier = SklearnClassifier(LinearSVC()).train(train_set)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, test_set)))
 
-voted_classifier = VoteClassifier(classifier,
-                                  #MNB_classifier,
-                                  #BernoulliNB_classifier,
-                                  #LogisticRegression_classifier,
-                                  SGD_classifier,
-                                  #SVC_classifier,
-                                  LinearSVC_classifier)
-print("voted_classifier accuracy:", (nltk.classify.accuracy(voted_classifier, test_set)))
+# voted_classifier = VoteClassifier(classifier,
+#                                   #MNB_classifier,
+#                                   #BernoulliNB_classifier,
+#                                   #LogisticRegression_classifier,
+#                                   SGD_classifier,
+#                                   #SVC_classifier,
+#                                   LinearSVC_classifier)
+# print("voted_classifier accuracy:", (nltk.classify.accuracy(voted_classifier, test_set)))
 
 # for loading in data
 pickle.dump(classifier, c)
@@ -162,9 +158,7 @@ pickle.dump(MNB_classifier, mnb)
 pickle.dump(BernoulliNB_classifier, bnb)
 pickle.dump(LogisticRegression_classifier, lg)
 pickle.dump(SGD_classifier, sgd)
-pickle.dump(SVC_classifier, svc)
 pickle.dump(LinearSVC_classifier, lsvc)
-pickle.dump(voted_classifier, vc)
 pickle.dump(word_features, wf)
 pickle.dump(train_set_save_final, tr)
 pickle.dump(test_set_save_final, te)
@@ -174,9 +168,7 @@ mnb.close()
 bnb.close()
 lg.close()
 sgd.close()
-svc.close()
 lsvc.close()
-vc.close()
 wf.close()
 tr.close()
 te.close()
