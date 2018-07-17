@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7dfa7-4bc1-423f-ad8e-85787a317d8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoRelevanceWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoRelevanceWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/langidFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/langidFilter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mjRelevanceWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/mjRelevanceWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/BernoulliNB_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/BernoulliNB_classifier.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/LinearSVC_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/LinearSVC_classifier.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/LogisticRegression_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/LogisticRegression_classifier.pickle" afterDir="false" />
@@ -14,14 +10,9 @@
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/SVC_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/SVC_classifier.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/VoteClassifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/VoteClassifier.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/my_classifier.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltkAnalysis/sorted_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/sorted_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/test_set.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/test_set.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/train_set.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/train_set.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nltkAnalysis/word_features.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/nltkAnalysis/word_features.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rawVideoData/grab.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rawVideoData/grab.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relevanceSorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/relevanceSorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youtubeScraperOnlyNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubeScraperOnlyNew.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nltkAnalysisPredictorMJ.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nltkAnalysisPredictorMJ.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="177" column="11" lean-forward="true" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+            <state relative-caret-position="390">
+              <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -62,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnsembleAnalysis.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EnsembleAnalysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
-              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -145,9 +136,9 @@
       <find>VoteClassifier</find>
       <find>NOTENG</find>
       <find>indexToEnd</find>
-      <find>why gend</find>
+      <find />
       <find>print</find>
-      <find>grab mod</find>
+      <find />
       <find>EN_video_id</find>
       <find>EN_published_at</find>
       <find>EN_title</find>
@@ -247,7 +238,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -267,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EnsembleAnalysis">
+  <component name="RunManager" selected="Python.nltkAnalysisPredictorMJ">
     <configuration name="EnsembleAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,8 +358,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.EnsembleAnalysis" />
         <item itemvalue="Python.nltkAnalysisPredictorMJ" />
+        <item itemvalue="Python.EnsembleAnalysis" />
         <item itemvalue="Python.mjRelevanceWriter" />
         <item itemvalue="Python.relevanceSorter" />
         <item itemvalue="Python.autoRelevanceWriter" />
@@ -390,7 +381,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -745,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="177" column="11" lean-forward="true" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nltkAnalysis/sorted_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -765,9 +745,19 @@
     <entry file="file://$PROJECT_DIR$/nltkAnalysis/EnsembleAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltkAnalysis/nltkAnalysisPredictorMJ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
