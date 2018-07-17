@@ -94,4 +94,4 @@ def append_truth_predictor(csvFileName, fileToWrite, classifier):
 
     new_df.to_csv((fileToWrite))
 
-append_truth_predictor('languageFilteredData/langidBatch3.csv', 'autoTested.csv', LinearSVC_classifier)
+append_truth_predictor('languageFilteredData/langidBatch4.csv', 'autoTested2.csv', LinearSVC_classifier)

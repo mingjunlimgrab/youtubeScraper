@@ -2,8 +2,8 @@ import pandas as pd
 import webbrowser
 import csv
 
-fileToRead = 'autoTested.csv'
-fileToWrite = 'autoTestedSorted.csv'
+fileToRead = 'autoTested2.csv'
+fileToWrite = 'autoTestedSorted2.csv'
 
 df = pd.read_csv(fileToRead)
 

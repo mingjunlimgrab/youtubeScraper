@@ -7,10 +7,10 @@ FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', '
         'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite', 'grab and go', 'grab the bottle', 'land grab',
         'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn', 'grab the bottle', 'smash and grab'}
 
-fileToRead = 'languageFilteredData/langidBatch2.csv'
-fileToWrite = 'mj2000plus.csv'
-indexToStart = 14500
-indexToEnd = 15000
+fileToRead = 'autoTestedSorted2.csv'
+fileToWrite = 'batch4.csv'
+indexToStart = 0
+indexToEnd = 187
 nextIndexToWrite = 0
 
 #Hotkeys
@@ -28,18 +28,18 @@ def alreadyInitialized():
     rows = []
     index = indexToStart
     i = nextIndexToWrite
-    for id in df['EN_video_id'][index: indexToEnd]:
-        newtitlething = dehypdeslash(df['EN_title'][index])
+    for id in df['video_id'][index: indexToEnd]:
+        newtitlething = dehypdeslash(df['title'][index])
         fleg = flagger(newtitlething.lower(), FLAG) and grabCheck(newtitlething.lower())
         row = []
-        print(df['EN_title'][index])
+        print(df['title'][index])
         value = False
         if not fleg:
             row.append(i)
-            row.append(df['EN_published_at'][index])
-            row.append(df['EN_video_id'][index])
-            row.append(df['EN_title'][index])
-            row.append(df['EN_description'][index])
+            row.append(df['published_at'][index])
+            row.append(df['video_id'][index])
+            row.append(df['title'][index])
+            row.append(df['description'][index])
             row.append('0')
             rows.append(row)
             index += 1
@@ -69,16 +69,16 @@ def alreadyInitialized():
             while value not in acceptable:
                 print(
                     "Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES)
-                value = input(df['EN_title'][index] + ' relevance ')
+                value = input(df['title'][index] + ' relevance ')
             if value == NOTENG:
                 index += 1
                 continue
             else:
                 row.append(i)
-                row.append(df['EN_published_at'][index])
-                row.append(df['EN_video_id'][index])
-                row.append(df['EN_title'][index])
-                row.append(df['EN_description'][index])
+                row.append(df['published_at'][index])
+                row.append(df['video_id'][index])
+                row.append(df['title'][index])
+                row.append(df['description'][index])
                 if value == YES:
                     row.append('1')
                 else:
@@ -91,10 +91,10 @@ def alreadyInitialized():
             continue
         else:
             row.append(i)
-            row.append(df['EN_published_at'][index])
-            row.append(df['EN_video_id'][index])
-            row.append(df['EN_title'][index])
-            row.append(df['EN_description'][index])
+            row.append(df['published_at'][index])
+            row.append(df['video_id'][index])
+            row.append(df['title'][index])
+            row.append(df['description'][index])
             if value == YES:
                 row.append('1')
             else:
@@ -121,17 +121,17 @@ def initialization():
     description = []
     relevance = []
     index = indexToStart #index to start from
-    for id in df['EN_video_id'][index: indexToEnd]:
-        newtitlething = dehypdeslash(df['EN_title'][index])
+    for id in df['video_id'][index: indexToEnd]:
+        newtitlething = dehypdeslash(df['title'][index])
         fleg = flagger(newtitlething.lower(), FLAG) and grabCheck(newtitlething.lower())
         row = []
-        print(df['EN_title'][index])
+        print(df['title'][index])
         value = False
         if not fleg:
-            published_at.append(df['EN_published_at'][index])
-            video_id.append(df['EN_video_id'][index])
-            title.append(df['EN_title'][index])
-            description.append(df['EN_description'][index])
+            published_at.append(df['published_at'][index])
+            video_id.append(df['video_id'][index])
+            title.append(df['title'][index])
+            description.append(df['description'][index])
             relevance.append('0')
             index += 1
             continue
@@ -154,15 +154,15 @@ def initialization():
             while not value:
                 print(
                     "Not English:" + NOTENG + " --- Not Grab: " + NO + " --- Open Video: " + SHOW + " --- GRAB: " + YES)
-                value = input(df['EN_title'][index] + ' relevance ')
+                value = input(df['title'][index] + ' relevance ')
             if value == NOTENG:
                 index += 1
                 continue
             else:
-                published_at.append(df['EN_published_at'][index])
-                video_id.append(df['EN_video_id'][index])
-                title.append(df['EN_title'][index])
-                description.append(df['EN_description'][index])
+                published_at.append(df['published_at'][index])
+                video_id.append(df['video_id'][index])
+                title.append(df['title'][index])
+                description.append(df['description'][index])
                 if value == YES:
                     relevance.append('1')
                 else:
@@ -172,10 +172,10 @@ def initialization():
             index += 1
             continue
         else:
-            published_at.append(df['EN_published_at'][index])
-            video_id.append(df['EN_video_id'][index])
-            title.append(df['EN_title'][index])
-            description.append(df['EN_description'][index])
+            published_at.append(df['published_at'][index])
+            video_id.append(df['video_id'][index])
+            title.append(df['title'][index])
+            description.append(df['description'][index])
             if value == YES:
                 relevance.append('1')
             else:

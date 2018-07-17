@@ -3,8 +3,8 @@ import pandas as pd
 import langid
 
 #Parameters#
-fileToRead = 'rawVideoData/grab2.csv'
-fileToWrite = 'languageFilteredData/langidBatch3.csv'
+fileToRead = 'rawVideoData/grab3.csv'
+fileToWrite = 'languageFilteredData/langidBatch4.csv'
 df = pd.read_csv(fileToRead)
 
 EN_published_at = []
