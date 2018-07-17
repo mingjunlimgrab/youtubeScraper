@@ -90,6 +90,11 @@ def truth_predictor(titles):
 
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
 def append_truth_predictor(titlesWithRelevance, classifier):
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    negatives = [item for item in titlesWithRelevance if item[1] == 0]
+    print("Positives: " + str(len(positives)))
+    print("Negatives: " + str(len(negatives)))
+
     toprint = []
     for thingy in titlesWithRelevance:
         title = thingy[0]
@@ -105,37 +110,12 @@ def append_truth_predictor(titlesWithRelevance, classifier):
             thingy.append(classifier.classify(featurized))
         if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
             toprint.append(thingy)
-    # for item in toprint:
-    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    for item in toprint:
+        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
-
-def append_truth_predictor2(preloadedFS, classifier):
-    toprint = []
-    for thingy in preloadedFS:
-        title = thingy[0]
-        cleaned = clean(title)
-        d_f = document_features(cleaned)
-        featurized = {}
-        for feature in d_f:
-            if d_f[feature] == True:
-                featurized[feature] = True
-        if len(thingy) == 3:
-            thingy[2] = classifier.classify(featurized)
-        else:
-            thingy.append(classifier.classify(featurized))
-        if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
-            toprint.append(thingy)
-    # for item in toprint:
-    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
-
-    false_negatives = [item for item in toprint if item[1] == 1]
-    print("Number of False_negatives is: " + str(len(false_negatives)))
-    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
-
-
 
 def create_test_set(csvFileName): #takes in a string (the name of a file or directory)
     df = pd.read_csv(csvFileName)
@@ -172,13 +152,14 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
 # print("\n")
 # truth_predictor(predicting_titles)
 #test_set = create_test_set('sorted_data.csv')
-append_truth_predictor(test_set, classifier)
-append_truth_predictor(test_set, MNB_classifier)
-append_truth_predictor(test_set, BernoulliNB_classifier)
-append_truth_predictor(test_set, LogisticRegression)
-append_truth_predictor(test_set, SGD_classifier)
-append_truth_predictor(test_set, SVC_classifier)
+# append_truth_predictor(test_set, classifier)
+# append_truth_predictor(test_set, MNB_classifier)
+# append_truth_predictor(test_set, BernoulliNB_classifier)
+# append_truth_predictor(test_set, LogisticRegression)
+# append_truth_predictor(test_set, SGD_classifier)
+# append_truth_predictor(test_set, SVC_classifier)
 append_truth_predictor(test_set, LinearSVC_classifier)
+
 
 c.close()
 mnb.close()

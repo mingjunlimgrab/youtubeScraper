@@ -102,11 +102,14 @@ irr_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in 
 
 twentyRel = int(len(rel_featuresets) * 0.2)
 twentyIrr = int(len(irr_featuresets) * 0.2)
-train_set_save = rel_featuresets[:twentyRel] + irr_featuresets[:twentyIrr]
-test_set_save = rel_featuresets[twentyRel:] + irr_featuresets[twentyIrr:]
+train_set_save = rel_featuresets[twentyRel:] + irr_featuresets[twentyIrr:]
+test_set_save = rel_featuresets[:twentyRel] + irr_featuresets[:twentyIrr]
 
 train_set = [item[1] for item in train_set_save]
 test_set = [item[1] for item in train_set_save]
+
+train_set_save_final = [[item[0], item[1][1]] for item in train_set_save]
+test_set_save_final = [[item[0], item[1][1]] for item in test_set_save]
 
 # option 2 shuffles data without splitting
 # random.shuffle(documents)
@@ -163,8 +166,8 @@ pickle.dump(SVC_classifier, svc)
 pickle.dump(LinearSVC_classifier, lsvc)
 pickle.dump(voted_classifier, vc)
 pickle.dump(word_features, wf)
-pickle.dump(train_set_save, tr)
-pickle.dump(test_set_save, te)
+pickle.dump(train_set_save_final, tr)
+pickle.dump(test_set_save_final, te)
 
 c.close()
 mnb.close()
