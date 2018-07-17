@@ -1,9 +1,10 @@
 from nltk.tokenize import word_tokenize
+import nltk
 import pickle
 import random
 import pandas as pd
 import numpy as np
-from nltkAnalysis.VoteClassifier import VoteClassifier
+# import VoteClassifier
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -28,7 +29,7 @@ lg = open('LogisticRegression_classifier.pickle', 'rb')
 sgd = open('SGD_classifier.pickle', 'rb')
 svc = open('SVC_classifier.pickle', 'rb')
 lsvc = open('LinearSVC_classifier.pickle', 'rb')
-vc = open('VoteClassifier.pickle', 'rb')
+# vc = open('VoteClassifier.pickle', 'rb')
 wf = open('word_features.pickle', 'rb')
 tr = open('train_set.pickle', 'rb')
 te = open('test_set.pickle', 'rb')
@@ -40,7 +41,7 @@ LogisticRegression = pickle.load(lg)
 SGD_classifier = pickle.load(sgd)
 SVC_classifier = pickle.load(svc)
 LinearSVC_classifier = pickle.load(lsvc)
-vote_classifier = pickle.load(vc)
+# vote_classifier = pickle.load(vc)
 word_features = pickle.load(wf)
 train_set = pickle.load(tr)
 test_set = pickle.load(te)
@@ -100,18 +101,18 @@ def append_truth_predictor(titlesWithRelevance, classifier):
         title = thingy[0]
         cleaned = clean(title)
         d_f = document_features(cleaned)
-        featurized = {}
-        for feature in d_f:
-            if d_f[feature] == True:
-                featurized[feature] = True
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
         if len(thingy) == 3:
-            thingy[2] = classifier.classify(featurized)
+            thingy[2] = classifier.classify(d_f)
         else:
-            thingy.append(classifier.classify(featurized))
+            thingy.append(classifier.classify(d_f))
         if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
             toprint.append(thingy)
-    for item in toprint:
-        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    # for item in toprint:
+    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
@@ -148,18 +149,32 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
                      '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
                      'ride hailing company grab', 'no auto food grab mod']
 
+documents = []
+index = 0
+for item in test_set:
+    tokenize = []
+    title = dehypdeslash(item[0])
+    words = word_tokenize(title)
+    for word in words:
+        lowercase_word = word.lower()
+        if lowercase_word not in stop_words:
+            tokenize.append(lowercase_word)
+    documents.append((document_features(tokenize), item[1]))
+    index += 1
+
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
 #test_set = create_test_set('sorted_data.csv')
-# append_truth_predictor(test_set, classifier)
-# append_truth_predictor(test_set, MNB_classifier)
+print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+append_truth_predictor(test_set, classifier)
+print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
+append_truth_predictor(test_set, MNB_classifier)
 # append_truth_predictor(test_set, BernoulliNB_classifier)
 # append_truth_predictor(test_set, LogisticRegression)
 # append_truth_predictor(test_set, SGD_classifier)
 # append_truth_predictor(test_set, SVC_classifier)
-append_truth_predictor(test_set, LinearSVC_classifier)
-
+# append_truth_predictor(test_set, LinearSVC_classifier)
 
 c.close()
 mnb.close()
@@ -168,7 +183,7 @@ lg.close()
 sgd.close()
 svc.close()
 lsvc.close()
-vc.close()
+# vc.close()
 wf.close()
 tr.close()
 te.close()
