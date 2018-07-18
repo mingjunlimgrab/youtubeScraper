@@ -1,8 +1,10 @@
 from nltk.tokenize import word_tokenize
+import nltk
 import pickle
 import random
 import pandas as pd
 import numpy as np
+# import VoteClassifier
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -20,15 +22,16 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'our', 'mightn', 'only', 'so', 'under', 'other', 'their', "you'd", 'o', 'those', 'mustn', 'weren',
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
-f = open('my_classifier.pickle', 'rb')
-wf = open('word_features.pickle', 'rb')
-# tr = open('/Users/mingjun.lim/Desktop/train_set.pickle', 'rb')
-# te = open('/Users/mingjun.lim/Desktop/test_set.pickle', 'rb')
 
-classifier = pickle.load(f)
+lsvc = open('LinearSVC_classifier.pickle', 'rb')
+wf = open('word_features.pickle', 'rb')
+tr = open('train_set.pickle', 'rb')
+te = open('test_set.pickle', 'rb')
+
+LinearSVC_classifier = pickle.load(lsvc)
 word_features = pickle.load(wf)
-# train_set = pickle.load(tr)
-# test_set = pickle.load(te)
+train_set = pickle.load(tr)
+test_set = pickle.load(te)
 
 def dehypdeslash(title):
     result1 = title
@@ -57,41 +60,36 @@ def document_features(doc):
         features['contains({})'.format(word)] = (word in doc_words)
     return features
 
-def predictor(titles):
-    for title in titles:
-        cleaned = clean(title)
-        d_f = document_features(cleaned)
-        print(title + ': ' + str(classifier.classify(d_f)))
-
-def truth_predictor(titles):
-    for title in titles:
-        cleaned = clean(title)
-        d_f = document_features(cleaned)
-        featurized = {}
-        for feature in d_f:
-            if d_f[feature] == True:
-                featurized[feature] = True
-        print(title + ': ' + str(classifier.classify(featurized)))
 
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
-def append_truth_predictor(titlesWithRelevance):
+def append_truth_predictor(titlesWithRelevance, classifier):
+    print(titlesWithRelevance)
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    negatives = [item for item in titlesWithRelevance if item[1] == 0]
+    print("Positives: " + str(len(positives)))
+    print("Negatives: " + str(len(negatives)))
+
     toprint = []
     for thingy in titlesWithRelevance:
         title = thingy[0]
         cleaned = clean(title)
         d_f = document_features(cleaned)
-        featurized = {}
-        for feature in d_f:
-            if d_f[feature] == True:
-                featurized[feature] = True
-        thingy.append(classifier.classify(featurized))
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(d_f)
+        else:
+            thingy.append(classifier.classify(d_f))
         if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
             toprint.append(thingy)
     for item in toprint:
         print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
-
-
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
 def create_test_set(csvFileName): #takes in a string (the name of a file or directory)
     df = pd.read_csv(csvFileName)
@@ -117,20 +115,33 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
 
-predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'what happens when i grab my dog\'s tail',
-                     'How to grab coupons', 'Grab Mod 3.2', 'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
-                     'grab premium kuala lumpur', 'Uber Agrees to Sell Southeast Asian Operations to Rival Grab',
-                     'grab gps tutorial', 'grab driver tutorial', 'spotlight: grab dos & don\'ts', 'grabtaxi new driver training video',
-                     '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
-                     'ride hailing company grab', 'no auto food grab mod']
+documents = []
+index = 0
+for item in test_set:
+    tokenize = []
+    title = dehypdeslash(item[0])
+    words = word_tokenize(title)
+    for word in words:
+        lowercase_word = word.lower()
+        if lowercase_word not in stop_words:
+            tokenize.append(lowercase_word)
+    documents.append((document_features(tokenize), item[1]))
+    index += 1
 
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
-test_set = create_test_set('sorted_data.csv')
-append_truth_predictor(test_set)
+#test_set = create_test_set('sorted_data.csv')
+print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
+append_truth_predictor(test_set, LinearSVC_classifier)
+# append_truth_predictor(test_set, BernoulliNB_classifier)
+# append_truth_predictor(test_set, LogisticRegression)
+# append_truth_predictor(test_set, SGD_classifier)
+# append_truth_predictor(test_set, SVC_classifier)
+# append_truth_predictor(test_set, LinearSVC_classifier)
 
-f.close()
+lsvc.close()
+# vc.close()
 wf.close()
-# tr.close()
-# te.close()
+tr.close()
+te.close()
