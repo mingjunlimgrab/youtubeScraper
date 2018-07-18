@@ -22,28 +22,11 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'our', 'mightn', 'only', 'so', 'under', 'other', 'their', "you'd", 'o', 'those', 'mustn', 'weren',
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-
-=======
-c = open('my_classifier.pickle', 'rb')
-mnb = open('MNB_classifier.pickle', 'rb')
-bnb = open('BernoulliNB_classifier.pickle', 'rb')
-lg = open('LogisticRegression_classifier.pickle', 'rb')
-sgd = open('SGD_classifier.pickle', 'rb')
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
 lsvc = open('LinearSVC_classifier.pickle', 'rb')
 wf = open('word_features.pickle', 'rb')
 tr = open('train_set.pickle', 'rb')
 te = open('test_set.pickle', 'rb')
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-=======
-classifier = pickle.load(c)
-MNB_classifier = pickle.load(mnb)
-BernoulliNB_classifier = pickle.load(bnb)
-LogisticRegression = pickle.load(lg)
-SGD_classifier = pickle.load(sgd)
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
 LinearSVC_classifier = pickle.load(lsvc)
 word_features = pickle.load(wf)
 train_set = pickle.load(tr)
@@ -161,14 +144,7 @@ append_truth_predictor(test_set, LogisticRegression)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
 append_truth_predictor(test_set, LinearSVC_classifier)
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-=======
-c.close()
-mnb.close()
-bnb.close()
-lg.close()
-sgd.close()
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
+
 lsvc.close()
 # vc.close()
 wf.close()
