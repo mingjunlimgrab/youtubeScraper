@@ -126,8 +126,8 @@ def append_truth_predictor(titlesWithRelevance, classifier):
             thingy.append(classifier.classify(d_f))
         if thingy[1] != thingy[2]:
             toprint.append(thingy)
-    # for item in toprint:
-    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    for item in toprint:
+        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
@@ -157,13 +157,12 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
 
-predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'what happens when i grab my dog\'s tail',
-                     'How to grab coupons', 'Grab Mod 3.2', 'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
-                     'grab premium kuala lumpur', 'Uber Agrees to Sell Southeast Asian Operations to Rival Grab',
-                     'grab gps tutorial', 'grab driver tutorial', 'spotlight: grab dos & don\'ts', 'grabtaxi new driver training video',
-                     '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
-                     'ride hailing company grab', 'no auto food grab mod']
-
+predicting_titles = [['Man has 156 seconds to grab free stuff', 0], ['How to collect a Grab Sample', 0], ['what happens when i grab my dog\'s tail', 0],
+                     ['How to grab coupons', 0], ['Grab Mod 3.2', 1], ['What it\'s like to be a Grabcar Driver', 1], ['Grab driver mod 5.31.4', 1],
+                     ['grab premium kuala lumpur', 1], ['Uber Agrees to Sell Southeast Asian Operations to Rival Grab', 1],
+                     ['grab gps tutorial', 1], ['grab driver tutorial', 1], ['spotlight: grab dos & don\'ts', 1], ['grabtaxi new driver training video', 1],
+                     ['[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 1], ['grab thailand', 1], ['anthony tan from grabtaxi', 1], ['grab co-founder tan hooi ling', 1],
+                     ['ride hailing company grab', 1]]
 
 
 # documents = []
@@ -202,18 +201,18 @@ for thingy in test_set:
 # print("\n")
 # truth_predictor(predicting_titles)
 # #test_set = create_test_set('sorted_data.csv')
-print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-append_truth_predictor(test_set, classifier)
+# print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+# append_truth_predictor(test_title, classifier)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
 # append_truth_predictor(test_set, MNB_classifier)
 # print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
 # append_truth_predictor(test_set, BernoulliNB_classifier)
-print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-append_truth_predictor(test_set, LogisticRegression)
-print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-append_truth_predictor(test_set, SGD_classifier)
-print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-append_truth_predictor(test_set, LinearSVC_classifier)
+# print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
+# append_truth_predictor(test_title, LogisticRegression)
+# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+# append_truth_predictor(test_title, SGD_classifier)
+# print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
+# append_truth_predictor(test_title, LinearSVC_classifier)
 print("voteclassifier accuracy:", (nltk.classify.accuracy(voteclassifier, documents)))
 append_truth_predictor(test_set, voteclassifier)
 

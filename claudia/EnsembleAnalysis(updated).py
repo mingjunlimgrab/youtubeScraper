@@ -7,6 +7,7 @@ from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC
 import pickle
+import VoteClassifier as vc
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -34,6 +35,7 @@ lsvc = open('LinearSVC_classifier.pickle', 'wb')
 wf = open('word_features.pickle', 'wb')
 tr = open('train_set.pickle', 'wb')
 te = open('test_set.pickle', 'wb')
+
 
 def dehypdeslash(title):
     result1 = title
@@ -63,7 +65,8 @@ def document_features(doc):
 
 new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab app', 100), ('grab express', 100),
              ('surge pricing', 100), ('grab driver', 100), ('grab mod', 100), ('grab food', 100), ('mod grab', 100),
-             ('grab ph', 100), ('grab indonesia', 100),
+             ('grab ph', 100), ('grab indonesia', 100), ('justgrab', 100), ('grabhitch', 100), ('grabshare', 100),
+             ('grabcar', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
 
 def special_features(title):
@@ -158,6 +161,8 @@ print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, test_s
 LinearSVC_classifier = SklearnClassifier(LinearSVC()).train(train_set)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, test_set)))
 
+voteclassifier = vc.VoteClassifier(classifier, LogisticRegression, SGD_classifier)
+
 # voted_classifier = VoteClassifier(classifier,
 #                                   #MNB_classifier,
 #                                   #BernoulliNB_classifier,
@@ -166,6 +171,8 @@ print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classi
 #                                   #SVC_classifier,
 #                                   LinearSVC_classifier)
 # print("voted_classifier accuracy:", (nltk.classify.accuracy(voted_classifier, test_set)))
+
+print("voteclassifier accuracy:", (nltk.classify.accuracy(voteclassifier, test_set)))
 
 # for loading in data
 pickle.dump(classifier, c)
