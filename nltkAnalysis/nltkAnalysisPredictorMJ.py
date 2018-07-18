@@ -22,29 +22,26 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'our', 'mightn', 'only', 'so', 'under', 'other', 'their', "you'd", 'o', 'those', 'mustn', 'weren',
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-
-=======
 c = open('my_classifier.pickle', 'rb')
 mnb = open('MNB_classifier.pickle', 'rb')
 bnb = open('BernoulliNB_classifier.pickle', 'rb')
 lg = open('LogisticRegression_classifier.pickle', 'rb')
 sgd = open('SGD_classifier.pickle', 'rb')
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
+svc = open('SVC_classifier.pickle', 'rb')
 lsvc = open('LinearSVC_classifier.pickle', 'rb')
+# vc = open('VoteClassifier.pickle', 'rb')
 wf = open('word_features.pickle', 'rb')
 tr = open('train_set.pickle', 'rb')
 te = open('test_set.pickle', 'rb')
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-=======
 classifier = pickle.load(c)
 MNB_classifier = pickle.load(mnb)
 BernoulliNB_classifier = pickle.load(bnb)
 LogisticRegression = pickle.load(lg)
 SGD_classifier = pickle.load(sgd)
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
+SVC_classifier = pickle.load(svc)
 LinearSVC_classifier = pickle.load(lsvc)
+# vote_classifier = pickle.load(vc)
 word_features = pickle.load(wf)
 train_set = pickle.load(tr)
 test_set = pickle.load(te)
@@ -76,6 +73,21 @@ def document_features(doc):
         features['contains({})'.format(word)] = (word in doc_words)
     return features
 
+def predictor(titles):
+    for title in titles:
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        print(title + ': ' + str(vote_classifier.classify(d_f)))
+
+def truth_predictor(titles):
+    for title in titles:
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        featurized = {}
+        for feature in d_f:
+            if d_f[feature] == True:
+                featurized[feature] = True
+        print(title + ': ' + str(vote_classifier.classify(featurized)))
 
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
 def append_truth_predictor(titlesWithRelevance, classifier):
@@ -131,6 +143,13 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
 
+predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'what happens when i grab my dog\'s tail',
+                     'How to grab coupons', 'Grab Mod 3.2', 'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
+                     'grab premium kuala lumpur', 'Uber Agrees to Sell Southeast Asian Operations to Rival Grab',
+                     'grab gps tutorial', 'grab driver tutorial', 'spotlight: grab dos & don\'ts', 'grabtaxi new driver training video',
+                     '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
+                     'ride hailing company grab', 'no auto food grab mod']
+
 documents = []
 index = 0
 for item in test_set:
@@ -148,27 +167,20 @@ for item in test_set:
 # print("\n")
 # truth_predictor(predicting_titles)
 #test_set = create_test_set('sorted_data.csv')
-# print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-# append_truth_predictor(test_set, classifier)
-# print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
-# append_truth_predictor(test_set, MNB_classifier)
-# print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
-# append_truth_predictor(test_set, BernoulliNB_classifier)
-print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-append_truth_predictor(test_set, LogisticRegression)
-# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-# append_truth_predictor(test_set, SGD_classifier)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
 append_truth_predictor(test_set, LinearSVC_classifier)
+# append_truth_predictor(test_set, BernoulliNB_classifier)
+# append_truth_predictor(test_set, LogisticRegression)
+# append_truth_predictor(test_set, SGD_classifier)
+# append_truth_predictor(test_set, SVC_classifier)
+# append_truth_predictor(test_set, LinearSVC_classifier)
 
-<<<<<<< HEAD:nltkAnalysis/LinearSVCPredictor.py
-=======
 c.close()
 mnb.close()
 bnb.close()
 lg.close()
 sgd.close()
->>>>>>> 0dd45798edc4423f2be28e1f40f0dee624e5d7bc:nltkAnalysis/nltkAnalysisPredictorMJ.py
+svc.close()
 lsvc.close()
 # vc.close()
 wf.close()
