@@ -279,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LinearSVCAnalysis">
+  <component name="RunManager" selected="Python.nltkAnalysisPredictorMJ">
     <configuration name="EnsembleAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="youtubeScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -381,9 +381,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nltkAnalysisPredictorMJ" />
         <item itemvalue="Python.LinearSVCAnalysis" />
         <item itemvalue="Python.LinearSVCPredictor" />
-        <item itemvalue="Python.nltkAnalysisPredictorMJ" />
         <item itemvalue="Python.EnsembleAnalysis" />
         <item itemvalue="Python.mjRelevanceWriter" />
       </list>
