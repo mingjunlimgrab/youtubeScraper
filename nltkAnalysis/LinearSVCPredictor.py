@@ -127,6 +127,32 @@ for item in test_set:
     documents.append((document_features(tokenize), item[1]))
     index += 1
 
+def positive_append(titlesWithRelevance, classifier):
+    print(titlesWithRelevance)
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    print("Positives: " + str(len(positives)))
+
+    toprint = []
+    for thingy in positives:
+        title = thingy[0]
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(d_f)
+        else:
+            thingy.append(classifier.classify(d_f))
+        if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
+            toprint.append(thingy)
+    for item in toprint:
+        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
@@ -137,12 +163,12 @@ for item in test_set:
 # append_truth_predictor(test_set, MNB_classifier)
 # print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
 # append_truth_predictor(test_set, BernoulliNB_classifier)
-print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-append_truth_predictor(test_set, LogisticRegression)
-# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+# print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
+# append_truth_predictor(test_set, LogisticRegression)
+# # print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
 # append_truth_predictor(test_set, SGD_classifier)
 print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-append_truth_predictor(test_set, LinearSVC_classifier)
+positive_append(test_set, LinearSVC_classifier)
 
 
 lsvc.close()

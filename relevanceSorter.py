@@ -2,8 +2,8 @@ import pandas as pd
 import webbrowser
 import csv
 
-fileToRead = 'autoTested2.csv'
-fileToWrite = 'autoTestedSorted2.csv'
+fileToRead = 'nltkAnalysis/sorted_data.csv'
+fileToWrite = 'recycle.csv'
 
 df = pd.read_csv(fileToRead)
 

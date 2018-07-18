@@ -4,7 +4,7 @@ import pandas as pd
 from mjutils import flagger, grabCheck
 
 # opening compiled test file from index 2k onwards
-df = pd.read_csv("/Users/claudia.seow/PycharmProjects/new/sorted2konwards.csv")
+df = pd.read_csv("nltkAnalysis/sorted_data.csv")
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",

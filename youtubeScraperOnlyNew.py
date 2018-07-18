@@ -26,9 +26,9 @@ num_pages = 20
 results_per_page = 50
 
 time_delta = 15 # Days between each search frame
-periods = 240 # Total time searched = periods * time_delta days before today's date.
+periods = 48 # Total time searched = periods * time_delta days before today's date.
 
-writeFile = 'rawVideoData/grab3.csv'
+writeFile = 'rawVideoData/grab4.csv'
 readFile = 'rawVideoData/grab.csv'
 # Modifyable search parameters (CHANGE ME)
 

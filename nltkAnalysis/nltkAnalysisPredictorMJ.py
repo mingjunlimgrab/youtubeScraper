@@ -92,8 +92,8 @@ def truth_predictor(titles):
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
 def append_truth_predictor(titlesWithRelevance, classifier):
     print(titlesWithRelevance)
-    positives = [item for item in titlesWithRelevance if item[1] == 1]
-    negatives = [item for item in titlesWithRelevance if item[1] == 0]
+    positives = [item for item in titlesWithRelevance if item[1] == '1']
+    negatives = [item for item in titlesWithRelevance if item[1] == '0']
     print("Positives: " + str(len(positives)))
     print("Negatives: " + str(len(negatives)))
 
@@ -110,12 +110,12 @@ def append_truth_predictor(titlesWithRelevance, classifier):
             thingy[2] = classifier.classify(d_f)
         else:
             thingy.append(classifier.classify(d_f))
-        if np.asscalar(thingy[1]) != np.asscalar(thingy[2]):
+        if thingy[1] != thingy[2]:
             toprint.append(thingy)
-    for item in toprint:
-        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    # for item in toprint:
+    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
-    false_negatives = [item for item in toprint if item[1] == 1]
+    false_negatives = [item for item in toprint if item[1] == '1']
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
@@ -143,6 +143,33 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
 
+def positive_append(titlesWithRelevance, classifier, printt=False):
+    # print(titlesWithRelevance)
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    print("Positives: " + str(len(positives)))
+
+    toprint = []
+    for thingy in positives:
+        title = thingy[0]
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(d_f)
+        else:
+            thingy.append(classifier.classify(d_f))
+        if int(thingy[1]) != int(thingy[2]):
+            toprint.append(thingy)
+    if print:
+        for item in toprint:
+            print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+
 predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a Grab Sample', 'what happens when i grab my dog\'s tail',
                      'How to grab coupons', 'Grab Mod 3.2', 'What it\'s like to be a Grabcar Driver', 'Grab driver mod 5.31.4',
                      'grab premium kuala lumpur', 'Uber Agrees to Sell Southeast Asian Operations to Rival Grab',
@@ -150,30 +177,45 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
                      '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
                      'ride hailing company grab', 'no auto food grab mod']
 
-documents = []
-index = 0
-for item in test_set:
-    tokenize = []
-    title = dehypdeslash(item[0])
-    words = word_tokenize(title)
-    for word in words:
-        lowercase_word = word.lower()
-        if lowercase_word not in stop_words:
-            tokenize.append(lowercase_word)
-    documents.append((document_features(tokenize), item[1]))
-    index += 1
+def documents_maker(positive= False):
+    documents = []
+    index = 0
+    for item in test_set:
+        if positive:
+            if item[1] == 1:
+                tokenize = []
+                title = dehypdeslash(item[0])
+                words = word_tokenize(title)
+                for word in words:
+                    lowercase_word = word.lower()
+                    if lowercase_word not in stop_words:
+                        tokenize.append(lowercase_word)
+                documents.append((document_features(tokenize), item[1]))
+                index += 1
+        else:
+            tokenize = []
+            title = dehypdeslash(item[0])
+            words = word_tokenize(title)
+            for word in words:
+                lowercase_word = word.lower()
+                if lowercase_word not in stop_words:
+                    tokenize.append(lowercase_word)
+            documents.append((document_features(tokenize), item[1]))
+            index += 1
+    return documents
 
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
 #test_set = create_test_set('sorted_data.csv')
-print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-append_truth_predictor(test_set, LinearSVC_classifier)
-# append_truth_predictor(test_set, BernoulliNB_classifier)
-# append_truth_predictor(test_set, LogisticRegression)
-# append_truth_predictor(test_set, SGD_classifier)
-# append_truth_predictor(test_set, SVC_classifier)
-# append_truth_predictor(test_set, LinearSVC_classifier)
+documents = documents_maker(positive=True)
+print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+# positive_append(test_set, classifier, printt=True)
+# positive_append(test_set, BernoulliNB_classifier)
+# positive_append(test_set, LogisticRegression)
+positive_append(test_set, SGD_classifier, printt=True)
+# positive_append(test_set, SVC_classifier)
+# positive_append(test_set, LinearSVC_classifier)
 
 c.close()
 mnb.close()
