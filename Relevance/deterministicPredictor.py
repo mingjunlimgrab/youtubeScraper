@@ -1,11 +1,8 @@
 from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 import pandas as pd
-import nltk
-import random
-from mjutils import dehypdeslash, flagger, grabCheck
 
-df = pd.read_csv("mj2000plus.csv")
+# opening compiled test file from index 2k onwards
+df = pd.read_csv("nltkAnalysis/sorted_data.csv")
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -24,15 +21,25 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no'}
 
 FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', 'mall grab', 'grab lab', 'boob',
-        'cash grab', 'ass grab', 'gta', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite',
-        'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn'}
+        'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite',
+        'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn', 'battle camp'}
 
-SCORE_DICT = {'grabcar': 5, 'grabbike': 5, 'grabcycle': 5, 'grabfood': 5, 'grabtaxi':5, 'grabshuttle': 5,
-'grabexpress':5, 'grabpay':5, 'justgrab':5, 'grab':2, 'uber':4, 'GOJEK': 4, 'ryde':4, 'mod': 3, 'driver': 4, 'drivers': 4, 'app': 3, 'car': 3, 'taxi': 4, 'job': 4, 'version': 2, 'delivery': 2,
+SCORE_DICT = {'grabcar': 5, 'grabbike': 5, 'grabcycle': 5, 'grabfood': 5, 'grabtaxi': 5, 'grabshuttle': 5, 'grabshare' : 5,
+'grabexpress': 5, 'grabpay': 5, 'justgrab': 5, 'grabmod':5, 'grab experience': 5, 'grab':2, 'uber':4, 'GOJEK': 4, 'ryde':4, 'mod': 3, 'driver': 4, 'drivers': 4, 'app': 3, 'car': 3, 'taxi': 4, 'job': 4, 'version': 2, 'delivery': 2,
 'private': 1, 'hire': 2, 'singapore': 3, 'sg':3, 'malaysia':3, 'vietnam':2, 'vn': 2, 'philippines': 2, 'ph': 2, 'kuala':1, 'lumpur':1, 'promo':3, 'premium': 2,
 'passenger': 4, 'bike': 4, 'gps': 3, 'spoof':3, 'hack':2, 'fake':2, 'rider': 4, 'cancel':3, 'cancellation':3, 'AR':3, 'pick': 2, 'order': 2, 'tutorial':1, 'tute':1, 'install':1, 'whatsapp': 3,
 'download': 1, 'softban': 4, 'ban':3, 'banned':3, 'root': 3, 'booking':4, 'book':3, 'southeast': 3, 'asia':3, 'bypass':2, 'modification': 3, 'malaysian': 3, 'singaporean': 3, 'acceptance': 2, 'rate': 1, 'destination': 2
 }
+
+def dehypdeslash(title):
+    result1 = title
+    if '-' in result1:
+        result1 = title.split('-')
+        result1 = ' '.join(result1)
+    if '/' in result1:
+        result1 = result1.split('/')
+        result1 = ' '.join(result1)
+    return result1
 
 def algorithm(args):
     if len(args)==0:
@@ -51,32 +58,62 @@ def algorithm(args):
         return 10
     else:
         return val
-numFlagged = 0
+
+def collector(tokenized):
+    keywords = {}
+    for w in tokenized:
+        if w in SCORE_DICT.keys():
+            keywords[w] = SCORE_DICT[w]
+    new_keywords = sorted(keywords, key=lambda x: keywords[x], reverse=True)
+    final_keywords = {}
+    for item in new_keywords:
+        final_keywords[item] = keywords[item]
+    args = []
+    for i in final_keywords.values():
+        args.append(i)
+    return args
+
+# threshold needs to be changed
+def relevance(val):
+    if val >= 8.0:
+        return 1
+    return 0
+
+set = {'correct': 0, 'wrong': 0}
+errors = []
+index = 0
 for title in df['title']:
     tokenized = []
     title = dehypdeslash(title)
     words = word_tokenize(title)
     for word in words:
-        if word not in stop_words:
-            tokenized.append(word.lower())
-    fullString = ' '.join(tokenized)
-    fleg = flagger(fullString, FLAG) and grabCheck(fullString)
-    keywords = {}
-    if fleg:
-        for w in tokenized:
-            if w in SCORE_DICT.keys():
-                keywords[w]=SCORE_DICT[w]
-        new_keywords = sorted(keywords, key=lambda x: keywords[x], reverse=True)
-        final_keywords = {}
-        for item in new_keywords:
-            final_keywords[item] = keywords[item]
-        args = []
-        for i in final_keywords.values():
-            args.append(i)
-        print(title + '  ' + str(algorithm(args)))
-    else:
-        #print(title + '  ' + '0 -- FLAGGED')
-        numFlagged += 1
+        lowercase_word = word.lower()
+        if lowercase_word not in stop_words:
+            tokenized.append(lowercase_word)
 
-print('NumVideos = ' + str(len (df['title'])))
-print('NumFlagged = ' + str(numFlagged))
+    args = collector(tokenized)
+    value = algorithm(args)
+    predict = relevance(value)
+    actual = int(df['relevance'][index])
+
+    if predict == actual:
+        set['correct'] += 1
+    else:
+        set['wrong'] += 1
+        errors.append([title, value, predict, actual])
+
+    index += 1
+
+def accuracy(set):
+    cor = set['correct']
+    wro = set['wrong']
+    ttl = cor + wro
+    percentage = cor / ttl
+    print(percentage)
+
+accuracy(set)
+errors.sort(key=lambda x: x[3], reverse = True)
+print(len(errors))
+
+for item in errors:
+    print(item)

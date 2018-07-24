@@ -3,7 +3,7 @@ import certifi
 import json
 import pandas as pd
 import emoji
-import rfc3339
+from Scraping import rfc3339
 import datetime
 from urllib.parse import quote_plus
 

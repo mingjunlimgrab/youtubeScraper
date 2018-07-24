@@ -3,8 +3,7 @@ import nltk
 import pickle
 import random
 import pandas as pd
-import numpy as np
-import VoteClassifier as vc
+from Relevance import VoteClassifier as vc
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -25,7 +24,8 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
 
 new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab app', 100), ('grab express', 100),
              ('surge pricing', 100), ('grab driver', 100), ('grab mod', 100), ('grab food', 100), ('mod grab', 100),
-             ('grab ph', 100), ('grab indonesia', 100),
+             ('grab ph', 100), ('grab indonesia', 100), ('justgrab', 100), ('grabhitch', 100), ('grabshare', 100),
+             ('grabcar', 100), ('grabbike', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
 
 c = open('my_classifier.pickle', 'rb')
@@ -48,7 +48,7 @@ word_features = pickle.load(wf)
 train_set = pickle.load(tr)
 test_set = pickle.load(te)
 
-voteclassifier = vc.VoteClassifier(classifier, LogisticRegression, SGD_classifier)
+vote_classifier = vc.VoteClassifier(classifier, LogisticRegression, SGD_classifier)
 
 def dehypdeslash(title):
     result1 = title
@@ -126,8 +126,8 @@ def append_truth_predictor(titlesWithRelevance, classifier):
             thingy.append(classifier.classify(d_f))
         if thingy[1] != thingy[2]:
             toprint.append(thingy)
-    for item in toprint:
-        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+    # for item in toprint:
+    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
@@ -156,6 +156,33 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     print(len(irr[eightyPercentIrr:]))
     test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
     return test_set
+
+def positive_append(titlesWithRelevance, classifier, printt=False):
+    # print(titlesWithRelevance)
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    print("Positives: " + str(len(positives)))
+
+    toprint = []
+    for thingy in positives:
+        title = thingy[0]
+        cleaned = clean(title)
+        d_f = document_features(cleaned)
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(d_f)
+        else:
+            thingy.append(classifier.classify(d_f))
+        if int(thingy[1]) != int(thingy[2]):
+            toprint.append(thingy)
+    if printt:
+        for item in toprint:
+            print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
 
 predicting_titles = [['Man has 156 seconds to grab free stuff', 0], ['How to collect a Grab Sample', 0], ['what happens when i grab my dog\'s tail', 0],
                      ['How to grab coupons', 0], ['Grab Mod 3.2', 1], ['What it\'s like to be a Grabcar Driver', 1], ['Grab driver mod 5.31.4', 1],
@@ -197,24 +224,52 @@ for thingy in test_set:
     documents.append((d_f, thingy[1]))
     index += 1
 
+def documents_maker(positive= False):
+    documents = []
+    index = 0
+    for item in test_set:
+        if positive:
+            if item[1] == 1:
+                tokenize = []
+                title = dehypdeslash(item[0])
+                words = word_tokenize(title)
+                for word in words:
+                    lowercase_word = word.lower()
+                    if lowercase_word not in stop_words:
+                        tokenize.append(lowercase_word)
+                documents.append((document_features(tokenize), item[1]))
+                index += 1
+        else:
+            tokenize = []
+            title = dehypdeslash(item[0])
+            words = word_tokenize(title)
+            for word in words:
+                lowercase_word = word.lower()
+                if lowercase_word not in stop_words:
+                    tokenize.append(lowercase_word)
+            documents.append((document_features(tokenize), item[1]))
+            index += 1
+    return documents
+
+documents = documents_maker(True)
 # predictor(predicting_titles)
 # print("\n")
 # truth_predictor(predicting_titles)
 # #test_set = create_test_set('sorted_data.csv')
-# print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-# append_truth_predictor(test_title, classifier)
+print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+positive_append(test_set, classifier)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
 # append_truth_predictor(test_set, MNB_classifier)
 # print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
 # append_truth_predictor(test_set, BernoulliNB_classifier)
-# print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-# append_truth_predictor(test_title, LogisticRegression)
-# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-# append_truth_predictor(test_title, SGD_classifier)
+print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
+positive_append(test_set, LogisticRegression)
+print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+positive_append(test_set, SGD_classifier)
 # print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-# append_truth_predictor(test_title, LinearSVC_classifier)
-print("voteclassifier accuracy:", (nltk.classify.accuracy(voteclassifier, documents)))
-append_truth_predictor(test_set, voteclassifier)
+# append_truth_predictor(test_set, LinearSVC_classifier)
+print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
+positive_append(test_set, vote_classifier)
 
 c.close()
 mnb.close()
@@ -222,7 +277,6 @@ bnb.close()
 lg.close()
 sgd.close()
 lsvc.close()
-# vc.close()
 wf.close()
 tr.close()
 te.close()
