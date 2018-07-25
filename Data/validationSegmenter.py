@@ -34,7 +34,7 @@ for index in range(len(df['title'])):
         zero_video_id.append(df['video_id'][index])
         zero_title.append(df['title'][index])
         zero_description.append(df['description'][index])
-        zero_relevance.append(df['relevance'][index])
+        zero_relevance.append(0)
 
 test_published_at = []
 test_video_id = []

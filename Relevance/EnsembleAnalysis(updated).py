@@ -26,15 +26,15 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no',
               "'", '!', '?'}
 
-c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'rb')
-mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/MNB_classifier.pickle', 'rb')
-bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/BernoulliNB_classifier.pickle', 'rb')
-lg = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LogisticRegression_classifier.pickle', 'rb')
-sgd = open('/Users/mingjun.lim/Documents//youtubeScraper/pickles/SGD_classifier.pickle', 'rb')
-lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LinearSVC_classifier.pickle', 'rb')
-tr = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/train_set.pickle', 'rb')
-te = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/test_set.pickle', 'rb')
-wf = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/word_features.pickle', 'rb')
+c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'wb')
+mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/MNB_classifier.pickle', 'wb')
+bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/BernoulliNB_classifier.pickle', 'wb')
+lg = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LogisticRegression_classifier.pickle', 'wb')
+sgd = open('/Users/mingjun.lim/Documents//youtubeScraper/Pickles/SGD_classifier.pickle', 'wb')
+lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LinearSVC_classifier.pickle', 'wb')
+tr = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/train_set.pickle', 'wb')
+te = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/test_set.pickle', 'wb')
+wf = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/word_features.pickle', 'wb')
 
 
 def dehypdeslash(title):
