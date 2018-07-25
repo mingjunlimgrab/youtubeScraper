@@ -28,6 +28,8 @@ new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab ap
              ('grabcar', 100), ('grabbike', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
 
+deterministic = ['grab mod', 'grabcar', 'grabbike']
+
 c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'rb')
 mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/MNB_classifier.pickle', 'rb')
 bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/BernoulliNB_classifier.pickle', 'rb')
@@ -158,6 +160,46 @@ def append_truth_predictor(titlesWithRelevance, classifier):
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
+def checker(title):
+    for word in deterministic:
+        if word in title:
+            return True
+    return False
+
+def NB_deterministic_predictor(titlesWithRelevance, classifier):
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    negatives = [item for item in titlesWithRelevance if item[1] == 0]
+    print("Positives: " + str(len(positives)))
+    print("Negatives: " + str(len(negatives)))
+
+    toprint = []
+    for thingy in titlesWithRelevance:
+        title = thingy[0]
+        title = dehypdeslash(title)
+        if checker(title.lower()):
+            if len(thingy) == 3:
+                thingy[2] = 1
+            else:
+                thingy.append(1)
+            continue
+        toke = special_features(title)
+        cleaned = clean(title)
+        for item in toke:
+            cleaned.append(item)
+        d_f = document_features(cleaned)
+        if len(thingy) == 3:
+            thingy[2] = classifier.classify(d_f)
+        else:
+            thingy.append(classifier.classify(d_f))
+        if thingy[1] != thingy[2]:
+            toprint.append(thingy)
+    for item in toprint:
+        print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
+
 def positive_append(titlesWithRelevance, classifier, printt=False):
     # print(titlesWithRelevance)
     positives = [item for item in titlesWithRelevance if item[1] == 1]
@@ -167,15 +209,17 @@ def positive_append(titlesWithRelevance, classifier, printt=False):
     for thingy in positives:
         title = thingy[0]
         title = dehypdeslash(title)
+        if checker(title.lower()):
+            if len(thingy) == 3:
+                thingy[2] = 1
+            else:
+                thingy.append(1)
+            continue
         toke = special_features(title)
         cleaned = clean(title)
         for item in toke:
             cleaned.append(item)
         d_f = document_features(cleaned)
-        # featurized = {}
-        # for feature in d_f:
-        #     if d_f[feature] == True:
-        #         featurized[feature] = True
         if len(thingy) == 3:
             thingy[2] = classifier.classify(d_f)
         else:
@@ -258,7 +302,8 @@ documents = documents_maker(True)
 # print("\n")
 # truth_predictor(predicting_titles)
 # #test_set = create_test_set('sorted_data.csv')
-print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+# print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+NB_deterministic_predictor(test_set, classifier)
 positive_append(test_set, classifier, True)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
 # append_truth_predictor(test_set, MNB_classifier)
