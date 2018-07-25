@@ -28,7 +28,7 @@ new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab ap
              ('grabcar', 100), ('grabbike', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
 
-deterministic = ['grab mod', 'grabcar', 'grabbike']
+deterministic = ['grab mod', 'mod grab', 'grabmod', 'grabcar', 'grabbike']
 
 c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'rb')
 mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/MNB_classifier.pickle', 'rb')
