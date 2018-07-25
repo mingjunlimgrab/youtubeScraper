@@ -28,15 +28,15 @@ new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab ap
              ('grabcar', 100), ('grabbike', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
 
-c = open('my_classifier.pickle', 'rb')
-mnb = open('MNB_classifier.pickle', 'rb')
-bnb = open('BernoulliNB_classifier.pickle', 'rb')
-lg = open('LogisticRegression_classifier.pickle', 'rb')
-sgd = open('SGD_classifier.pickle', 'rb')
-lsvc = open('LinearSVC_classifier.pickle', 'rb')
-wf = open('word_features.pickle', 'rb')
-tr = open('train_set.pickle', 'rb')
-te = open('test_set.pickle', 'rb')
+c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'rb')
+mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/MNB_classifier.pickle', 'rb')
+bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/BernoulliNB_classifier.pickle', 'rb')
+lg = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LogisticRegression_classifier.pickle', 'rb')
+sgd = open('/Users/mingjun.lim/Documents//youtubeScraper/pickles/SGD_classifier.pickle', 'rb')
+lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LinearSVC_classifier.pickle', 'rb')
+te = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/test_set.pickle', 'rb')
+tr = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/train_set.pickle', 'rb')
+wf = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/word_features.pickle', 'rb')
 
 classifier = pickle.load(c)
 MNB_classifier = pickle.load(mnb)
@@ -100,6 +100,31 @@ def truth_predictor(titles):
                 featurized[feature] = True
         print(title + ': ' + str(vote_classifier.classify(featurized)))
 
+
+def create_test_set(csvFileName): #takes in a string (the name of a file or directory)
+    df = pd.read_csv(csvFileName)
+    documents = []
+    lib = []
+    index = 0
+    for title in df['title']:
+        documents.append([title, df['relevance'][index]])
+        index += 1
+    rel = []
+    irr = []
+    for item in documents:
+        if item[1] == 1:
+            rel.append(item)
+        else:
+            irr.append(item)
+    random.shuffle(rel)
+    random.shuffle(irr)
+    eightyPercentRel = int(len(rel) * 0.8)
+    eightyPercentIrr = int(len(irr) * 0.8)
+    print(len(rel[eightyPercentRel:]))
+    print(len(irr[eightyPercentIrr:]))
+    test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
+    return test_set
+
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
 def append_truth_predictor(titlesWithRelevance, classifier):
     positives = [item for item in titlesWithRelevance if item[1] == 1]
@@ -133,30 +158,6 @@ def append_truth_predictor(titlesWithRelevance, classifier):
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
-def create_test_set(csvFileName): #takes in a string (the name of a file or directory)
-    df = pd.read_csv(csvFileName)
-    documents = []
-    lib = []
-    index = 0
-    for title in df['title']:
-        documents.append([title, df['relevance'][index]])
-        index += 1
-    rel = []
-    irr = []
-    for item in documents:
-        if item[1] == 1:
-            rel.append(item)
-        else:
-            irr.append(item)
-    random.shuffle(rel)
-    random.shuffle(irr)
-    eightyPercentRel = int(len(rel) * 0.8)
-    eightyPercentIrr = int(len(irr) * 0.8)
-    print(len(rel[eightyPercentRel:]))
-    print(len(irr[eightyPercentIrr:]))
-    test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
-    return test_set
-
 def positive_append(titlesWithRelevance, classifier, printt=False):
     # print(titlesWithRelevance)
     positives = [item for item in titlesWithRelevance if item[1] == 1]
@@ -165,7 +166,11 @@ def positive_append(titlesWithRelevance, classifier, printt=False):
     toprint = []
     for thingy in positives:
         title = thingy[0]
+        title = dehypdeslash(title)
+        toke = special_features(title)
         cleaned = clean(title)
+        for item in toke:
+            cleaned.append(item)
         d_f = document_features(cleaned)
         # featurized = {}
         # for feature in d_f:
@@ -229,25 +234,22 @@ def documents_maker(positive= False):
     index = 0
     for item in test_set:
         if positive:
-            if item[1] == 1:
-                tokenize = []
+            if item[1] == 1 or item[1] == '1':
                 title = dehypdeslash(item[0])
-                words = word_tokenize(title)
-                for word in words:
-                    lowercase_word = word.lower()
-                    if lowercase_word not in stop_words:
-                        tokenize.append(lowercase_word)
-                documents.append((document_features(tokenize), item[1]))
+                toke = special_features(title)
+                cleaned = clean(title)
+                for itemz in toke:
+                    cleaned.append(itemz)
+                documents.append((document_features(cleaned), item[1]))
                 index += 1
         else:
             tokenize = []
             title = dehypdeslash(item[0])
-            words = word_tokenize(title)
-            for word in words:
-                lowercase_word = word.lower()
-                if lowercase_word not in stop_words:
-                    tokenize.append(lowercase_word)
-            documents.append((document_features(tokenize), item[1]))
+            toke = special_features(title)
+            cleaned = clean(title)
+            for itemz in toke:
+                cleaned.append(itemz)
+            documents.append((document_features(cleaned), item[1]))
             index += 1
     return documents
 
@@ -257,19 +259,19 @@ documents = documents_maker(True)
 # truth_predictor(predicting_titles)
 # #test_set = create_test_set('sorted_data.csv')
 print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-positive_append(test_set, classifier)
+positive_append(test_set, classifier, True)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
 # append_truth_predictor(test_set, MNB_classifier)
 # print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
 # append_truth_predictor(test_set, BernoulliNB_classifier)
-print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-positive_append(test_set, LogisticRegression)
-print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-positive_append(test_set, SGD_classifier)
-# print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-# append_truth_predictor(test_set, LinearSVC_classifier)
-print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
-positive_append(test_set, vote_classifier)
+# print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
+# positive_append(test_set, LogisticRegression)
+# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+# positive_append(test_set, SGD_classifier)
+# # print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
+# # append_truth_predictor(test_set, LinearSVC_classifier)
+# print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
+# positive_append(test_set, vote_classifier)
 
 c.close()
 mnb.close()
