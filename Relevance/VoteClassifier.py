@@ -78,6 +78,9 @@ class VoteClassifier(ClassifierI):
                 v = 1
             elif result == [0,0,0]:
                 v = 0
+            else:
+                v = 0
+                print('Something went wrong')
         return v
 
 

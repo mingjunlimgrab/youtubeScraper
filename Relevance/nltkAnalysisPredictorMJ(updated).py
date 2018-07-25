@@ -111,20 +111,7 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     for title in df['title']:
         documents.append([title, df['relevance'][index]])
         index += 1
-    rel = []
-    irr = []
-    for item in documents:
-        if item[1] == 1:
-            rel.append(item)
-        else:
-            irr.append(item)
-    random.shuffle(rel)
-    random.shuffle(irr)
-    eightyPercentRel = int(len(rel) * 0.8)
-    eightyPercentIrr = int(len(irr) * 0.8)
-    print(len(rel[eightyPercentRel:]))
-    print(len(irr[eightyPercentIrr:]))
-    test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
+    test_set = documents
     return test_set
 
 # Takes in a list of lists [[Title, relevance], [Title, relevance], ...] and appends true classification to the end of each list
@@ -296,6 +283,10 @@ def documents_maker(positive= False):
             documents.append((document_features(cleaned), item[1]))
             index += 1
     return documents
+
+########## UNCOMMENT ME TO USE THE REAL TEST SET #######################
+test_set = create_test_set('/Users/mingjun.lim/Documents/youtubeScraper/Data/test_data.csv')
+####### 'test_set' otherwise refers to pickled validation set ######
 
 documents = documents_maker(True)
 # predictor(predicting_titles)

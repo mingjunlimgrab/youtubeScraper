@@ -32,8 +32,8 @@ bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/BernoulliNB_clas
 lg = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LogisticRegression_classifier.pickle', 'rb')
 sgd = open('/Users/mingjun.lim/Documents//youtubeScraper/pickles/SGD_classifier.pickle', 'rb')
 lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LinearSVC_classifier.pickle', 'rb')
-te = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/train_set.pickle', 'rb')
-tr = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/test_set.pickle', 'rb')
+tr = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/train_set.pickle', 'rb')
+te = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/test_set.pickle', 'rb')
 wf = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/word_features.pickle', 'rb')
 
 
@@ -78,7 +78,7 @@ def special_features(title):
             toke.append(item[0])
     return toke
 
-df = pd.read_csv("/Users/mingjun.lim/Documents/youtubeScraper/Data/sorted_data.csv")
+df = pd.read_csv("/Users/mingjun.lim/Documents/youtubeScraper/Data/validtrainData.csv")
 
 documents = []
 lib = []
