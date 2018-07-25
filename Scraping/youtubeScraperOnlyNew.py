@@ -28,8 +28,8 @@ results_per_page = 50
 time_delta = 15 # Days between each search frame
 periods = 48 # Total time searched = periods * time_delta days before today's date.
 
-writeFile = 'rawVideoData/grab4.csv'
-readFile = 'rawVideoData/grab.csv'
+writeFile = '/Users/mingjun.lim/Documents/youtubeScraper/Data/rawVideoData/validationBatch2.csv'
+readFile = '/Users/mingjun.lim/Documents/youtubeScraper/Data/rawVideoData/grab.csv'
 # Modifyable search parameters (CHANGE ME)
 
 # Load existing DataFrame (named test.csv). If unable to find, start from scratch.

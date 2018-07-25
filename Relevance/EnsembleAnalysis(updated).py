@@ -7,7 +7,7 @@ from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, LinearSVC
 import pickle
-import VoteClassifier as vc
+from Relevance import VoteClassifier as vc
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -26,15 +26,15 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no',
               "'", '!', '?'}
 
-c = open('my_classifier.pickle', 'wb')
-mnb = open('MNB_classifier.pickle', 'wb')
-bnb = open('BernoulliNB_classifier.pickle', 'wb')
-lg = open('LogisticRegression_classifier.pickle', 'wb')
-sgd = open('SGD_classifier.pickle', 'wb')
-lsvc = open('LinearSVC_classifier.pickle', 'wb')
-wf = open('word_features.pickle', 'wb')
-tr = open('train_set.pickle', 'wb')
-te = open('test_set.pickle', 'wb')
+c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier.pickle', 'rb')
+mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/MNB_classifier.pickle', 'rb')
+bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/BernoulliNB_classifier.pickle', 'rb')
+lg = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LogisticRegression_classifier.pickle', 'rb')
+sgd = open('/Users/mingjun.lim/Documents//youtubeScraper/pickles/SGD_classifier.pickle', 'rb')
+lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/LinearSVC_classifier.pickle', 'rb')
+te = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/train_set.pickle', 'rb')
+tr = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/test_set.pickle', 'rb')
+wf = open('/Users/mingjun.lim/Documents/youtubeScraper/pickles/word_features.pickle', 'rb')
 
 
 def dehypdeslash(title):
@@ -78,7 +78,7 @@ def special_features(title):
             toke.append(item[0])
     return toke
 
-df = pd.read_csv("sorted_data.csv")
+df = pd.read_csv("/Users/mingjun.lim/Documents/youtubeScraper/Data/sorted_data.csv")
 
 documents = []
 lib = []

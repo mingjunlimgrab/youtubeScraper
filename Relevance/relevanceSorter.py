@@ -1,9 +1,9 @@
 import pandas as pd
 import webbrowser
 import csv
-
-fileToRead = 'nltkAnalysis/sorted_data.csv'
-fileToWrite = 'recycle.csv'
+with_zeros = True
+fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/sorted_data.csv'
+fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/sorted_data_sorted.csv'
 
 df = pd.read_csv(fileToRead)
 
@@ -22,7 +22,7 @@ zero_relevance = []
 index = 0
 
 for index in range(len(df['title'])):
-    if df['relevance'][index] == 1:
+    if df['relevance'][index] == 1 or df['relevance'][index] == '1':
         one_published_at.append(df['published_at'][index])
         one_video_id.append(df['video_id'][index])
         one_title.append(df['title'][index])
@@ -40,6 +40,13 @@ num_ones = len(one_video_id)
 num_zeros = len(zero_video_id)
 percentYield = (num_ones * 100)/(num_ones + num_zeros)
 print(percentYield)
+
+if with_zeros:
+    one_published_at.extend(zero_published_at)
+    one_video_id.extend(zero_video_id)
+    one_title.extend(zero_title)
+    one_description.extend(zero_description)
+    one_relevance.extend(zero_relevance)
 
 new_df = pd.DataFrame(one_published_at, columns=['published_at'])
 new_df['video_id'] = one_video_id

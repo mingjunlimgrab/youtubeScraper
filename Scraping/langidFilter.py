@@ -3,8 +3,8 @@ import pandas as pd
 import langid
 
 #Parameters#
-fileToRead = 'rawVideoData/grab3.csv'
-fileToWrite = 'languageFilteredData/langidBatch4.csv'
+fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/rawVideoData/validationBatch2.csv'
+fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/languageFilteredData/validationBatch2EN.csv'
 df = pd.read_csv(fileToRead)
 
 EN_published_at = []
@@ -42,9 +42,9 @@ for title in df['title']:
 #     i += 1
 # '''
 
-EN_df = pd.DataFrame(EN_published_at, columns = ['EN_published_at'])
-EN_df['EN_video_id']=EN_video_id
-EN_df['EN_title']=EN_title
-EN_df['EN_description']=EN_description
+EN_df = pd.DataFrame(EN_published_at, columns = ['published_at'])
+EN_df['video_id']=EN_video_id
+EN_df['title']=EN_title
+EN_df['description']=EN_description
 
 EN_df.to_csv(fileToWrite)

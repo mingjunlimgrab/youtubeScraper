@@ -7,10 +7,10 @@ FLAG = {'perfidious', '8 ball pool', 'factorio', 'gameplay', 'pussy', 'trump', '
         'cash grab', 'ass grab', 'GTA', 'fallout 4', "smash'n'grab", 'grim dawn', 'minecraft', 'fortnite', 'grab and go', 'grab the bottle', 'land grab',
         'sonic', 'roblox', 'grab points', 'grab point', 'grabpoints', 'grabpoint', 'music video', 'hsn', 'grab the bottle', 'smash and grab'}
 
-fileToRead = 'autoTestedSorted2.csv'
-fileToWrite = 'batch4.csv'
-indexToStart = 0
-indexToEnd = 187
+fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/languageFilteredData/validationBatch2EN.csv'
+fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/manuallyClassifiedData/validationBatchLabelled.csv'
+indexToStart = 1500
+indexToEnd = 2245
 nextIndexToWrite = 0
 
 #Hotkeys
