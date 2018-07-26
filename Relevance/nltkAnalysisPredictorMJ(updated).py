@@ -147,6 +147,52 @@ def append_truth_predictor(titlesWithRelevance, classifier):
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
+def append_truth_predictor_fn(titlesWithRelevance, classifierFn):
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    negatives = [item for item in titlesWithRelevance if item[1] == 0]
+    print("Positives: " + str(len(positives)))
+    print("Negatives: " + str(len(negatives)))
+
+    toprint = []
+    for thingy in titlesWithRelevance:
+        title = thingy[0]
+        title = dehypdeslash(title)
+        toke = special_features(title)
+        cleaned = clean(title)
+        for item in toke:
+            cleaned.append(item)
+        d_f = document_features(cleaned)
+        # featurized = {}
+        # for feature in d_f:
+        #     if d_f[feature] == True:
+        #         featurized[feature] = True
+        if len(thingy) == 3:
+            thingy[2] = classifierFn(title)
+        else:
+            thingy.append(classifierFn(title))
+        if thingy[1] != thingy[2]:
+            toprint.append(thingy)
+    # for item in toprint:
+    #     print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
+
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
+    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
+
+def spitter(string):
+    title = string
+    title = dehypdeslash(title)
+    if checker(title.lower()):
+        spit = 1
+    else:
+        toke = special_features(title)
+        cleaned = clean(title)
+        for item in toke:
+            cleaned.append(item)
+        d_f = document_features(cleaned)
+        spit = classifier.classify(d_f)
+    return spit
+
 def checker(title):
     for word in deterministic:
         if word in title:
@@ -220,45 +266,71 @@ def positive_append(titlesWithRelevance, classifier, printt=False):
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
 
-predicting_titles = [['Man has 156 seconds to grab free stuff', 0], ['How to collect a Grab Sample', 0], ['what happens when i grab my dog\'s tail', 0],
-                     ['How to grab coupons', 0], ['Grab Mod 3.2', 1], ['What it\'s like to be a Grabcar Driver', 1], ['Grab driver mod 5.31.4', 1],
-                     ['grab premium kuala lumpur', 1], ['Uber Agrees to Sell Southeast Asian Operations to Rival Grab', 1],
-                     ['grab gps tutorial', 1], ['grab driver tutorial', 1], ['spotlight: grab dos & don\'ts', 1], ['grabtaxi new driver training video', 1],
-                     ['[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 1], ['grab thailand', 1], ['anthony tan from grabtaxi', 1], ['grab co-founder tan hooi ling', 1],
-                     ['ride hailing company grab', 1]]
+def positive_append_fn(titlesWithRelevance, classifierFn, printt=False):
+    # print(titlesWithRelevance)
+    positives = [item for item in titlesWithRelevance if item[1] == 1]
+    print("Positives: " + str(len(positives)))
 
+    toprint = []
+    for thingy in positives:
+        title = thingy[0]
+        title = dehypdeslash(title)
+        if checker(title.lower()):
+            if len(thingy) == 3:
+                thingy[2] = 1
+            else:
+                thingy.append(1)
+            continue
+        toke = special_features(title)
+        cleaned = clean(title)
+        for item in toke:
+            cleaned.append(item)
+        d_f = document_features(cleaned)
+        if len(thingy) == 3:
+            thingy[2] = classifierFn(title)
+        else:
+            thingy.append(classifierFn(title))
+        if int(thingy[1]) != int(thingy[2]):
+            toprint.append(thingy)
+    if printt:
+        for item in toprint:
+            print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
-# documents = []
-# index = 0
-# for item in test_set:
-#     tokenize = []
-#     title = dehypdeslash(item[0])
-#     toke = special_features(title)
-#     for item in toke:
-#         tokenize.append(item)
-#     words = word_tokenize(title)
-#     for word in words:
-#         lowercase_word = word.lower()
-#         if lowercase_word not in stop_words:
-#             tokenize.append(lowercase_word)
-#     d_f = document_features(tokenize)
-#     documents.append((d_f, item[1]))
-#     index += 1
+    false_negatives = [item for item in toprint if item[1] == 1]
+    print("Number of False_negatives is: " + str(len(false_negatives)))
 
-test_title = [['grab mod driver app uber', 1], ['spoof gps grab app', 1], ['tutorial mask location grab', 1], ['grab driver drunk', 1], ['grabpay', 1]]
+def outputSaver(NBclassifierFn, csvTest):
+    df = pd.read_csv(csvTest)
+    index = 0
+    published_at = []
+    video_id = []
+    title = []
+    description = []
+    relevance = []
+    threat = []
+    pred_relevance = []
 
-documents = []
-index = 0
-for thingy in test_set:
-    title = thingy[0]
-    title = dehypdeslash(title)
-    toke = special_features(title)
-    cleaned = clean(title)
-    for item in toke:
-        cleaned.append(item)
-    d_f = document_features(cleaned)
-    documents.append((d_f, thingy[1]))
-    index += 1
+    for item in df['title']:
+        if NBclassifierFn(item) == 1 or NBclassifierFn(item) == '1':
+            published_at.append(df['published_at'][index])
+            video_id.append(df['video_id'][index])
+            title.append(df['title'][index])
+            description.append(df['description'][index])
+            relevance.append(df['relevance'][index])
+            threat.append(df['threat'][index])
+            pred_relevance.append(1)
+        index += 1
+
+    new_df = pd.DataFrame(published_at, columns=['published_at'])
+    new_df['video_id'] = video_id
+    new_df['title'] = title
+    new_df['description'] = description
+    new_df['relevance'] = relevance
+    new_df['threat'] = threat
+    new_df['pred_relevance'] = pred_relevance
+
+    new_df.to_csv('/Users/mingjun.lim/Documents/youtubeScraper/Data/firstRound.csv')
+
 
 def documents_maker(positive= False):
     documents = []
@@ -286,28 +358,30 @@ def documents_maker(positive= False):
 
 ########## UNCOMMENT ME TO USE THE REAL TEST SET #######################
 test_set = create_test_set('/Users/mingjun.lim/Documents/youtubeScraper/Data/test_data.csv')
+# test_set = create_test_set('/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelledFull.csv')
 ####### 'test_set' otherwise refers to pickled validation set ######
 
-documents = documents_maker(True)
+documents = documents_maker()
 # predictor(predicting_titles)
 # print("\n")
-# truth_predictor(predicting_titles)
-# #test_set = create_test_set('sorted_data.csv')
+# # truth_predictor(predicting_titles)
 # print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
 NB_deterministic_predictor(test_set, classifier)
-positive_append(test_set, classifier, True)
+# # positive_append(test_set, classifier)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
-# append_truth_predictor(test_set, MNB_classifier)
+# # append_truth_predictor(test_set, MNB_classifier)
 # print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
-# append_truth_predictor(test_set, BernoulliNB_classifier)
+# # append_truth_predictor(test_set, BernoulliNB_classifier)
 # print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-# positive_append(test_set, LogisticRegression)
+# # positive_append(test_set, LogisticRegression)
 # print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-# positive_append(test_set, SGD_classifier)
-# # print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
+# # positive_append(test_set, SGD_classifier)
+# print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
 # # append_truth_predictor(test_set, LinearSVC_classifier)
 # print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
 # positive_append(test_set, vote_classifier)
+# append_truth_predictor_fn(test_set, spitter)
+# outputSaver(spitter, '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelledFull.csv')
 
 c.close()
 mnb.close()

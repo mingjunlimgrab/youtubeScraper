@@ -2,8 +2,8 @@ import pandas as pd
 import webbrowser
 import csv
 
-fileToRead = 'onlyPositives.csv'
-fileToWrite = 'onlyPositivesSorted.csv'
+fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelledFull.csv'
+fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatSorted.csv'
 
 df = pd.read_csv(fileToRead)
 

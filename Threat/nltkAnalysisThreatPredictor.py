@@ -2,7 +2,7 @@ from nltk.tokenize import word_tokenize
 import pickle
 import random
 import pandas as pd
-import VoteClassifierThreat as vc
+import Threat.VoteClassifierThreat as vc
 import nltk
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
@@ -23,15 +23,15 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
 
 new_words = [('grab app', 100), ('grab mod', 100), ('mod grab', 100), ('grabmod', 100)]
 
-c = open('my_classifier_threat.pickle', 'rb')
-mnb = open('MNB_classifier_threat.pickle', 'rb')
-bnb = open('BernoulliNB_classifier_threat.pickle', 'rb')
-lg = open('LogisticRegression_classifier_threat.pickle', 'rb')
-sgd = open('SGD_classifier_threat.pickle', 'rb')
-lsvc = open('LinearSVC_classifier_threat.pickle', 'rb')
-wf = open('word_features_threat.pickle', 'rb')
-tr = open('train_set_threat.pickle', 'rb')
-te = open('test_set_threat.pickle', 'rb')
+c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier_threat.pickle', 'rb')
+mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/MNB_classifier_threat.pickle', 'rb')
+bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/BernoulliNB_classifier_threat.pickle', 'rb')
+lg = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LogisticRegression_classifier_threat.pickle', 'rb')
+sgd = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/SGD_classifier_threat.pickle', 'rb')
+lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LinearSVC_classifier_threat.pickle', 'rb')
+wf = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/word_features_threat.pickle', 'rb')
+tr = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/train_set_threat.pickle', 'rb')
+te = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/test_set_threat.pickle', 'rb')
 
 classifier = pickle.load(c)
 MNB_classifier = pickle.load(mnb)

@@ -5,9 +5,9 @@ from mjutils import flagger, dehypdeslash, grabCheck
 
 FLAG = {}
 
-fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/threat_data.csv'
-fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/mjThreatLabelled.csv'
-indexToStart = 560
+fileToRead = '/Users/mingjun.lim/Documents/youtubeScraper/Data/test_data.csv'
+fileToWrite = '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelled.csv'
+indexToStart = 0
 nextIndexToWrite = 0
 
 #Hotkeys
