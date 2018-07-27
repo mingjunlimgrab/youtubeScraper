@@ -23,7 +23,7 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               "'", '!', '?'}
 
 new_words = [('grab bike', 100), ('grab car', 100), ('grab pay', 100), ('grab app', 100), ('grab express', 100),
-             ('surge pricing', 100), ('grab driver', 100), ('grab mod', 100), ('grab food', 100), ('mod grab', 100),
+             ('surge pricing', 100), ('grab driver', 100), (' grab mod ', 100), ('grab food', 100), (' mod grab ', 100),
              ('grab ph', 100), ('grab indonesia', 100), ('justgrab', 100), ('grabhitch', 100), ('grabshare', 100),
              ('grabcar', 100), ('grabbike', 100),
              ('grab phillipines', 100), ('anthony tan', 100), ('tan hooi ling', 100), ('grabmod', 100), ('grabpay', 100)]
@@ -179,8 +179,8 @@ def append_truth_predictor_fn(titlesWithRelevance, classifierFn):
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
-def spitter(string):
-    title = string
+def spitter(strink):
+    title = strink
     title = dehypdeslash(title)
     if checker(title.lower()):
         spit = 1
@@ -199,7 +199,7 @@ def checker(title):
             return True
     return False
 
-def NB_deterministic_predictor(titlesWithRelevance, classifier):
+def NB_deterministic_predictor(titlesWithRelevance):
     positives = [item for item in titlesWithRelevance if item[1] == 1]
     negatives = [item for item in titlesWithRelevance if item[1] == 0]
     print("Positives: " + str(len(positives)))
@@ -214,22 +214,24 @@ def NB_deterministic_predictor(titlesWithRelevance, classifier):
                 thingy[2] = 1
             else:
                 thingy.append(1)
-            continue
-        toke = special_features(title)
-        cleaned = clean(title)
-        for item in toke:
-            cleaned.append(item)
-        d_f = document_features(cleaned)
-        if len(thingy) == 3:
-            thingy[2] = classifier.classify(d_f)
+            if int(thingy[1]) != int(thingy[2]):
+                toprint.append(thingy)
         else:
-            thingy.append(classifier.classify(d_f))
-        if thingy[1] != thingy[2]:
-            toprint.append(thingy)
+            toke = special_features(title)
+            cleaned = clean(title)
+            for item in toke:
+                cleaned.append(item)
+            d_f = document_features(cleaned)
+            if len(thingy) == 3:
+                thingy[2] = classifier.classify(d_f)
+            else:
+                thingy.append(classifier.classify(d_f))
+            if int(thingy[1]) != int(thingy[2]):
+                toprint.append(thingy)
     for item in toprint:
         print(item[0] + ': ' + str(item[1]) + ' ' + str(item[2]))
 
-    false_negatives = [item for item in toprint if item[1] == 1]
+    false_negatives = [item for item in toprint if item[1] == 1 or item[1] == '1']
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
@@ -298,6 +300,7 @@ def positive_append_fn(titlesWithRelevance, classifierFn, printt=False):
 
     false_negatives = [item for item in toprint if item[1] == 1]
     print("Number of False_negatives is: " + str(len(false_negatives)))
+    print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
 def outputSaver(NBclassifierFn, csvTest):
     df = pd.read_csv(csvTest)
@@ -310,14 +313,21 @@ def outputSaver(NBclassifierFn, csvTest):
     threat = []
     pred_relevance = []
 
+    try:
+        x = df['threat']
+        isThreat = True
+    except:
+        isThreat = False
+
     for item in df['title']:
-        if NBclassifierFn(item) == 1 or NBclassifierFn(item) == '1':
+        if NBclassifierFn(item) == 1:
             published_at.append(df['published_at'][index])
             video_id.append(df['video_id'][index])
             title.append(df['title'][index])
             description.append(df['description'][index])
             relevance.append(df['relevance'][index])
-            threat.append(df['threat'][index])
+            if isThreat:
+                threat.append(df['threat'][index])
             pred_relevance.append(1)
         index += 1
 
@@ -326,7 +336,8 @@ def outputSaver(NBclassifierFn, csvTest):
     new_df['title'] = title
     new_df['description'] = description
     new_df['relevance'] = relevance
-    new_df['threat'] = threat
+    if isThreat:
+        new_df['threat'] = threat
     new_df['pred_relevance'] = pred_relevance
 
     new_df.to_csv('/Users/mingjun.lim/Documents/youtubeScraper/Data/firstRound.csv')
@@ -366,7 +377,7 @@ documents = documents_maker()
 # print("\n")
 # # truth_predictor(predicting_titles)
 # print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-NB_deterministic_predictor(test_set, classifier)
+# NB_deterministic_predictor(test_set)
 # # positive_append(test_set, classifier)
 # print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
 # # append_truth_predictor(test_set, MNB_classifier)
@@ -381,7 +392,7 @@ NB_deterministic_predictor(test_set, classifier)
 # print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
 # positive_append(test_set, vote_classifier)
 # append_truth_predictor_fn(test_set, spitter)
-# outputSaver(spitter, '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelledFull.csv')
+outputSaver(spitter, '/Users/mingjun.lim/Documents/youtubeScraper/Data/testThreatLabelledFull.csv')
 
 c.close()
 mnb.close()

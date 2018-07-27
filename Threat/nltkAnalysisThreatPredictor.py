@@ -128,8 +128,6 @@ def append_truth_predictor(titlesWithRelevance, classifier):
     print("Number of False_negatives is: " + str(len(false_negatives)))
     print("Number of False_positives is: " + str(len(toprint) - len(false_negatives)))
 
-
-
 def create_test_set(csvFileName): #takes in a string (the name of a file or directory)
     df = pd.read_csv(csvFileName)
     documents = []
@@ -138,20 +136,7 @@ def create_test_set(csvFileName): #takes in a string (the name of a file or dire
     for title in df['title']:
         documents.append([title, df['threat'][index]])
         index += 1
-    rel = []
-    irr = []
-    for item in documents:
-        if item[1] == 'HIG':
-            rel.append(item)
-        else:
-            irr.append(item)
-    random.shuffle(rel)
-    random.shuffle(irr)
-    eightyPercentRel = int(len(rel) * 0.5)
-    eightyPercentIrr = int(len(irr) * 0.5)
-    print(len(rel[eightyPercentRel:]))
-    print(len(irr[eightyPercentIrr:]))
-    test_set = rel[eightyPercentRel:] + irr[eightyPercentIrr:]
+    test_set = documents
     return test_set
 
 documents = []
@@ -174,19 +159,22 @@ predicting_titles = ['Man has 156 seconds to grab free stuff', 'How to collect a
                      '[SOCIAL EXPERIMENT] GOJEK vs. GRAB vs. UBER', 'grab thailand', 'anthony tan from grabtaxi', 'grab co-founder tan hooi ling',
                      'ride hailing company grab', 'no auto food grab mod']
 
-print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
-append_truth_predictor(test_set, classifier)
-print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
-append_truth_predictor(test_set, MNB_classifier)
-print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
-append_truth_predictor(test_set, BernoulliNB_classifier)
-print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
-append_truth_predictor(test_set, LogisticRegression)
-print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
-append_truth_predictor(test_set, SGD_classifier)
-print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
-append_truth_predictor(test_set, LinearSVC_classifier)
-print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
+
+test_set = create_test_set('/Users/mingjun.lim/Documents/youtubeScraper/Data/firstRound.csv')
+# print("Original Naive Bayes accuracy:", (nltk.classify.accuracy(classifier, documents)))
+# append_truth_predictor(test_set, classifier)
+# print("MNB_classifier accuracy:", (nltk.classify.accuracy(MNB_classifier, documents)))
+# append_truth_predictor(test_set, MNB_classifier)
+# print("BernoulliNB_classifier accuracy:", (nltk.classify.accuracy(BernoulliNB_classifier, documents)))
+# append_truth_predictor(test_set, BernoulliNB_classifier)
+# print("LogisticRegression_classifier accuracy:", (nltk.classify.accuracy(LogisticRegression, documents)))
+# append_truth_predictor(test_set, LogisticRegression)
+# print("SGD_classifier accuracy:", (nltk.classify.accuracy(SGD_classifier, documents)))
+# append_truth_predictor(test_set, SGD_classifier)
+# print("LinearSVC_classifier accuracy:", (nltk.classify.accuracy(LinearSVC_classifier, documents)))
+# append_truth_predictor(test_set, LinearSVC_classifier)
+# print("voteclassifier accuracy:", (nltk.classify.accuracy(vote_classifier, documents)))
+# append_truth_predictor(test_set, vote_classifier)
 append_truth_predictor(test_set, vote_classifier)
 
 c.close()
