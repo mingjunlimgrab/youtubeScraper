@@ -1,7 +1,7 @@
 from nltk.classify import ClassifierI
 from statistics import mode
 
-new_words = [('grab app', 100), ('grab mod', 100), ('mod grab', 100), ('grabmod', 100)]
+new_words = [('grab mod', 100), ('mod grab', 100), ('grabmod', 100)]
 
 new_words_list = []
 for item in new_words:
