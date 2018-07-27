@@ -7,7 +7,7 @@ from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import LinearSVC
 import pickle
-import Threat.VoteClassifierThreat as vc
+import VoteClassifierThreat as vc
 
 stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that'll", "you'll", 'through', 'than',
               'most', 'out', 'in', 'theirs', 'your', 'are', 'y', 'this', 'some', 'few', 'themselves', 'you', "won't",
@@ -26,15 +26,15 @@ stop_words = {'who', 'all', 'very', 'can', "she's", 'did', 'hadn', 'they', "that
               'off', 'should', "wouldn't", 'until', 'same', 'during', '-', '(', ')', '|', ',', '[', ']', ':', '%', 'no',
               "'", '!', '?'}
 
-c = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/my_classifier_threat.pickle', 'wb')
-mnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/MNB_classifier_threat.pickle', 'wb')
-bnb = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/BernoulliNB_classifier_threat.pickle', 'wb')
-lg = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LogisticRegression_classifier_threat.pickle', 'wb')
-sgd = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/SGD_classifier_threat.pickle', 'wb')
-lsvc = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/LinearSVC_classifier_threat.pickle', 'wb')
-wf = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/word_features_threat.pickle', 'wb')
-tr = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/train_set_threat.pickle', 'wb')
-te = open('/Users/mingjun.lim/Documents/youtubeScraper/Pickles/test_set_threat.pickle', 'wb')
+c = open('my_classifier_threat.pickle', 'wb')
+mnb = open('MNB_classifier_threat.pickle', 'wb')
+bnb = open('BernoulliNB_classifier_threat.pickle', 'wb')
+lg = open('LogisticRegression_classifier_threat.pickle', 'wb')
+sgd = open('SGD_classifier_threat.pickle', 'wb')
+lsvc = open('LinearSVC_classifier_threat.pickle', 'wb')
+wf = open('word_features_threat.pickle', 'wb')
+tr = open('train_set_threat.pickle', 'wb')
+te = open('test_set_threat.pickle', 'wb')
 
 def dehypdeslash(title):
     result1 = title
@@ -62,7 +62,7 @@ def document_features(doc):
         features['contains({})'.format(word)] = (word in doc_words)
     return features
 
-new_words = [('grab app', 100), ('grab mod', 100), ('mod grab', 100), ('grabmod', 100)]
+new_words = [('grab mod', 100), ('mod grab', 100), ('grabmod', 100), (' grab mod ', 100), (' mod grab ', 100), ('mod grab ', 100)]
 
 def special_features(title):
     toke = []
@@ -73,7 +73,7 @@ def special_features(title):
             toke.append(item[0])
     return toke
 
-df = pd.read_csv("/Users/mingjun.lim/Documents/youtubeScraper/Data/threat_data_labelled.csv")
+df = pd.read_csv("testThreatLabelledFull.csv")
 
 documents = []
 lib = []
@@ -114,8 +114,8 @@ for word in new_words:
 hig_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in hig]
 low_featuresets = [[item[0], (document_features(item[1]), item[2])] for item in low]
 
-twentyRel = int(len(hig_featuresets) * 0.2)
-twentyIrr = int(len(low_featuresets) * 0.2)
+twentyRel = int(len(hig_featuresets) * 0.3)
+twentyIrr = int(len(low_featuresets) * 0.3)
 
 # train_set_save = rel_featuresets[:500] + irr_featuresets
 # test_set_save = rel_featuresets[500:]
